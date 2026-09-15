@@ -1,0 +1,30 @@
+/* 我的成就（achievements） */
+.achievements-page {
+  height: 100vh;
+}
+
+.achievements-empty {
+  padding: 16rpx 36rpx;
+  position: relative;
+  .empty-title{
+    text-align: center;
+  }
+  .empty-img {
+    height: 200rpx;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.achievement-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+  box-sizing: border-box;
+  .badge-img{
+    height: 120rpx;
+  }
+  .locked {
+    filter: grayscale(1);
+  }
+}

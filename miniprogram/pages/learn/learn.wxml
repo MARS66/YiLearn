@@ -1,0 +1,64 @@
+<view class="page learn-page">
+  
+  <block wx:if="{{empty}}">
+    <scroll-view class="learn-scroll" scroll-y>
+      <view class="empty">
+        <image src="/assets/mascot/mascot-peek-curious.png" mode="widthFix" aria-role="img" aria-label="小火种邀请你先认识第一个字" />
+        <view class="empty-title">还没有可回顾的文字</view>
+        <view class="empty-copy">先认识第一个字，再来回顾吧。</view>
+        <view class="primary" bindtap="goFirstLearn" hover-class="tap-state" aria-role="button">先认识第一个字</view>
+      </view>
+    </scroll-view>
+  </block>
+
+  <block wx:else>
+    <view class="learn-progress" aria-label="学习进度 {{percent}}%">
+      <view class="progress-bar memory-bars">
+        <view wx:for="{{bars}}" wx:key="index" class="{{item ? 'on' : ''}}"></view>
+      </view>
+      <view class="progress-percent">{{percent}}%</view>
+    </view>
+    <view class="learn-scroll" >
+      <view class="learn-intro">
+        
+        <view class="mode-pill">
+          <text class="mode-icon iconfont {{mode === 'review' ? 'icon-fuxi' : 'icon-shu'}}">
+          </text>{{mode === 'review' ? '巩固复习' : '正在学习'}}</view>
+        <view class="encourage">{{encourage}}</view>
+      </view>
+
+      <view class="learn-stage-wrap">
+        <image class="learn-mascot" src="{{mascot}}" mode="heightFix" aria-role="img" aria-label="小火种陪伴识字" />
+        <view class="memory-card {{mode === 'review' && !revealed ? 'memory-card-hidden' : ''}}" bindtap="onCardTap" aria-role="{{mode === 'review' && !revealed ? 'button' : 'img'}}" aria-label="{{mode === 'review' && !revealed ? '点击查看读音与资料' : '彝文记忆卡'}}">
+          <view class="play-audio iconfont icon-shengyin"></view>
+          <view class="memory-card-hidden" wx:if="{{mode === 'review' && !revealed}}">
+            <view class="glyph memory-glyph">{{card.g}}</view>
+            <view class="tap-hint">点击卡片查看读音与资料</view>
+          </view>
+          <view class="pinyin memory-pinyin">
+            <text class="initial">{{card.initial}}</text>
+            <text wx:if="{{card.final}}" class="final">{{card.final}}</text>
+          </view>
+          <view class="glyph memory-glyph">{{card.g}}</view>
+          <view class="facts">
+            <view class="fact"><text class="fact-label">部首</text><text class="fact-value">{{card.radical}}</text></view>
+            <view class="fact"><text class="fact-label">总笔画</text><text class="fact-value">{{card.strokes}}</text></view>
+            <view class="fact"><text class="fact-label">音调</text><text class="fact-value">{{card.strokes}}</text></view>
+          </view>
+          <view class="facts facts-group">
+              <view class="fact">
+              <text class="fact-label">常用词组</text>
+              <text class="fact-value">{{card.group}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="actions">
+      <view class="secondary {{prevDisabled ? 'disabled' : ''}}" bindtap="onPrev" hover-class="action-pressed" aria-role="button" aria-disabled="{{prevDisabled}}">上一个</view>
+      <view class="primary" bindtap="onNext" hover-class="tap-state" aria-role="button">{{nextText}}
+      </view>
+    </view>
+  </block>
+</view>

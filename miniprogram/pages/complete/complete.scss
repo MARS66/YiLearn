@@ -1,0 +1,47 @@
+.complete-page { height: 100vh; }
+.complete-page .app-header { min-height: 112rpx; }
+.complete-page .header-title { font-size: 44rpx; }
+.complete-page .header-btn { font-size: 72rpx; font-weight: 300; }
+.complete-page .header-side { color: var(--fg); font-size: 36rpx; letter-spacing: .08em; }
+.complete-page .scroll { padding: 20rpx 30rpx 48rpx; }
+.complete-page .actions { padding: 28rpx 6rpx 10rpx; }
+.complete-page .actions .primary, .complete-page .actions .secondary { min-height: 112rpx; font-size: 34rpx; }
+
+.poster { position: relative; overflow: hidden; min-height: 1180rpx; padding: 38rpx 40rpx; border: 2rpx solid #53504b; border-radius: 56rpx; background: radial-gradient(circle at 80% 18%, #312f29 0, transparent 40%), var(--ink); box-shadow: var(--shadow); color: #fff; box-sizing: border-box; }
+.poster::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 34rpx; background: repeating-linear-gradient(55deg, rgba(111,37,27,.95) 0 20rpx, rgba(24,23,21,.2) 20rpx 40rpx); }
+.poster-brand { display: flex; align-items: center; gap: 18rpx; }
+.poster-logo { width: 72rpx; height: 88rpx; }
+.poster-brand-copy { display: flex; flex-direction: column; }
+.poster-brand-name { font-size: 32rpx; font-weight: 900; }
+.poster-brand-small { color: #cac5bd; font-size: 24rpx; }
+.poster-date { position: absolute; top: 42rpx; right: 34rpx; color: #c9c4bd; font-size: 22rpx; }
+.poster-title { position: relative; z-index: 2; width: 72%; margin-top: 68rpx; font-size: 60rpx; font-weight: 900; line-height: 1.18; }
+.poster-title-line { display: block; white-space: nowrap; }
+.poster-result { display: flex; align-items: baseline; white-space: nowrap; }
+.poster-big { display: inline-block; margin-right: 14rpx; color: var(--red); font-size: 128rpx; line-height: 1; }
+.poster-img { position: absolute; z-index: 1; top: 144rpx; right: -42rpx; width: 410rpx; }
+.poster-stats { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 194rpx; }
+.poster-stat { min-height: 152rpx; border-right: 1rpx solid #575757; text-align: center; }
+.poster-stat:last-child { border: 0; }
+.poster-stat-value { display: block; color: var(--red); font-size: 60rpx; font-weight: 900; line-height: 1.1; }
+.poster-stat-label { color: #d6d1ca; font-size: 25rpx; }
+.poster-week { margin-top: 34rpx; padding: 28rpx 24rpx; border: 2rpx solid #4a4945; border-radius: 32rpx; background: rgba(255,255,255,.035); }
+.poster-week-title { display: block; margin-bottom: 18rpx; font-size: 30rpx; font-weight: 800; }
+.poster-week .day { color: #c9c4bd; font-size: 20rpx; }
+.poster-week .day-i { width: 58rpx; height: 58rpx; }
+.poster-quote { width: 58%; margin-top: 38rpx; padding-top: 34rpx; border-top: 2rpx solid #555; font-size: 31rpx; font-weight: 700; line-height: 1.7; }
+.share-seal { position: absolute; z-index: 2; right: 30rpx; bottom: 38rpx; width: 236rpx; padding: 14rpx 12rpx 12rpx; border-radius: 28rpx; background: #fff; color: var(--fg); text-align: center; box-sizing: border-box; }
+.share-code { display: block; width: 190rpx; height: 190rpx; margin: 0 auto 4rpx; border-radius: 18rpx; }
+.share-seal-copy { font-size: 18rpx; white-space: nowrap; }
+.continue-btn { display: flex; align-items: center; justify-content: center; min-height: 82rpx; margin-top: 10rpx; color: var(--muted); font-size: 29rpx; font-weight: 700; text-decoration: underline; }
+.action-pressed { background: rgba(23,22,20,.08); }
+.tap-state { background: var(--red-dark); opacity: .9; }
+.continue-pressed { opacity: .55; }
+
+@media (max-width: 360px) {
+  .poster { min-height: 1140rpx; padding-right: 32rpx; padding-left: 32rpx; }
+  .poster-title { font-size: 54rpx; }
+  .poster-big { font-size: 114rpx; }
+  .poster-img { right: -60rpx; width: 380rpx; }
+  .poster-date { display: none; }
+}

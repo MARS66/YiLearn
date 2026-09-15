@@ -1,0 +1,105 @@
+<view class="page tab-page">
+  <view class="scroll">
+    <view class="encourage profile-hero">
+      <view>你的每一步，</view>
+      <view class="profile-h2">都在延续彝文</view>
+      <image 
+      class="profile-mascot" 
+      src="/assets/mascot/mascot-fire-seed.png"
+       mode="heightFix" aria-role="img" aria-label="小火种为学习进度加油" />
+    </view>
+
+    <view class="progress-panel">
+      <view class="progress-panel-title">
+         <text class="iconfont icon-progress icon-xuexijindu"></text>
+        我的进度
+      </view>
+     <view class="progress-content">
+        <view class="big-progress">
+          <text class="big-num">{{totalLearned}}</text>
+          <view class="big-small">
+            <text>/ {{totalWords}}</text>
+            <text>已认识</text>
+          </view>
+        </view>
+        <view class="yellow-chip">
+          <view>距离半程还差 </view>
+          <view class="yellow-num">{{halfRemaining}}</view>字
+        </view>
+      </view>
+      <text class="progress-copy">今日进度 {{percent}}%</text>
+      <view class="progress-bar">
+        <view wx:for="{{bars}}" wx:key="index" class="{{item ? 'on' : ''}}"></view>
+      </view>
+    </view>
+
+    <view class="week-card">
+      <view class="week-summary">
+        <view><text class="iconfont icon-daka"></text>本周学习记录</view>
+        <view><text class="iconfont icon-jiangbei1"></text>连续学习 <text class="red week-num"> {{longestStreak}}</text> 天</view>
+      </view>
+      <view class="week">
+        <view wx:for="{{week}}" wx:key="index" class="day {{item.done ? 'done' : ''}}">
+          <text>{{item.label}}</text>
+          <view class="day-i">{{item.done ? '✓' : ''}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="panel stats">
+      <view class="stat">
+        <text class="iconfont icon-shu"></text>
+           <view>今日学习</view>
+        <text class="stat-value">{{todayLearned}}</text>
+        </view>
+      <view class="stat">
+        <text class="iconfont icon-fuxi"></text>
+           <view>累计回顾</view>
+        <text class="stat-value">{{reviewCount}}</text>
+        </view>
+      <view class="stat">
+        <text class="iconfont icon-daka-copy"></text>
+           <view>学习天数</view>
+        <text class="stat-value">{{studyDays}}</text>
+        </view>
+    </view>
+
+    <view class="panel achievement-panel">
+      <view class="achievement-heading" bindtap="goAchievements" hover-class="row-pressed" aria-role="button">
+        <text class="list-row-label"><text class="iconfont icon-jiangbei"></text>我的成就</text>
+        <text class="list-row-value">查看全部　›</text>
+      </view>
+      <view class="achievement-row">
+        <view wx:for="{{badges}}" wx:key="name" class="badge {{item.unlocked ? '' : 'locked'}}">
+          <image class="badge-image" src="{{item.image}}" mode="aspectFit" aria-hidden="true" />
+          <text class="badge-name">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="panel settings-panel">
+      <view class="setting">
+        <view class="setting-text">
+          <text class="setting-text-title"><text class="iconfont icon-shengyin"></text>声音</text>
+          <text class="setting-text-desc">卡片切换提示音</text>
+        </view>
+        <view class="switch {{sound ? 'on' : ''}}" bindtap="toggleSound" hover-class="switch-pressed" aria-role="switch" aria-label="声音" aria-checked="{{sound}}">
+          <view class="switch-knob"></view>
+        </view>
+      </view>
+      <view class="setting">
+        <view class="setting-text">
+          <text class="setting-text-title"><text class="iconfont icon-shake"></text>振动</text>
+          <text class="setting-text-desc">操作反馈</text>
+        </view>
+        <view class="switch {{vibration ? 'on' : ''}}" bindtap="toggleVibration" hover-class="switch-pressed" aria-role="switch" aria-label="振动" aria-checked="{{vibration}}">
+          <view class="switch-knob"></view>
+        </view>
+      </view>
+      <view class="setting" bindtap="goStorage" hover-class="row-pressed" aria-role="button">
+        <text class="setting-text-title"><text class="iconfont icon-jurassic_data"></text>本地存储说明</text>
+        <text class="setting-value">›</text>
+      </view>
+    </view>
+  </view>
+</view>

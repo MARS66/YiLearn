@@ -1,0 +1,25 @@
+<view class="page detail-page">
+  <scroll-view class="scroll" scroll-y>
+    <view class="detail-card">
+      <view class="pinyin">
+        <text class="initial">{{initial}}</text>
+        <text wx:if="{{final}}" class="final">{{final}}</text>
+      </view>
+      <view class="glyph detail-card-glyph">{{g}}</view>
+      <text class="detail-status">{{learned ? '已学习' : '尚未学习'}}</text>
+    </view>
+
+    <view class="detail-facts">
+      <view class="detail-fact"><text class="detail-fact-label">完整拼音</text><text class="detail-fact-value">{{py}}</text></view>
+      <view class="detail-fact"><text class="detail-fact-label">字典序号</text><text class="detail-fact-value">{{seqText}}</text></view>
+      <view class="detail-fact"><text class="detail-fact-label">声母</text><text class="detail-fact-value">{{initial}}</text></view>
+      <view class="detail-fact"><text class="detail-fact-label">韵母</text><text class="detail-fact-value">{{finalText}}</text></view>
+      <view class="detail-fact"><text class="detail-fact-label">部首</text><text class="detail-fact-value">{{radical}}</text></view>
+      <view class="detail-fact"><text class="detail-fact-label">总笔画</text><text class="detail-fact-value">{{strokes}}</text></view>
+      <view class="detail-fact"><text class="detail-fact-label">剩余笔画</text><text class="detail-fact-value">{{remain}}</text></view>
+      <view class="detail-fact"><text class="detail-fact-label">词组</text><text class="detail-fact-value">{{group}}</text></view>
+    </view>
+
+    <text class="detail-note">从字典查看文字不会改变顺序学习进度。</text>
+  </scroll-view>
+</view>

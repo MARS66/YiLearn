@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/profile/profile",
+    "pages/index/index",
+    "pages/learn/learn",
+    "pages/dictionary/dictionary",
+    "pages/complete/complete",
+    "pages/detail/detail",
+    "pages/achievements/achievements",
+    "pages/storage-info/storage-info"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#FAF7F0",
+    "backgroundColor": "#FAF7F0"
+  },
+  "tabBar": {
+    "color": "#6F6B65",
+    "selectedColor": "#E13C2F",
+    "backgroundColor": "#FAF7F0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/index.png",
+        "selectedIconPath": "assets/index-active.png",
+        "text": "学习"
+      },
+      {
+        "pagePath": "pages/dictionary/dictionary",
+        "iconPath": "assets/dictionary.png",
+        "selectedIconPath": "assets/dictionary-active.png",
+        "text": "字典"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "assets/profile.png",
+        "selectedIconPath": "assets/profile-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "tagNameStyleIsolation": "legacy",
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

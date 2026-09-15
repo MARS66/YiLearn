@@ -1,0 +1,69 @@
+<view class="page complete-page">
+  <view class="status-bar-slot" style="height: {{statusBarHeight}}px;"></view>
+
+  <view class="app-header">
+    <view class="header-btn" bindtap="onBack" aria-role="button" aria-label="返回">‹</view>
+    <text class="header-title">{{mode === 'review' ? '回顾完成' : '学习完成'}}</text>
+    <text class="header-side">···</text>
+  </view>
+
+  <scroll-view class="scroll" scroll-y>
+    <block wx:if="{{mode === 'review'}}">
+      <view class="empty">
+        <image src="/assets/mascot/mascot-celebrate.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝完成回顾" />
+        <view class="empty-title">已回顾 {{reviewCount}} 个彝文字</view>
+        <view class="empty-copy">没有分数，也不用判断对错。想再看看时，随时回来。</view>
+      </view>
+      <view class="actions">
+        <view class="secondary" bindtap="goHome" hover-class="action-pressed" aria-role="button">完成回顾</view>
+        <view class="primary" bindtap="goReview" hover-class="tap-state" aria-role="button">再回顾一组</view>
+      </view>
+    </block>
+
+    <block wx:else>
+      <view class="poster">
+        <view class="poster-brand">
+          <image class="poster-logo" src="/assets/logo.png" mode="aspectFit" aria-hidden="true" />
+          <view class="poster-brand-copy">
+            <text class="poster-brand-name">彝学 YiLearn</text>
+            <text class="poster-brand-small">每天认识 10 个彝文字</text>
+          </view>
+        </view>
+        <text class="poster-date">生成于 {{dateText}}</text>
+        <view class="poster-title">
+          <text class="poster-title-line">今天又认识了</text>
+          <view class="poster-result"><text class="poster-big">{{newCount}}</text><text>个彝文字</text></view>
+        </view>
+        <image class="poster-img" src="/assets/mascot/mascot-celebrate.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝今天的学习" />
+        <view class="poster-stats">
+          <view class="poster-stat"><text class="poster-stat-value">{{streak}} 天</text><text class="poster-stat-label">连续学习</text></view>
+          <view class="poster-stat"><text class="poster-stat-value">{{totalLearned}}</text><text class="poster-stat-label">累计识字</text></view>
+          <view class="poster-stat"><text class="poster-stat-value">{{todayLearned}}</text><text class="poster-stat-label">今日识字</text></view>
+        </view>
+        <view class="poster-week">
+          <text class="poster-week-title">▮ 本周学习记录</text>
+          <view class="week">
+            <view wx:for="{{week}}" wx:key="index" class="day {{item.done ? 'done' : ''}}">
+              <text>{{item.label}}</text>
+              <view class="day-i">{{item.done ? '✓' : ''}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="poster-quote">
+          <text>每一个新字，</text>
+          <text>都是文化延续的一步。</text>
+        </view>
+        <view class="share-seal">
+          <image class="share-code" src="/assets/scancode.jpg" mode="aspectFit" aria-label="小程序码" />
+          <text class="share-seal-copy">长按识别，一起识字</text>
+        </view>
+      </view>
+
+      <view class="actions">
+        <view class="secondary" bindtap="savePoster" hover-class="action-pressed" aria-role="button">保存海报</view>
+        <view class="primary" bindtap="sharePoster" hover-class="tap-state" aria-role="button">分享给朋友</view>
+      </view>
+      <view class="continue-btn" bindtap="continueLearn" hover-class="continue-pressed" aria-role="button">继续学习　›</view>
+    </block>
+  </scroll-view>
+</view>

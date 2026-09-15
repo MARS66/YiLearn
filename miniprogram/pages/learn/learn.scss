@@ -1,0 +1,248 @@
+/* 学习 / 回顾共用记忆卡 */
+.learn-page {
+  position: relative;
+  .learn-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 22rpx;
+    padding: 0 36rpx;
+    background: var(--bg);
+    box-sizing: border-box;
+
+    .progress-bar {
+      flex: 1;
+    }
+
+    .progress-percent {
+      flex: none;
+      font-size: 30rpx;
+      font-weight: 800;
+      color: var(--red);
+    }
+  }
+
+  .app-header {
+    position: relative;
+    min-height: 104rpx;
+    padding-top: 0;
+    padding-right: 190rpx;
+  }
+
+  .header-title {
+    position: absolute;
+    left: 50%;
+    font-size: 42rpx;
+    transform: translateX(-50%);
+  }
+
+  .header-side {
+    position: absolute;
+    right: 190rpx;
+    color: var(--fg);
+    font-size: 34rpx;
+  }
+
+  .header-btn {
+    font-size: 72rpx;
+    font-weight: 300;
+  }
+
+  .learn-scroll {
+    min-height: 0;
+    padding: 70rpx 36rpx 20rpx;
+    box-sizing: border-box;
+    .learn-intro {
+      position: relative;
+      padding: 20rpx 12rpx 40rpx;
+      box-sizing: border-box;
+      .mode-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 10rpx 20rpx;
+        border-radius: 999rpx;
+        background: var(--red);
+        color: var(--white);
+        font-size: 36rpx;
+        font-weight: 900;
+        .mode-icon {
+          font-size: 46rpx;
+          margin-right: 18rpx;
+        }
+      }
+
+      .encourage {
+        margin: 20rpx 0 0 8rpx;
+        font-family: var(--font-display);
+        font-size: 38rpx;
+        font-weight: 600;
+        line-height: 1.55;
+        white-space: pre-line;
+        transform: rotate(-2deg);
+        &::after {
+          content: "";
+          display: block;
+          width: 204rpx;
+          height: 16rpx;
+          margin: 6rpx 0 0 96rpx;
+          border-top: 6rpx solid var(--red);
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .learn-stage-wrap {
+      position: relative;
+      padding-top: 4rpx;
+      .learn-mascot {
+        position: absolute;
+        z-index: 2;
+        top: -270rpx;
+        right: -2rpx;
+        height: 280rpx;
+        pointer-events: none;
+      }
+
+      .memory-card {
+        position: relative;
+        overflow: hidden;
+        padding: 50rpx 36rpx 48rpx;
+        border: 2rpx solid #514f4a;
+        border-radius: 56rpx;
+        background: radial-gradient(circle at 80% 18%, #2c2b27 0, transparent 40%), var(--ink);
+        box-shadow: var(--shadow);
+        color: #fff;
+        box-sizing: border-box;
+        .memory-card-hidden{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background: radial-gradient(circle at 80% 18%, #2c2b27 0, transparent 40%), var(--ink);
+          align-items: center;
+        }
+        .play-audio {
+          position: absolute;
+          top: 80rpx;
+          right:0rpx;
+          width: 80rpx;
+          height: 80rpx;
+          text-align: center;
+          line-height: 80rpx;
+          font-weight: 900;
+          background: var(--red);
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40rpx;
+          z-index: 10;
+          color: var(--white);
+          cursor: pointer;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          height: 28rpx;
+          background: repeating-linear-gradient(55deg, rgba(102,35,26,.9) 0 18rpx, rgba(25,24,22,.2) 18rpx 36rpx);
+        }
+
+        .memory-pinyin {
+          font-size: 58rpx;
+          line-height: 1;
+        }
+
+        .memory-glyph {
+          margin: 20rpx 0 40rpx;
+          font-size: 300rpx;
+          line-height: 300rpx;
+        }
+
+        .memory-bars {
+          margin: 0 0 44rpx;
+
+          view.on {
+            background: linear-gradient(90deg, #e13c2f, #ff684f);
+          }
+        }
+
+        .facts {
+          .fact {
+            min-height: 128rpx;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .fact-label {
+              font-size: 28rpx;
+            }
+
+            .fact-value {
+              margin-top: 12rpx;
+              font-size: 38rpx;
+              font-weight: 800;
+            }
+          }
+        }
+
+        .facts-group {
+          .fact {
+            padding: 10 20rpx;
+            .fact-label{
+              text-align: left;
+            }
+            .fact-value {
+              text-align: left;
+              font-size: 40rpx;
+              font-weight: normal;
+            }
+          }
+        }
+
+        .tap-hint {
+          color: #d5d1c9;
+          font-size: 28rpx;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .actions {
+    flex: none;
+    padding: 26rpx 36rpx ;
+    background: var(--bg);
+    .primary,
+    .secondary {
+      font-size: 36rpx;
+    }
+  }
+}
+
+.disabled {
+  opacity: .35;
+}
+
+.action-pressed {
+  background: rgba(23,22,20,.08);
+}
+
+.tap-state {
+  background: var(--red-dark);
+  opacity: .9;
+}
+
+@media (max-width: 360px) {
+  .learn-intro { min-height: 238rpx; }
+  .learn-mascot { top: -258rpx; width: 340rpx; }
+  .memory-card { min-height: 800rpx; }
+  .memory-glyph { font-size: 284rpx; }
+}

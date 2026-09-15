@@ -1,0 +1,16 @@
+<view class="bottom-nav">
+  <view
+    wx:for="{{list}}"
+    wx:key="pagePath"
+    class="nav-btn {{selected === index ? 'active' : ''}}"
+    data-index="{{index}}"
+    data-path="{{item.pagePath}}"
+    bindtap="onTabTap"
+    aria-role="button"
+    aria-label="{{item.text}}"
+  >
+    <view class="nav-icon nav-icon-{{item.icon}}"></view>
+    <text>{{item.text}}</text>
+    <view wx:if="{{selected === index}}" class="nav-dot"></view>
+  </view>
+</view>

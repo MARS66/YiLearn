@@ -1,0 +1,66 @@
+<view class="page tab-page">
+  <view class="scroll">
+    <view class="hero">
+       <view class="encourage hero-heading">
+        <text class="hero-date">{{dateText}}</text>
+        <text class="hero-h2">你好，</text>
+        <text class="hero-h2">今天也来学一点</text>
+      </view>
+      <view class="streak-chip"><text class="iconfont streak-icon icon-daka-copy"></text> 连续学习 <text class="streak-num">{{streak}}</text> 天</view>
+      <image class="hero-mascot" src="/assets/mascot/mascot-leaning-calm.png" mode="widthFix" aria-role="img" aria-label="小火种安静地陪伴学习" />
+    </view>
+
+    <view class="study-card">
+      <view class = "card-watermark" aria-hidden = "true" >  {{nextWord.g}} 
+      </view >
+      <view class="card-label">
+        <view class="book-icon iconfont icon-shu"></view>
+        <text>今日学习</text>
+        <view class="totalWords"><text class="learned">{{totalLearned}}</text>/<text class="total">{{totalWords}}</text></view>
+      </view>
+      <block>
+        <view class="word-outer">
+        <view class="word-stage">
+          <view class="pinyin">
+            <text class="initial">{{nextWord.initial}}</text>
+            <text wx:if="{{nextWord.final}}" class="final">{{nextWord.final}}</text>
+          </view>
+          <view class="glyph">{{nextWord.g}}</view> 
+        </view>
+        </view>
+      </block>
+      <view class="card-footer">
+        <view class="progress-area">
+          <view class="progress-copy">今日完成 <text class="bold">{{percent}}%</text></view>
+          <view class="progress-bar">
+            <view wx:for="{{todayBars}}" wx:key="index" class="{{item ? 'on' : ''}}"></view>
+          </view>
+        </view>
+        <view class="primary card-cta" bindtap="goLearn" hover-class="tap-state" aria-role="button" aria-label="{{buttonText}}">{{buttonText}}</view>
+      </view>
+    </view>
+    <view class="home-grid">
+      <view class="quick-card" bindtap="goReview" hover-class="quick-card-pressed" aria-role="button" aria-label="自主回顾，随机回顾 10 个已学字">
+        <view class="review-icon iconfont icon-fuxi"></view>
+        <text class="quick-strong">复习巩固</text>
+        <text class="quick-span">已学文字随机复习</text>
+      </view>
+      <view class="quick-card quick-card-2" bindtap="goAchievements" hover-class="quick-card-pressed" aria-role="button" aria-label="查看成就">
+        <view class="achievement-icon iconfont icon-jiangbei1"></view>
+        <image class="achievement-mark" src="{{latestStreak.image}}" mode="aspectFit" aria-hidden="true" />
+        <text class="quick-strong">成就</text>
+        <text class="quick-span">看看新的里程碑</text>
+      </view>
+    </view>
+
+    <view class="week-card">
+      <view class="section-title"><text class="iconfont week-icon icon-daka"></text> 本周学习记录 </view>
+      <view class="week">
+        <view wx:for="{{week}}" wx:key="index" class="day {{item.done ? 'done' : ''}}">
+          <text>{{item.label}}</text>
+          <view class="day-i">{{item.done ? '✓' : item.dayNum}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

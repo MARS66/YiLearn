@@ -1,0 +1,64 @@
+<view class="page tab-page dict-page">
+  <view class="dict-header">
+    <view class="dict-title">字典</view>
+    <view class="search">
+      <text class="search-icon">⌕</text>
+      <input
+        class="search-input"
+        value="{{query}}"
+        bindinput="onSearchInput"
+        placeholder="查找彝文字或拼音"
+        placeholder-class="search-ph"
+        aria-label="搜索彝文字或完整拼音"
+      />
+    </view>
+  </view>
+
+  <view class="dict-tabs">
+    <view
+      wx:for="{{tabs}}"
+      wx:key="*this"
+      class="dict-tab {{activeTab === item ? 'active' : ''}}"
+      data-tab="{{item}}"
+      bindtap="onTabTap"
+    >{{item}}</view>
+  </view>
+
+  <view class="dict-body">
+    <scroll-view class="dict-index" scroll-y>
+      <view
+        wx:for="{{indexOptions}}"
+        wx:key="*this"
+        class="index-btn {{activeIndex === item ? 'active' : ''}}"
+        data-index="{{item}}"
+        bindtap="onIndexTap"
+      >{{item}}</view>
+    </scroll-view>
+
+    <scroll-view class="glyph-area" scroll-y>
+      <block wx:if="{{!empty}}">
+        <block wx:for="{{groups}}" wx:key="letter" wx:for-item="group">
+          <view class="group-title">{{group.letter}}</view>
+          <view class="glyph-grid">
+            <view
+              wx:for="{{group.items}}"
+              wx:key="index"
+              class="glyph-cell {{item.learned ? 'learned' : ''}}"
+              data-index="{{item.index}}"
+              bindtap="onWordTap"
+            >
+              <text class="glyph-cell-py">{{item.py}}</text>
+              <text class="glyph-cell-g">{{item.g}}</text>
+              <text wx:if="{{item.learned}}" class="glyph-cell-tag">已学</text>
+            </view>
+          </view>
+        </block>
+      </block>
+      <view wx:else class="empty">
+        <view class="empty-h2">没有找到相关文字</view>
+        <view class="empty-p">换个拼音或清除筛选再试试。</view>
+        <view class="secondary" bindtap="clearFilter">清除筛选</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

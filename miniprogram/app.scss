@@ -1,0 +1,421 @@
+/*
+ * 全局设计变量 + 共享 UI 原语
+ * 设计基准宽 390px，统一下沉为微信小程序 rpx（1px -> 2rpx）
+ */
+ @import './assets/icons/index.scss';
+page {
+  /* 颜色 token */
+  --bg: #FAF7F0;
+  --surface: #ffffff72;
+  --fg: #171614;
+  --muted: #6F6B65;
+  --line: #DED9D0;
+  --line2: #ded9d05e;
+  --red: #E13C2F;
+  --red-dark: #B92A20;
+  --yellow: #F2B632;
+  --white: #ffffff;
+  --ink: #171614;
+  --soft-red: #FCE8E4;
+  --shadow: 0 24rpx 68rpx rgba(35, 24, 16, 0.09);
+  --r-sm: 28rpx;
+  --r-md: 40rpx;
+  --r-lg: 56rpx;
+
+  /* 字体 token */
+  --font-display: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-yi: "Noto Sans Yi", "Microsoft Yi Baiti", "Segoe UI Historic", sans-serif;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+/* ---------- 布局 ---------- */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.status-bar-slot {
+  flex: none;
+}
+.scroll {
+  flex: 1;
+  padding: 16rpx 36rpx 40rpx;
+  box-sizing: border-box;
+}
+
+/* ---------- 自定义导航头部 ---------- */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24rpx;
+  min-height: 112rpx;
+  padding: 8rpx 36rpx 16rpx;
+  background: var(--bg);
+}
+.header-btn {
+  width: 88rpx;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 56rpx;
+  color: var(--fg);
+}
+.header-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 44rpx;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.header-side {
+  min-width: 88rpx;
+  text-align: right;
+  font-weight: 800;
+  font-size: 28rpx;
+}
+
+/* ---------- 按钮 ---------- */
+.primary {
+  min-height: 90rpx;
+  border-radius: 999rpx;
+  padding: 0 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 32rpx;
+  background: var(--red);
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.primary:active {
+  background: var(--red-dark);
+}
+.secondary {
+  min-height: 90rpx;
+  border-radius: 999rpx;
+  padding: 0 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 32rpx;
+  border: 3rpx solid var(--fg);
+  background: transparent;
+  color: var(--fg);
+  box-sizing: border-box;
+}
+.danger {
+  color: var(--red);
+  font-weight: 800;
+}
+.secondary.danger {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+/* ---------- 进度条 ---------- */
+.progress-bar {
+  display: flex;
+  gap: 10rpx;
+}
+.progress-bar view {
+  height: 18rpx;
+  flex: 1;
+  border-radius: 999rpx;
+  background: #5d5d5d;
+}
+.progress-bar view.on {
+  background: linear-gradient(90deg, #e13c2f, #ff5547);
+}
+
+/* ---------- 拼音 / 字形 ---------- */
+.pinyin {
+  text-align: center;
+  font-size: 56rpx;
+  font-weight: 900;
+}
+.initial {
+  color: #ff5144;
+}
+.final {
+  color: var(--yellow);
+}
+.glyph {
+  font-family: var(--font-yi);
+  font-weight: 400;
+  font-size: 248rpx;
+  line-height: 1;
+  text-align: center;
+}
+
+/* ---------- 周打卡 ---------- */
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10rpx;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12rpx;
+  font-size: 22rpx;
+  color: var(--muted);
+}
+.day-label {
+  display: block;
+}
+.day-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64rpx;
+  height: 64rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.day.done .day-i {
+  background: var(--red);
+  border-color: var(--red);
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* ---------- 面板 / 标题 ---------- */
+.panel {
+  margin-top: 24rpx;
+  padding: 34rpx;
+  border: 1rpx solid var(--line2);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-sizing: border-box;
+}
+.section-title {
+  margin: 0 0 24rpx;
+  font-size: 34rpx;
+}
+.red {
+  color: var(--red);
+}
+.muted {
+  color: var(--muted);
+}
+
+/* ---------- 空状态 ---------- */
+.empty {
+  text-align: center;
+  padding: 100rpx 40rpx;
+}
+.empty image {
+  width: 280rpx;
+  height: auto;
+}
+.empty-title {
+  font-size: 46rpx;
+  margin: 24rpx 0 16rpx;
+}
+.empty-copy {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+
+
+/* ---------- 资料三列 ---------- */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1rpx solid #595959;
+}
+.fact {
+  padding: 10rpx 20rpx;
+  border-right: 1rpx solid #595959;
+  text-align: center;
+}
+.fact:last-child {
+  border: 0;
+}
+.fact-label {
+  display: block;
+  color: #aaa49d;
+  font-size: 24rpx;
+}
+.fact-value {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 34rpx;
+}
+
+/* ---------- 详情两列 ---------- */
+.detail-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rpx;
+  margin-top: 20rpx;
+}
+.detail-fact {
+  padding: 28rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 28rpx;
+  background: #ffffff;
+}
+.detail-fact-label {
+  display: block;
+  color: var(--muted);
+  font-size: 24rpx;
+}
+.detail-fact-value {
+  display: block;
+  margin-top: 6rpx;
+  font-size: 32rpx;
+}
+
+/* ---------- 成就徽章 ---------- */
+.achievement-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rpx;
+}
+.badge {
+  padding: 30rpx;
+  background: #fff8e7;
+  border: 2rpx solid #f3dca2;
+  border-radius: 36rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+.badge-name {
+  display: block;
+  margin-top: 14rpx;
+  font-size: 28rpx;
+}
+.badge-desc {
+  display: block;
+  margin-top: 8rpx;
+  color: var(--muted);
+  font-size: 22rpx;
+}
+.badge-mark {
+  font-size: 68rpx;
+  color: #b87900;
+}
+
+
+/* ---------- 设置行 ---------- */
+.setting {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  min-height: 108rpx;
+  border-bottom: 1rpx solid var(--line);
+}
+.setting:last-child {
+  border: 0;
+}
+.setting-text {
+  flex: 1;
+}
+.setting-text-desc {
+  display: block;
+  color: var(--muted);
+  font-size: 24rpx;
+}
+.switch {
+  width: 100rpx;
+  height: 60rpx;
+  border-radius: 999rpx;
+  padding: 6rpx;
+  background: #aaaaaa;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  transition: background 0.18s;
+}
+.switch-knob {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: transform 0.18s;
+}
+.switch.on {
+  background: var(--red);
+}
+.switch.on .switch-knob {
+  transform: translateX(40rpx);
+}
+
+/* ---------- 底部操作区 ---------- */
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24rpx;
+  padding: 24rpx 36rpx;
+}
+
+/* ---------- 弹窗 ---------- */
+.modal-wrap {
+  position: fixed;
+  z-index: 40;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(23, 22, 20, 0.46);
+  padding: 36rpx;
+}
+.modal {
+  width: 100%;
+  padding: 40rpx;
+  border-radius: 48rpx;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+}
+.modal-title {
+  margin: 0 0 16rpx;
+  font-size: 42rpx;
+  font-weight: 800;
+}
+.modal-copy {
+  color: var(--muted);
+  line-height: 1.6;
+}
+.modal-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rpx;
+  margin-top: 32rpx;
+}
+
+.encourage {
+  margin: 20rpx 0 0 8rpx;
+  font-family: var(--font-display);
+  font-size: 38rpx;
+  font-weight: 600;
+  line-height: 1.55;
+  white-space: pre-line;
+  transform: rotate(-2deg);
+  &::after {
+    content: "";
+    display: block;
+    width: 204rpx;
+    height: 16rpx;
+    margin: 6rpx 0 0 96rpx;
+    border-top: 6rpx solid var(--red);
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,324 @@
+/* 我的（profile） */
+.page {
+  .scroll {
+    .profile-hero {
+      position: relative;
+      padding: 0rpx 18rpx 0;
+      box-sizing: border-box;
+      margin-top: -20rpx;
+      font-size: 50rpx;
+      margin-bottom: 40rpx;
+      .profile-h2 {
+        margin-left: 60rpx;
+      }
+      .profile-mascot {
+        position: absolute;
+        z-index: 2;
+        right: 20rpx;
+        bottom: -70rpx;
+        height: 240rpx;
+        @media (max-width: 360px) {
+          right: -28rpx;
+          height: 328rpx;
+        }
+      }
+    }
+
+    /* ---- 进度面板 ---- */
+    .progress-panel {
+      position: relative;
+      overflow: hidden;
+      min-height: 310rpx;
+      padding: 26rpx 36rpx;
+      border: 2rpx solid #504e49;
+      border-radius: 54rpx;
+      background: radial-gradient(circle at 78% 20%, #302f2b 0, transparent 42%), var(--ink);
+      box-shadow: var(--shadow);
+      color: #fff;
+      box-sizing: border-box;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 270rpx;
+        height: 28rpx;
+        background: repeating-linear-gradient(55deg, rgba(111,37,27,.95) 0 18rpx, transparent 18rpx 36rpx);
+      }
+
+      .progress-panel-title {
+        display: block;
+        margin-bottom: 16rpx;
+        font-size: 32rpx;
+        display: flex;
+        align-items: center;
+          font-weight: 600;
+        .iconfont {
+          font-size: 40rpx;
+          margin-right: 12rpx;
+          color: var(--red);
+        }
+      }
+
+      .progress-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20rpx;
+      }
+
+      .big-progress {
+        display: flex;
+        align-items: center;
+        gap: 12rpx;
+        .big-num {
+          font-size: 100rpx;
+          line-height: 1;
+          font-weight: 900;
+          color: var(--red);
+          @media (max-width: 360px) {
+            font-size: 100rpx;
+          }
+        }
+        .big-small {
+          display: flex;
+          flex-direction: column;
+          color: #e0dcd5;
+          font-size: 30rpx;
+          line-height: 1.3;
+        }
+      }
+
+      .yellow-chip {
+        padding: 17rpx 24rpx;
+        border-radius: 36rpx;
+        background: #e9c916;
+        color: var(--ink);
+        font-size: 26rpx;
+        font-weight: normal;
+        text-align: center;
+        box-sizing: border-box;
+
+        @media (max-width: 360px) {
+          min-width: 208rpx;
+          padding-right: 18rpx;
+          padding-left: 18rpx;
+        }
+
+        .yellow-num {
+          display: inline;
+          margin: 0 8rpx;
+          font-weight: 900;
+          color: var(--red);
+          font-size: 50rpx;
+        }
+      }
+
+      .progress-copy {
+        display: block;
+        margin: 14rpx 0 10rpx;
+        font-size: 27rpx;
+        font-weight: 800;
+      }
+
+      .progress-bar {
+        margin-bottom: 24rpx;
+        gap: 8rpx;
+        view {
+          height: 16rpx;
+        }
+      }
+    }
+
+    /* ---- 周打卡 ---- */
+    .week-card {
+      margin-top: 18rpx;
+      padding: 22rpx 28rpx 24rpx;
+      border: 2rpx solid var(--line2);
+      border-radius: 38rpx;
+      background: var(--surface);
+      box-shadow: 0 12rpx 30rpx rgba(35,24,16,.04);
+      .week-summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20rpx;
+        margin-bottom: 16rpx;
+        font-size: 28rpx;
+        font-weight: 800;
+        .iconfont {
+          font-size: 40rpx;
+          margin-right: 12rpx;
+          color: var(--red);
+        }
+        .icon-jiangbei1 {
+          color: var(--yellow);
+        }
+        @media (max-width: 360px) {
+          font-size: 25rpx;
+        }
+
+        .week-num {
+          margin: 0 6rpx;
+          font-size: 46rpx;
+        }
+      }
+
+      .day-i {
+        width: 54rpx;
+        height: 54rpx;
+      }
+    }
+
+    /* ---- 今日统计三列 ---- */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 20rpx 0;
+
+      .stat {
+        min-height: 96rpx;
+        border-right: 1rpx solid var(--line);
+        text-align: center;
+        font-size: 24rpx;
+        .iconfont {
+          font-size: 50rpx;
+          margin-bottom: 12rpx;
+        }
+        &:last-child {
+          border: 0;
+        }
+
+        .stat-label {
+          display: block;
+          color: var(--fg);
+          font-size: 25rpx;
+        }
+
+        .stat-value {
+          display: block;
+          margin-top: 6rpx;
+          color: var(--red);
+          font-size: 52rpx;
+          font-weight: 600;
+        }
+      }
+    }
+
+    /* ---- 成就面板 ---- */
+    .achievement-panel {
+      border-radius: 38rpx;
+      box-shadow: 0 12rpx 30rpx rgba(35,24,16,.04);
+      background: var(--surface);
+      .achievement-heading {
+        padding-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 1rpx solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .iconfont{
+          font-size: 40rpx;
+          margin-right: 12rpx;
+          font-weight: 900;
+          color: var(--yellow);
+        }
+        .heading-logo {
+          flex: none;
+          width: 54rpx;
+          height: 54rpx;
+        }
+        .list-row-value{
+          font-size: 26rpx;
+        }
+      }
+
+      .achievement-row {
+        margin-top: 18rpx;
+
+        .badge {
+          position: relative;
+          overflow: hidden;
+          min-height: 190rpx;
+          padding: 16rpx 20rpx 18rpx;
+          background: linear-gradient(145deg, #fffdf8, #fff5dd);
+
+          &.locked {
+            opacity: .52;
+            filter: grayscale(.55);
+          }
+
+          .badge-image {
+            display: block;
+            width: 116rpx;
+            height: 112rpx;
+            margin: 0 auto;
+          }
+
+          .badge-name {
+            margin-top: 2rpx;
+            font-size: 26rpx;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+
+    /* ---- 设置面板 ---- */
+    .settings-panel {
+      padding:0 20rpx;
+      .setting {
+        min-height: unset;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .iconfont {
+          font-size: 40rpx;
+          margin-right: 30rpx;
+        }
+        .setting-text {
+          .setting-text-title {
+            font-size: 30rpx;
+            font-weight: normal;
+          }
+
+          .setting-text-desc {
+            display: none;
+          }
+        }
+
+        .switch {
+          width: 92rpx;
+          height: 52rpx;
+          padding: 5rpx;
+
+          &.on .switch-knob {
+            transform: translateX(40rpx);
+          }
+
+          .switch-knob {
+            width: 42rpx;
+            height: 42rpx;
+          }
+        }
+      }
+      .setting:last-child {
+       border-bottom: unset;
+      }
+    }
+  }
+
+  .modal-wrap {
+    padding-bottom: calc(36rpx + env(safe-area-inset-bottom));
+  }
+}
+
+/* hover / 状态工具类（供各 tab 页共用，保留顶层） */
+.switch-pressed {
+  opacity: .72;
+}
+
+.row-pressed {
+  opacity: .58;
+}

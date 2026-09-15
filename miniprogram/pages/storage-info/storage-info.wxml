@@ -1,0 +1,29 @@
+<view class="page storage-page">
+  <scroll-view class="scroll">
+    <view class="panel">
+      <view class="storage-title">学习记录保存在当前设备</view>
+      <view class="storage-para">识字进度、学习日期、回顾次数和设置仅保存在当前微信设备，不需要注册或登录。</view>
+      <view class="storage-para">卸载小程序、清理微信缓存或更换设备后，记录可能丢失。</view>
+    </view>
+
+    <view class="panel">
+      <view class="storage-subtitle">当前保存内容</view>
+      <view class="list-row"><text class="list-row-label">已认识文字</text><text class="list-row-value">{{learnedCount}} 字</text></view>
+      <view class="list-row"><text class="list-row-label">学习日期</text><text class="list-row-value">{{studyDays}} 天</text></view>
+      <view class="list-row"><text class="list-row-label">累计回顾</text><text class="list-row-value">{{reviewCount}} 字</text></view>
+    </view>
+
+    <view class="secondary danger storage-clear" bindtap="openClearModal">清除本地学习记录</view>
+  </scroll-view>
+
+  <view wx:if="{{modalVisible}}" class="modal-wrap" bindtap="closeModal">
+    <view class="modal" catchtap="noop">
+      <view class="modal-title">清除本地学习记录？</view>
+      <view class="modal-copy">识字进度、学习天数、回顾次数和成就都会删除，且无法恢复。</view>
+      <view class="modal-actions">
+        <view class="secondary" bindtap="closeModal">取消</view>
+        <view class="primary" bindtap="confirmClear">确认清除</view>
+      </view>
+    </view>
+  </view>
+</view>
