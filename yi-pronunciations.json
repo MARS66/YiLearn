@@ -1,0 +1,5925 @@
+[
+  {
+    "g": "ꀀ",
+    "pinyin": "it",
+    "ipa": "i⁵⁵"
+  },
+  {
+    "g": "ꀁ",
+    "pinyin": "ix",
+    "ipa": "i⁴⁴"
+  },
+  {
+    "g": "ꀂ",
+    "pinyin": "i",
+    "ipa": "i³³"
+  },
+  {
+    "g": "ꀃ",
+    "pinyin": "ip",
+    "ipa": "i²¹"
+  },
+  {
+    "g": "ꀄ",
+    "pinyin": "iet",
+    "ipa": "ɛ⁵⁵"
+  },
+  {
+    "g": "ꀅ",
+    "pinyin": "iex",
+    "ipa": "ɛ⁴⁴"
+  },
+  {
+    "g": "ꀆ",
+    "pinyin": "ie",
+    "ipa": "ɛ³³"
+  },
+  {
+    "g": "ꀇ",
+    "pinyin": "iep",
+    "ipa": "ɛ²¹"
+  },
+  {
+    "g": "ꀈ",
+    "pinyin": "at",
+    "ipa": "a⁵⁵"
+  },
+  {
+    "g": "ꀉ",
+    "pinyin": "ax",
+    "ipa": "a⁴⁴"
+  },
+  {
+    "g": "ꀊ",
+    "pinyin": "a",
+    "ipa": "a³³"
+  },
+  {
+    "g": "ꀋ",
+    "pinyin": "ap",
+    "ipa": "a²¹"
+  },
+  {
+    "g": "ꀌ",
+    "pinyin": "uox",
+    "ipa": "ɔ⁴⁴"
+  },
+  {
+    "g": "ꀍ",
+    "pinyin": "uo",
+    "ipa": "ɔ³³"
+  },
+  {
+    "g": "ꀎ",
+    "pinyin": "uop",
+    "ipa": "ɔ²¹"
+  },
+  {
+    "g": "ꀏ",
+    "pinyin": "ot",
+    "ipa": "o⁵⁵"
+  },
+  {
+    "g": "ꀐ",
+    "pinyin": "ox",
+    "ipa": "o⁴⁴"
+  },
+  {
+    "g": "ꀑ",
+    "pinyin": "o",
+    "ipa": "o³³"
+  },
+  {
+    "g": "ꀒ",
+    "pinyin": "op",
+    "ipa": "o²¹"
+  },
+  {
+    "g": "ꀓ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꀔ",
+    "pinyin": "e",
+    "ipa": "ɯ³³"
+  },
+  {
+    "g": "ꀖ",
+    "pinyin": "bit",
+    "ipa": "pi⁵⁵"
+  },
+  {
+    "g": "ꀗ",
+    "pinyin": "bix",
+    "ipa": "pi⁴⁴"
+  },
+  {
+    "g": "ꀘ",
+    "pinyin": "bi",
+    "ipa": "pi³³"
+  },
+  {
+    "g": "ꀙ",
+    "pinyin": "bip",
+    "ipa": "pi²¹"
+  },
+  {
+    "g": "ꀚ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꀛ",
+    "pinyin": "biex",
+    "ipa": "pɛ⁴⁴"
+  },
+  {
+    "g": "ꀜ",
+    "pinyin": "bie",
+    "ipa": "pɛ³³"
+  },
+  {
+    "g": "ꀝ",
+    "pinyin": "biep",
+    "ipa": "pɛ²¹"
+  },
+  {
+    "g": "ꀞ",
+    "pinyin": "bat",
+    "ipa": "pa⁵⁵"
+  },
+  {
+    "g": "ꀟ",
+    "pinyin": "bax",
+    "ipa": "pa⁴⁴"
+  },
+  {
+    "g": "ꀠ",
+    "pinyin": "ba",
+    "ipa": "pa³³"
+  },
+  {
+    "g": "ꀡ",
+    "pinyin": "bap",
+    "ipa": "pa²¹"
+  },
+  {
+    "g": "ꀢ",
+    "pinyin": "buox",
+    "ipa": "pɔ⁴⁴"
+  },
+  {
+    "g": "ꀣ",
+    "pinyin": "buo",
+    "ipa": "pɔ³³"
+  },
+  {
+    "g": "ꀤ",
+    "pinyin": "buop",
+    "ipa": "pɔ²¹"
+  },
+  {
+    "g": "ꀥ",
+    "pinyin": "bot",
+    "ipa": "po⁵⁵"
+  },
+  {
+    "g": "ꀦ",
+    "pinyin": "box",
+    "ipa": "po⁴⁴"
+  },
+  {
+    "g": "ꀧ",
+    "pinyin": "bo",
+    "ipa": "po³³"
+  },
+  {
+    "g": "ꀨ",
+    "pinyin": "bop",
+    "ipa": "po²¹"
+  },
+  {
+    "g": "ꀩ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꀪ",
+    "pinyin": "be",
+    "ipa": "pɯ³³"
+  },
+  {
+    "g": "ꀫ",
+    "pinyin": "bep",
+    "ipa": "pɯ²¹"
+  },
+  {
+    "g": "ꀬ",
+    "pinyin": "but",
+    "ipa": "pu⁵⁵"
+  },
+  {
+    "g": "ꀭ",
+    "pinyin": "bux",
+    "ipa": "pu⁴⁴"
+  },
+  {
+    "g": "ꀮ",
+    "pinyin": "bu",
+    "ipa": "pu³³"
+  },
+  {
+    "g": "ꀯ",
+    "pinyin": "bup",
+    "ipa": "pu²¹"
+  },
+  {
+    "g": "ꀰ",
+    "pinyin": "burx",
+    "ipa": "pu̱⁴⁴"
+  },
+  {
+    "g": "ꀱ",
+    "pinyin": "bur",
+    "ipa": "pu̱³³"
+  },
+  {
+    "g": "ꀲ",
+    "pinyin": "byt",
+    "ipa": "pɿ⁵⁵"
+  },
+  {
+    "g": "ꀳ",
+    "pinyin": "byx",
+    "ipa": "pɿ⁴⁴"
+  },
+  {
+    "g": "ꀴ",
+    "pinyin": "by",
+    "ipa": "pɿ³³"
+  },
+  {
+    "g": "ꀵ",
+    "pinyin": "byp",
+    "ipa": "pɿ²¹"
+  },
+  {
+    "g": "ꀶ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꀷ",
+    "pinyin": "byr",
+    "ipa": "pɿ̱³³"
+  },
+  {
+    "g": "ꀸ",
+    "pinyin": "pit",
+    "ipa": "pʰi⁵⁵"
+  },
+  {
+    "g": "ꀹ",
+    "pinyin": "pix",
+    "ipa": "pʰi⁴⁴"
+  },
+  {
+    "g": "ꀺ",
+    "pinyin": "pi",
+    "ipa": "pʰi³³"
+  },
+  {
+    "g": "ꀻ",
+    "pinyin": "pip",
+    "ipa": "pʰi²¹"
+  },
+  {
+    "g": "ꀼ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꀽ",
+    "pinyin": "pie",
+    "ipa": "pʰɛ³³"
+  },
+  {
+    "g": "ꀾ",
+    "pinyin": "piep",
+    "ipa": "pʰɛ²¹"
+  },
+  {
+    "g": "ꀿ",
+    "pinyin": "pat",
+    "ipa": "pʰa⁵⁵"
+  },
+  {
+    "g": "ꁀ",
+    "pinyin": "pax",
+    "ipa": "pʰa⁴⁴"
+  },
+  {
+    "g": "ꁁ",
+    "pinyin": "pa",
+    "ipa": "pʰa³³"
+  },
+  {
+    "g": "ꁂ",
+    "pinyin": "pap",
+    "ipa": "pʰa²¹"
+  },
+  {
+    "g": "ꁃ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁄ",
+    "pinyin": "puo",
+    "ipa": "pʰɔ³³"
+  },
+  {
+    "g": "ꁅ",
+    "pinyin": "puop",
+    "ipa": "pʰɔ²¹"
+  },
+  {
+    "g": "ꁆ",
+    "pinyin": "pot",
+    "ipa": "pʰo⁵⁵"
+  },
+  {
+    "g": "ꁇ",
+    "pinyin": "pox",
+    "ipa": "pʰo⁴⁴"
+  },
+  {
+    "g": "ꁈ",
+    "pinyin": "po",
+    "ipa": "pʰo³³"
+  },
+  {
+    "g": "ꁉ",
+    "pinyin": "pop",
+    "ipa": "pʰo²¹"
+  },
+  {
+    "g": "ꁊ",
+    "pinyin": "put",
+    "ipa": "pʰu⁵⁵"
+  },
+  {
+    "g": "ꁋ",
+    "pinyin": "pux",
+    "ipa": "pʰu⁴⁴"
+  },
+  {
+    "g": "ꁌ",
+    "pinyin": "pu",
+    "ipa": "pʰu³³"
+  },
+  {
+    "g": "ꁍ",
+    "pinyin": "pup",
+    "ipa": "pʰu²¹"
+  },
+  {
+    "g": "ꁎ",
+    "pinyin": "purx",
+    "ipa": "pʰu̱⁴⁴"
+  },
+  {
+    "g": "ꁏ",
+    "pinyin": "pur",
+    "ipa": "pʰu̱³³"
+  },
+  {
+    "g": "ꁐ",
+    "pinyin": "pyt",
+    "ipa": "pʰɿ⁵⁵"
+  },
+  {
+    "g": "ꁑ",
+    "pinyin": "pyx",
+    "ipa": "pʰɿ⁴⁴"
+  },
+  {
+    "g": "ꁒ",
+    "pinyin": "py",
+    "ipa": "pʰɿ³³"
+  },
+  {
+    "g": "ꁓ",
+    "pinyin": "pyp",
+    "ipa": "pʰɿ²¹"
+  },
+  {
+    "g": "ꁔ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁕ",
+    "pinyin": "pyr",
+    "ipa": "pʰɿ̱³³"
+  },
+  {
+    "g": "ꁖ",
+    "pinyin": "bbit",
+    "ipa": "bi⁵⁵"
+  },
+  {
+    "g": "ꁗ",
+    "pinyin": "bbix",
+    "ipa": "bi⁴⁴"
+  },
+  {
+    "g": "ꁘ",
+    "pinyin": "bbi",
+    "ipa": "bi³³"
+  },
+  {
+    "g": "ꁙ",
+    "pinyin": "bbip",
+    "ipa": "bi²¹"
+  },
+  {
+    "g": "ꁚ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁛ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁜ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁝ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁞ",
+    "pinyin": "bbat",
+    "ipa": "ba⁵⁵"
+  },
+  {
+    "g": "ꁟ",
+    "pinyin": "bbax",
+    "ipa": "ba⁴⁴"
+  },
+  {
+    "g": "ꁠ",
+    "pinyin": "bba",
+    "ipa": "ba³³"
+  },
+  {
+    "g": "ꁡ",
+    "pinyin": "bbap",
+    "ipa": "ba²¹"
+  },
+  {
+    "g": "ꁢ",
+    "pinyin": "bbuox",
+    "ipa": "bɔ⁴⁴"
+  },
+  {
+    "g": "ꁣ",
+    "pinyin": "bbuo",
+    "ipa": "bɔ³³"
+  },
+  {
+    "g": "ꁤ",
+    "pinyin": "bbuop",
+    "ipa": "bɔ²¹"
+  },
+  {
+    "g": "ꁥ",
+    "pinyin": "bbot",
+    "ipa": "bo⁵⁵"
+  },
+  {
+    "g": "ꁦ",
+    "pinyin": "bbox",
+    "ipa": "bo⁴⁴"
+  },
+  {
+    "g": "ꁧ",
+    "pinyin": "bbo",
+    "ipa": "bo³³"
+  },
+  {
+    "g": "ꁨ",
+    "pinyin": "bbop",
+    "ipa": "bo²¹"
+  },
+  {
+    "g": "ꁩ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁪ",
+    "pinyin": "bbe",
+    "ipa": "bɯ³³"
+  },
+  {
+    "g": "ꁫ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁬ",
+    "pinyin": "bbut",
+    "ipa": "bu⁵⁵"
+  },
+  {
+    "g": "ꁭ",
+    "pinyin": "bbux",
+    "ipa": "bu⁴⁴"
+  },
+  {
+    "g": "ꁮ",
+    "pinyin": "bbu",
+    "ipa": "bu³³"
+  },
+  {
+    "g": "ꁯ",
+    "pinyin": "bbup",
+    "ipa": "bu²¹"
+  },
+  {
+    "g": "ꁰ",
+    "pinyin": "bburx",
+    "ipa": "bu̱⁴⁴"
+  },
+  {
+    "g": "ꁱ",
+    "pinyin": "bbur",
+    "ipa": "bu̱³³"
+  },
+  {
+    "g": "ꁲ",
+    "pinyin": "bbyt",
+    "ipa": "bɿ⁵⁵"
+  },
+  {
+    "g": "ꁳ",
+    "pinyin": "bbyx",
+    "ipa": "bɿ⁴⁴"
+  },
+  {
+    "g": "ꁴ",
+    "pinyin": "bby",
+    "ipa": "bɿ³³"
+  },
+  {
+    "g": "ꁵ",
+    "pinyin": "bbyp",
+    "ipa": "bɿ²¹"
+  },
+  {
+    "g": "ꁶ",
+    "pinyin": "nbit",
+    "ipa": "mbi⁵⁵"
+  },
+  {
+    "g": "ꁷ",
+    "pinyin": "nbix",
+    "ipa": "mbi⁴⁴"
+  },
+  {
+    "g": "ꁸ",
+    "pinyin": "nbi",
+    "ipa": "mbi³³"
+  },
+  {
+    "g": "ꁹ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁺ",
+    "pinyin": "nbiex",
+    "ipa": "mbɛ⁴⁴"
+  },
+  {
+    "g": "ꁻ",
+    "pinyin": "nbie",
+    "ipa": "mbɛ³³"
+  },
+  {
+    "g": "ꁼ",
+    "pinyin": "nbiep",
+    "ipa": "mbɛ²¹"
+  },
+  {
+    "g": "ꁽ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꁾ",
+    "pinyin": "nbax",
+    "ipa": "mba⁴⁴"
+  },
+  {
+    "g": "ꁿ",
+    "pinyin": "nba",
+    "ipa": "mba³³"
+  },
+  {
+    "g": "ꂀ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂁ",
+    "pinyin": "nbot",
+    "ipa": "mbo⁵⁵"
+  },
+  {
+    "g": "ꂂ",
+    "pinyin": "nbox",
+    "ipa": "mbo⁴⁴"
+  },
+  {
+    "g": "ꂃ",
+    "pinyin": "nbo",
+    "ipa": "mbo³³"
+  },
+  {
+    "g": "ꂄ",
+    "pinyin": "nbop",
+    "ipa": "mbo²¹"
+  },
+  {
+    "g": "ꂅ",
+    "pinyin": "nbut",
+    "ipa": "mbu⁵⁵"
+  },
+  {
+    "g": "ꂆ",
+    "pinyin": "nbux",
+    "ipa": "mbu⁴⁴"
+  },
+  {
+    "g": "ꂇ",
+    "pinyin": "nbu",
+    "ipa": "mbu³³"
+  },
+  {
+    "g": "ꂈ",
+    "pinyin": "nbup",
+    "ipa": "mbu²¹"
+  },
+  {
+    "g": "ꂉ",
+    "pinyin": "nburx",
+    "ipa": "mbu̱⁴⁴"
+  },
+  {
+    "g": "ꂊ",
+    "pinyin": "nbur",
+    "ipa": "mbu̱³³"
+  },
+  {
+    "g": "ꂋ",
+    "pinyin": "nbyt",
+    "ipa": "mbɿ⁵⁵"
+  },
+  {
+    "g": "ꂌ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂍ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂎ",
+    "pinyin": "nbyp",
+    "ipa": "mbɿ²¹"
+  },
+  {
+    "g": "ꂏ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂐ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂑ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂒ",
+    "pinyin": "hmix",
+    "ipa": "m̥i⁴⁴"
+  },
+  {
+    "g": "ꂓ",
+    "pinyin": "hmi",
+    "ipa": "m̥i³³"
+  },
+  {
+    "g": "ꂔ",
+    "pinyin": "hmip",
+    "ipa": "m̥i²¹"
+  },
+  {
+    "g": "ꂕ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂖ",
+    "pinyin": "hmie",
+    "ipa": "m̥ɛ³³"
+  },
+  {
+    "g": "ꂗ",
+    "pinyin": "hmiep",
+    "ipa": "m̥ɛ²¹"
+  },
+  {
+    "g": "ꂘ",
+    "pinyin": "hmat",
+    "ipa": "m̥a⁵⁵"
+  },
+  {
+    "g": "ꂙ",
+    "pinyin": "hmax",
+    "ipa": "m̥a⁴⁴"
+  },
+  {
+    "g": "ꂚ",
+    "pinyin": "hma",
+    "ipa": "m̥a³³"
+  },
+  {
+    "g": "ꂛ",
+    "pinyin": "hmap",
+    "ipa": "m̥a²¹"
+  },
+  {
+    "g": "ꂜ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂝ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂞ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂟ",
+    "pinyin": "hmot",
+    "ipa": "m̥o⁵⁵"
+  },
+  {
+    "g": "ꂠ",
+    "pinyin": "hmox",
+    "ipa": "m̥o⁴⁴"
+  },
+  {
+    "g": "ꂡ",
+    "pinyin": "hmo",
+    "ipa": "m̥o³³"
+  },
+  {
+    "g": "ꂢ",
+    "pinyin": "hmop",
+    "ipa": "m̥o²¹"
+  },
+  {
+    "g": "ꂣ",
+    "pinyin": "hmut",
+    "ipa": "m̥u⁵⁵"
+  },
+  {
+    "g": "ꂤ",
+    "pinyin": "hmux",
+    "ipa": "m̥u⁴⁴"
+  },
+  {
+    "g": "ꂥ",
+    "pinyin": "hmu",
+    "ipa": "m̥u³³"
+  },
+  {
+    "g": "ꂦ",
+    "pinyin": "hmup",
+    "ipa": "m̥u²¹"
+  },
+  {
+    "g": "ꂧ",
+    "pinyin": "hmurx",
+    "ipa": "m̥u̱⁴⁴"
+  },
+  {
+    "g": "ꂨ",
+    "pinyin": "hmur",
+    "ipa": "m̥u̱³³"
+  },
+  {
+    "g": "ꂩ",
+    "pinyin": "hmyx",
+    "ipa": "m̥ɿ⁴⁴"
+  },
+  {
+    "g": "ꂪ",
+    "pinyin": "hmy",
+    "ipa": "m̥ɿ³³"
+  },
+  {
+    "g": "ꂫ",
+    "pinyin": "hmyp",
+    "ipa": "m̥ɿ²¹"
+  },
+  {
+    "g": "ꂬ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂭ",
+    "pinyin": "hmyr",
+    "ipa": "m̥ɿ̱³³"
+  },
+  {
+    "g": "ꂮ",
+    "pinyin": "mit",
+    "ipa": "mi⁵⁵"
+  },
+  {
+    "g": "ꂯ",
+    "pinyin": "mix",
+    "ipa": "mi⁴⁴"
+  },
+  {
+    "g": "ꂰ",
+    "pinyin": "mi",
+    "ipa": "mi³³"
+  },
+  {
+    "g": "ꂱ",
+    "pinyin": "mip",
+    "ipa": "mi²¹"
+  },
+  {
+    "g": "ꂲ",
+    "pinyin": "miex",
+    "ipa": "mɛ⁴⁴"
+  },
+  {
+    "g": "ꂳ",
+    "pinyin": "mie",
+    "ipa": "mɛ³³"
+  },
+  {
+    "g": "ꂴ",
+    "pinyin": "miep",
+    "ipa": "mɛ²¹"
+  },
+  {
+    "g": "ꂵ",
+    "pinyin": "mat",
+    "ipa": "ma⁵⁵"
+  },
+  {
+    "g": "ꂶ",
+    "pinyin": "max",
+    "ipa": "ma⁴⁴"
+  },
+  {
+    "g": "ꂷ",
+    "pinyin": "ma",
+    "ipa": "ma³³"
+  },
+  {
+    "g": "ꂸ",
+    "pinyin": "map",
+    "ipa": "ma²¹"
+  },
+  {
+    "g": "ꂹ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂺ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꂻ",
+    "pinyin": "muo",
+    "ipa": "mɔ³³"
+  },
+  {
+    "g": "ꂼ",
+    "pinyin": "muop",
+    "ipa": "mɔ²¹"
+  },
+  {
+    "g": "ꂽ",
+    "pinyin": "mot",
+    "ipa": "mo⁵⁵"
+  },
+  {
+    "g": "ꂾ",
+    "pinyin": "mox",
+    "ipa": "mo⁴⁴"
+  },
+  {
+    "g": "ꂿ",
+    "pinyin": "mo",
+    "ipa": "mo³³"
+  },
+  {
+    "g": "ꃀ",
+    "pinyin": "mop",
+    "ipa": "mo²¹"
+  },
+  {
+    "g": "ꃁ",
+    "pinyin": "mex",
+    "ipa": "mɯ⁴⁴"
+  },
+  {
+    "g": "ꃂ",
+    "pinyin": "me",
+    "ipa": "mɯ³³"
+  },
+  {
+    "g": "ꃃ",
+    "pinyin": "mut",
+    "ipa": "mu⁵⁵"
+  },
+  {
+    "g": "ꃄ",
+    "pinyin": "mux",
+    "ipa": "mu⁴⁴"
+  },
+  {
+    "g": "ꃅ",
+    "pinyin": "mu",
+    "ipa": "mu³³"
+  },
+  {
+    "g": "ꃆ",
+    "pinyin": "mup",
+    "ipa": "mu²¹"
+  },
+  {
+    "g": "ꃇ",
+    "pinyin": "murx",
+    "ipa": "mu̱⁴⁴"
+  },
+  {
+    "g": "ꃈ",
+    "pinyin": "mur",
+    "ipa": "mu̱³³"
+  },
+  {
+    "g": "ꃉ",
+    "pinyin": "myt",
+    "ipa": "mɿ⁵⁵"
+  },
+  {
+    "g": "ꃊ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꃋ",
+    "pinyin": "my",
+    "ipa": "mɿ³³"
+  },
+  {
+    "g": "ꃌ",
+    "pinyin": "myp",
+    "ipa": "mɿ²¹"
+  },
+  {
+    "g": "ꃍ",
+    "pinyin": "fit",
+    "ipa": "fi⁵⁵"
+  },
+  {
+    "g": "ꃎ",
+    "pinyin": "fix",
+    "ipa": "fi⁴⁴"
+  },
+  {
+    "g": "ꃏ",
+    "pinyin": "fi",
+    "ipa": "fi³³"
+  },
+  {
+    "g": "ꃐ",
+    "pinyin": "fip",
+    "ipa": "fi²¹"
+  },
+  {
+    "g": "ꃑ",
+    "pinyin": "fat",
+    "ipa": "fa⁵⁵"
+  },
+  {
+    "g": "ꃒ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꃓ",
+    "pinyin": "fa",
+    "ipa": "fa³³"
+  },
+  {
+    "g": "ꃔ",
+    "pinyin": "fap",
+    "ipa": "fa²¹"
+  },
+  {
+    "g": "ꃕ",
+    "pinyin": "fox",
+    "ipa": "fo⁴⁴"
+  },
+  {
+    "g": "ꃖ",
+    "pinyin": "fo",
+    "ipa": "fo³³"
+  },
+  {
+    "g": "ꃗ",
+    "pinyin": "fop",
+    "ipa": "fo²¹"
+  },
+  {
+    "g": "ꃘ",
+    "pinyin": "fut",
+    "ipa": "fu⁵⁵"
+  },
+  {
+    "g": "ꃙ",
+    "pinyin": "fux",
+    "ipa": "fu⁴⁴"
+  },
+  {
+    "g": "ꃚ",
+    "pinyin": "fu",
+    "ipa": "fu³³"
+  },
+  {
+    "g": "ꃛ",
+    "pinyin": "fup",
+    "ipa": "fu²¹"
+  },
+  {
+    "g": "ꃜ",
+    "pinyin": "furx",
+    "ipa": "fu̱⁴⁴"
+  },
+  {
+    "g": "ꃝ",
+    "pinyin": "fur",
+    "ipa": "fu̱³³"
+  },
+  {
+    "g": "ꃞ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꃟ",
+    "pinyin": "fyx",
+    "ipa": "fɿ⁴⁴"
+  },
+  {
+    "g": "ꃠ",
+    "pinyin": "fy",
+    "ipa": "fɿ³³"
+  },
+  {
+    "g": "ꃡ",
+    "pinyin": "fyp",
+    "ipa": "fɿ²¹"
+  },
+  {
+    "g": "ꃢ",
+    "pinyin": "vit",
+    "ipa": "vi⁵⁵"
+  },
+  {
+    "g": "ꃣ",
+    "pinyin": "vix",
+    "ipa": "vi⁴⁴"
+  },
+  {
+    "g": "ꃤ",
+    "pinyin": "vi",
+    "ipa": "vi³³"
+  },
+  {
+    "g": "ꃥ",
+    "pinyin": "vip",
+    "ipa": "vi²¹"
+  },
+  {
+    "g": "ꃦ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꃧ",
+    "pinyin": "viex",
+    "ipa": "vɛ⁴⁴"
+  },
+  {
+    "g": "ꃨ",
+    "pinyin": "vie",
+    "ipa": "vɛ³³"
+  },
+  {
+    "g": "ꃩ",
+    "pinyin": "viep",
+    "ipa": "vɛ²¹"
+  },
+  {
+    "g": "ꃪ",
+    "pinyin": "vat",
+    "ipa": "va⁵⁵"
+  },
+  {
+    "g": "ꃫ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꃬ",
+    "pinyin": "va",
+    "ipa": "va³³"
+  },
+  {
+    "g": "ꃭ",
+    "pinyin": "vap",
+    "ipa": "va²¹"
+  },
+  {
+    "g": "ꃮ",
+    "pinyin": "vot",
+    "ipa": "vo⁵⁵"
+  },
+  {
+    "g": "ꃯ",
+    "pinyin": "vox",
+    "ipa": "vo⁴⁴"
+  },
+  {
+    "g": "ꃰ",
+    "pinyin": "vo",
+    "ipa": "vo³³"
+  },
+  {
+    "g": "ꃱ",
+    "pinyin": "vop",
+    "ipa": "vo²¹"
+  },
+  {
+    "g": "ꃲ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꃳ",
+    "pinyin": "vep",
+    "ipa": "vɯ²¹"
+  },
+  {
+    "g": "ꃴ",
+    "pinyin": "vut",
+    "ipa": "vu⁵⁵"
+  },
+  {
+    "g": "ꃵ",
+    "pinyin": "vux",
+    "ipa": "vu⁴⁴"
+  },
+  {
+    "g": "ꃶ",
+    "pinyin": "vu",
+    "ipa": "vu³³"
+  },
+  {
+    "g": "ꃷ",
+    "pinyin": "vup",
+    "ipa": "vu²¹"
+  },
+  {
+    "g": "ꃸ",
+    "pinyin": "vurx",
+    "ipa": "vu̱⁴⁴"
+  },
+  {
+    "g": "ꃹ",
+    "pinyin": "vur",
+    "ipa": "vu̱³³"
+  },
+  {
+    "g": "ꃺ",
+    "pinyin": "vyt",
+    "ipa": "vɿ⁵⁵"
+  },
+  {
+    "g": "ꃻ",
+    "pinyin": "vyx",
+    "ipa": "vɿ⁴⁴"
+  },
+  {
+    "g": "ꃼ",
+    "pinyin": "vy",
+    "ipa": "vɿ³³"
+  },
+  {
+    "g": "ꃽ",
+    "pinyin": "vyp",
+    "ipa": "vɿ²¹"
+  },
+  {
+    "g": "ꃾ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꃿ",
+    "pinyin": "vyr",
+    "ipa": "vɿ̱³³"
+  },
+  {
+    "g": "ꄀ",
+    "pinyin": "dit",
+    "ipa": "ti⁵⁵"
+  },
+  {
+    "g": "ꄁ",
+    "pinyin": "dix",
+    "ipa": "ti⁴⁴"
+  },
+  {
+    "g": "ꄂ",
+    "pinyin": "di",
+    "ipa": "ti³³"
+  },
+  {
+    "g": "ꄃ",
+    "pinyin": "dip",
+    "ipa": "ti²¹"
+  },
+  {
+    "g": "ꄄ",
+    "pinyin": "diex",
+    "ipa": "tɛ⁴⁴"
+  },
+  {
+    "g": "ꄅ",
+    "pinyin": "die",
+    "ipa": "tɛ³³"
+  },
+  {
+    "g": "ꄆ",
+    "pinyin": "diep",
+    "ipa": "tɛ²¹"
+  },
+  {
+    "g": "ꄇ",
+    "pinyin": "dat",
+    "ipa": "ta⁵⁵"
+  },
+  {
+    "g": "ꄈ",
+    "pinyin": "dax",
+    "ipa": "ta⁴⁴"
+  },
+  {
+    "g": "ꄉ",
+    "pinyin": "da",
+    "ipa": "ta³³"
+  },
+  {
+    "g": "ꄊ",
+    "pinyin": "dap",
+    "ipa": "ta²¹"
+  },
+  {
+    "g": "ꄋ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꄌ",
+    "pinyin": "duo",
+    "ipa": "tɔ³³"
+  },
+  {
+    "g": "ꄍ",
+    "pinyin": "dot",
+    "ipa": "to⁵⁵"
+  },
+  {
+    "g": "ꄎ",
+    "pinyin": "dox",
+    "ipa": "to⁴⁴"
+  },
+  {
+    "g": "ꄏ",
+    "pinyin": "do",
+    "ipa": "to³³"
+  },
+  {
+    "g": "ꄐ",
+    "pinyin": "dop",
+    "ipa": "to²¹"
+  },
+  {
+    "g": "ꄑ",
+    "pinyin": "dex",
+    "ipa": "tɯ⁴⁴"
+  },
+  {
+    "g": "ꄒ",
+    "pinyin": "de",
+    "ipa": "tɯ³³"
+  },
+  {
+    "g": "ꄓ",
+    "pinyin": "dep",
+    "ipa": "tɯ²¹"
+  },
+  {
+    "g": "ꄔ",
+    "pinyin": "dut",
+    "ipa": "tu⁵⁵"
+  },
+  {
+    "g": "ꄕ",
+    "pinyin": "dux",
+    "ipa": "tu⁴⁴"
+  },
+  {
+    "g": "ꄖ",
+    "pinyin": "du",
+    "ipa": "tu³³"
+  },
+  {
+    "g": "ꄗ",
+    "pinyin": "dup",
+    "ipa": "tu²¹"
+  },
+  {
+    "g": "ꄘ",
+    "pinyin": "durx",
+    "ipa": "tu̱⁴⁴"
+  },
+  {
+    "g": "ꄙ",
+    "pinyin": "dur",
+    "ipa": "tu̱³³"
+  },
+  {
+    "g": "ꄚ",
+    "pinyin": "tit",
+    "ipa": "tʰi⁵⁵"
+  },
+  {
+    "g": "ꄛ",
+    "pinyin": "tix",
+    "ipa": "tʰi⁴⁴"
+  },
+  {
+    "g": "ꄜ",
+    "pinyin": "ti",
+    "ipa": "tʰi³³"
+  },
+  {
+    "g": "ꄝ",
+    "pinyin": "tip",
+    "ipa": "tʰi²¹"
+  },
+  {
+    "g": "ꄞ",
+    "pinyin": "tiex",
+    "ipa": "tʰɛ⁴⁴"
+  },
+  {
+    "g": "ꄟ",
+    "pinyin": "tie",
+    "ipa": "tʰɛ³³"
+  },
+  {
+    "g": "ꄠ",
+    "pinyin": "tiep",
+    "ipa": "tʰɛ²¹"
+  },
+  {
+    "g": "ꄡ",
+    "pinyin": "tat",
+    "ipa": "tʰa⁵⁵"
+  },
+  {
+    "g": "ꄢ",
+    "pinyin": "tax",
+    "ipa": "tʰa⁴⁴"
+  },
+  {
+    "g": "ꄣ",
+    "pinyin": "ta",
+    "ipa": "tʰa³³"
+  },
+  {
+    "g": "ꄤ",
+    "pinyin": "tap",
+    "ipa": "tʰa²¹"
+  },
+  {
+    "g": "ꄥ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꄦ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꄧ",
+    "pinyin": "tuo",
+    "ipa": "tʰɔ³³"
+  },
+  {
+    "g": "ꄨ",
+    "pinyin": "tuop",
+    "ipa": "tʰɔ²¹"
+  },
+  {
+    "g": "ꄩ",
+    "pinyin": "tot",
+    "ipa": "tʰo⁵⁵"
+  },
+  {
+    "g": "ꄪ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꄫ",
+    "pinyin": "to",
+    "ipa": "tʰo³³"
+  },
+  {
+    "g": "ꄬ",
+    "pinyin": "top",
+    "ipa": "tʰo²¹"
+  },
+  {
+    "g": "ꄭ",
+    "pinyin": "tex",
+    "ipa": "tʰɯ⁴⁴"
+  },
+  {
+    "g": "ꄮ",
+    "pinyin": "te",
+    "ipa": "tʰɯ³³"
+  },
+  {
+    "g": "ꄯ",
+    "pinyin": "tep",
+    "ipa": "tʰɯ²¹"
+  },
+  {
+    "g": "ꄰ",
+    "pinyin": "tut",
+    "ipa": "tʰu⁵⁵"
+  },
+  {
+    "g": "ꄱ",
+    "pinyin": "tux",
+    "ipa": "tʰu⁴⁴"
+  },
+  {
+    "g": "ꄲ",
+    "pinyin": "tu",
+    "ipa": "tʰu³³"
+  },
+  {
+    "g": "ꄳ",
+    "pinyin": "tup",
+    "ipa": "tʰu²¹"
+  },
+  {
+    "g": "ꄴ",
+    "pinyin": "turx",
+    "ipa": "tʰu̱⁴⁴"
+  },
+  {
+    "g": "ꄵ",
+    "pinyin": "tur",
+    "ipa": "tʰu̱³³"
+  },
+  {
+    "g": "ꄶ",
+    "pinyin": "ddit",
+    "ipa": "di⁵⁵"
+  },
+  {
+    "g": "ꄷ",
+    "pinyin": "ddix",
+    "ipa": "di⁴⁴"
+  },
+  {
+    "g": "ꄸ",
+    "pinyin": "ddi",
+    "ipa": "di³³"
+  },
+  {
+    "g": "ꄹ",
+    "pinyin": "ddip",
+    "ipa": "di²¹"
+  },
+  {
+    "g": "ꄺ",
+    "pinyin": "ddiex",
+    "ipa": "dɛ⁴⁴"
+  },
+  {
+    "g": "ꄻ",
+    "pinyin": "ddie",
+    "ipa": "dɛ³³"
+  },
+  {
+    "g": "ꄼ",
+    "pinyin": "ddiep",
+    "ipa": "dɛ²¹"
+  },
+  {
+    "g": "ꄽ",
+    "pinyin": "ddat",
+    "ipa": "da⁵⁵"
+  },
+  {
+    "g": "ꄾ",
+    "pinyin": "ddax",
+    "ipa": "da⁴⁴"
+  },
+  {
+    "g": "ꄿ",
+    "pinyin": "dda",
+    "ipa": "da³³"
+  },
+  {
+    "g": "ꅀ",
+    "pinyin": "ddap",
+    "ipa": "da²¹"
+  },
+  {
+    "g": "ꅁ",
+    "pinyin": "dduox",
+    "ipa": "dɔ⁴⁴"
+  },
+  {
+    "g": "ꅂ",
+    "pinyin": "dduo",
+    "ipa": "dɔ³³"
+  },
+  {
+    "g": "ꅃ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꅄ",
+    "pinyin": "ddot",
+    "ipa": "do⁵⁵"
+  },
+  {
+    "g": "ꅅ",
+    "pinyin": "ddox",
+    "ipa": "do⁴⁴"
+  },
+  {
+    "g": "ꅆ",
+    "pinyin": "ddo",
+    "ipa": "do³³"
+  },
+  {
+    "g": "ꅇ",
+    "pinyin": "ddop",
+    "ipa": "do²¹"
+  },
+  {
+    "g": "ꅈ",
+    "pinyin": "ddex",
+    "ipa": "dɯ⁴⁴"
+  },
+  {
+    "g": "ꅉ",
+    "pinyin": "dde",
+    "ipa": "dɯ³³"
+  },
+  {
+    "g": "ꅊ",
+    "pinyin": "ddep",
+    "ipa": "dɯ²¹"
+  },
+  {
+    "g": "ꅋ",
+    "pinyin": "ddut",
+    "ipa": "du⁵⁵"
+  },
+  {
+    "g": "ꅌ",
+    "pinyin": "ddux",
+    "ipa": "du⁴⁴"
+  },
+  {
+    "g": "ꅍ",
+    "pinyin": "ddu",
+    "ipa": "du³³"
+  },
+  {
+    "g": "ꅎ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꅏ",
+    "pinyin": "ddurx",
+    "ipa": "du̱⁴⁴"
+  },
+  {
+    "g": "ꅐ",
+    "pinyin": "ddur",
+    "ipa": "du̱³³"
+  },
+  {
+    "g": "ꅑ",
+    "pinyin": "ndit",
+    "ipa": "ndi⁵⁵"
+  },
+  {
+    "g": "ꅒ",
+    "pinyin": "ndix",
+    "ipa": "ndi⁴⁴"
+  },
+  {
+    "g": "ꅓ",
+    "pinyin": "ndi",
+    "ipa": "ndi³³"
+  },
+  {
+    "g": "ꅔ",
+    "pinyin": "ndip",
+    "ipa": "ndi²¹"
+  },
+  {
+    "g": "ꅕ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꅖ",
+    "pinyin": "ndie",
+    "ipa": "ndɛ³³"
+  },
+  {
+    "g": "ꅗ",
+    "pinyin": "ndat",
+    "ipa": "nda⁵⁵"
+  },
+  {
+    "g": "ꅘ",
+    "pinyin": "ndax",
+    "ipa": "nda⁴⁴"
+  },
+  {
+    "g": "ꅙ",
+    "pinyin": "nda",
+    "ipa": "nda³³"
+  },
+  {
+    "g": "ꅚ",
+    "pinyin": "ndap",
+    "ipa": "nda²¹"
+  },
+  {
+    "g": "ꅛ",
+    "pinyin": "ndot",
+    "ipa": "ndo⁵⁵"
+  },
+  {
+    "g": "ꅜ",
+    "pinyin": "ndox",
+    "ipa": "ndo⁴⁴"
+  },
+  {
+    "g": "ꅝ",
+    "pinyin": "ndo",
+    "ipa": "ndo³³"
+  },
+  {
+    "g": "ꅞ",
+    "pinyin": "ndop",
+    "ipa": "ndo²¹"
+  },
+  {
+    "g": "ꅟ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꅠ",
+    "pinyin": "nde",
+    "ipa": "ndɯ³³"
+  },
+  {
+    "g": "ꅡ",
+    "pinyin": "ndep",
+    "ipa": "ndɯ²¹"
+  },
+  {
+    "g": "ꅢ",
+    "pinyin": "ndut",
+    "ipa": "ndu⁵⁵"
+  },
+  {
+    "g": "ꅣ",
+    "pinyin": "ndux",
+    "ipa": "ndu⁴⁴"
+  },
+  {
+    "g": "ꅤ",
+    "pinyin": "ndu",
+    "ipa": "ndu³³"
+  },
+  {
+    "g": "ꅥ",
+    "pinyin": "ndup",
+    "ipa": "ndu²¹"
+  },
+  {
+    "g": "ꅦ",
+    "pinyin": "ndurx",
+    "ipa": "ndu̱⁴⁴"
+  },
+  {
+    "g": "ꅧ",
+    "pinyin": "ndur",
+    "ipa": "ndu̱³³"
+  },
+  {
+    "g": "ꅨ",
+    "pinyin": "hnit",
+    "ipa": "n̥i⁵⁵"
+  },
+  {
+    "g": "ꅩ",
+    "pinyin": "hnix",
+    "ipa": "n̥i⁴⁴"
+  },
+  {
+    "g": "ꅪ",
+    "pinyin": "hni",
+    "ipa": "n̥i³³"
+  },
+  {
+    "g": "ꅫ",
+    "pinyin": "hnip",
+    "ipa": "n̥i²¹"
+  },
+  {
+    "g": "ꅬ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꅭ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꅮ",
+    "pinyin": "hnie",
+    "ipa": "n̥ɛ³³"
+  },
+  {
+    "g": "ꅯ",
+    "pinyin": "hniep",
+    "ipa": "n̥ɛ²¹"
+  },
+  {
+    "g": "ꅰ",
+    "pinyin": "hnat",
+    "ipa": "n̥a⁵⁵"
+  },
+  {
+    "g": "ꅱ",
+    "pinyin": "hnax",
+    "ipa": "n̥a⁴⁴"
+  },
+  {
+    "g": "ꅲ",
+    "pinyin": "hna",
+    "ipa": "n̥a³³"
+  },
+  {
+    "g": "ꅳ",
+    "pinyin": "hnap",
+    "ipa": "n̥a²¹"
+  },
+  {
+    "g": "ꅴ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꅵ",
+    "pinyin": "hnuo",
+    "ipa": "n̥ɔ³³"
+  },
+  {
+    "g": "ꅶ",
+    "pinyin": "hnot",
+    "ipa": "n̥o⁵⁵"
+  },
+  {
+    "g": "ꅷ",
+    "pinyin": "hnox",
+    "ipa": "n̥o⁴⁴"
+  },
+  {
+    "g": "ꅸ",
+    "pinyin": "hnop",
+    "ipa": "n̥o²¹"
+  },
+  {
+    "g": "ꅹ",
+    "pinyin": "hnex",
+    "ipa": "n̥ɯ⁴⁴"
+  },
+  {
+    "g": "ꅺ",
+    "pinyin": "hne",
+    "ipa": "n̥ɯ³³"
+  },
+  {
+    "g": "ꅻ",
+    "pinyin": "hnep",
+    "ipa": "n̥ɯ²¹"
+  },
+  {
+    "g": "ꅼ",
+    "pinyin": "hnut",
+    "ipa": "n̥u⁵⁵"
+  },
+  {
+    "g": "ꅽ",
+    "pinyin": "nit",
+    "ipa": "ni⁵⁵"
+  },
+  {
+    "g": "ꅾ",
+    "pinyin": "nix",
+    "ipa": "ni⁴⁴"
+  },
+  {
+    "g": "ꅿ",
+    "pinyin": "ni",
+    "ipa": "ni³³"
+  },
+  {
+    "g": "ꆀ",
+    "pinyin": "nip",
+    "ipa": "ni²¹"
+  },
+  {
+    "g": "ꆁ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆂ",
+    "pinyin": "nie",
+    "ipa": "nɛ³³"
+  },
+  {
+    "g": "ꆃ",
+    "pinyin": "niep",
+    "ipa": "nɛ²¹"
+  },
+  {
+    "g": "ꆄ",
+    "pinyin": "nax",
+    "ipa": "na⁴⁴"
+  },
+  {
+    "g": "ꆅ",
+    "pinyin": "na",
+    "ipa": "na³³"
+  },
+  {
+    "g": "ꆆ",
+    "pinyin": "nap",
+    "ipa": "na²¹"
+  },
+  {
+    "g": "ꆇ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆈ",
+    "pinyin": "nuo",
+    "ipa": "nɔ³³"
+  },
+  {
+    "g": "ꆉ",
+    "pinyin": "nuop",
+    "ipa": "nɔ²¹"
+  },
+  {
+    "g": "ꆊ",
+    "pinyin": "not",
+    "ipa": "no⁵⁵"
+  },
+  {
+    "g": "ꆋ",
+    "pinyin": "nox",
+    "ipa": "no⁴⁴"
+  },
+  {
+    "g": "ꆌ",
+    "pinyin": "no",
+    "ipa": "no³³"
+  },
+  {
+    "g": "ꆍ",
+    "pinyin": "nop",
+    "ipa": "no²¹"
+  },
+  {
+    "g": "ꆎ",
+    "pinyin": "nex",
+    "ipa": "nɯ⁴⁴"
+  },
+  {
+    "g": "ꆏ",
+    "pinyin": "ne",
+    "ipa": "nɯ³³"
+  },
+  {
+    "g": "ꆐ",
+    "pinyin": "nep",
+    "ipa": "nɯ²¹"
+  },
+  {
+    "g": "ꆑ",
+    "pinyin": "nut",
+    "ipa": "nu⁵⁵"
+  },
+  {
+    "g": "ꆒ",
+    "pinyin": "nux",
+    "ipa": "nu⁴⁴"
+  },
+  {
+    "g": "ꆓ",
+    "pinyin": "nu",
+    "ipa": "nu³³"
+  },
+  {
+    "g": "ꆔ",
+    "pinyin": "nup",
+    "ipa": "nu²¹"
+  },
+  {
+    "g": "ꆕ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆖ",
+    "pinyin": "nur",
+    "ipa": "nu̱³³"
+  },
+  {
+    "g": "ꆗ",
+    "pinyin": "hlit",
+    "ipa": "ɬi⁵⁵"
+  },
+  {
+    "g": "ꆘ",
+    "pinyin": "hlix",
+    "ipa": "ɬi⁴⁴"
+  },
+  {
+    "g": "ꆙ",
+    "pinyin": "hli",
+    "ipa": "ɬi³³"
+  },
+  {
+    "g": "ꆚ",
+    "pinyin": "hlip",
+    "ipa": "ɬi²¹"
+  },
+  {
+    "g": "ꆛ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆜ",
+    "pinyin": "hlie",
+    "ipa": "ɬɛ³³"
+  },
+  {
+    "g": "ꆝ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆞ",
+    "pinyin": "hlat",
+    "ipa": "ɬa⁵⁵"
+  },
+  {
+    "g": "ꆟ",
+    "pinyin": "hlax",
+    "ipa": "ɬa⁴⁴"
+  },
+  {
+    "g": "ꆠ",
+    "pinyin": "hla",
+    "ipa": "ɬa³³"
+  },
+  {
+    "g": "ꆡ",
+    "pinyin": "hlap",
+    "ipa": "ɬa²¹"
+  },
+  {
+    "g": "ꆢ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆣ",
+    "pinyin": "hluo",
+    "ipa": "ɬɔ³³"
+  },
+  {
+    "g": "ꆤ",
+    "pinyin": "hluop",
+    "ipa": "ɬɔ²¹"
+  },
+  {
+    "g": "ꆥ",
+    "pinyin": "hlox",
+    "ipa": "ɬo⁴⁴"
+  },
+  {
+    "g": "ꆦ",
+    "pinyin": "hlo",
+    "ipa": "ɬo³³"
+  },
+  {
+    "g": "ꆧ",
+    "pinyin": "hlop",
+    "ipa": "ɬo²¹"
+  },
+  {
+    "g": "ꆨ",
+    "pinyin": "hlex",
+    "ipa": "ɬɯ⁴⁴"
+  },
+  {
+    "g": "ꆩ",
+    "pinyin": "hle",
+    "ipa": "ɬɯ³³"
+  },
+  {
+    "g": "ꆪ",
+    "pinyin": "hlep",
+    "ipa": "ɬɯ²¹"
+  },
+  {
+    "g": "ꆫ",
+    "pinyin": "hlut",
+    "ipa": "ɬu⁵⁵"
+  },
+  {
+    "g": "ꆬ",
+    "pinyin": "hlux",
+    "ipa": "ɬu⁴⁴"
+  },
+  {
+    "g": "ꆭ",
+    "pinyin": "hlu",
+    "ipa": "ɬu³³"
+  },
+  {
+    "g": "ꆮ",
+    "pinyin": "hlup",
+    "ipa": "ɬu²¹"
+  },
+  {
+    "g": "ꆯ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆰ",
+    "pinyin": "hlur",
+    "ipa": "ɬu̱³³"
+  },
+  {
+    "g": "ꆱ",
+    "pinyin": "hlyt",
+    "ipa": "ɬɿ⁵⁵"
+  },
+  {
+    "g": "ꆲ",
+    "pinyin": "hlyx",
+    "ipa": "ɬɿ⁴⁴"
+  },
+  {
+    "g": "ꆳ",
+    "pinyin": "hly",
+    "ipa": "ɬɿ³³"
+  },
+  {
+    "g": "ꆴ",
+    "pinyin": "hlyp",
+    "ipa": "ɬɿ²¹"
+  },
+  {
+    "g": "ꆵ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆶ",
+    "pinyin": "hlyr",
+    "ipa": "ɬɿ̱³³"
+  },
+  {
+    "g": "ꆷ",
+    "pinyin": "lit",
+    "ipa": "li⁵⁵"
+  },
+  {
+    "g": "ꆸ",
+    "pinyin": "lix",
+    "ipa": "li⁴⁴"
+  },
+  {
+    "g": "ꆹ",
+    "pinyin": "li",
+    "ipa": "li³³"
+  },
+  {
+    "g": "ꆺ",
+    "pinyin": "lip",
+    "ipa": "li²¹"
+  },
+  {
+    "g": "ꆻ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꆼ",
+    "pinyin": "liex",
+    "ipa": "lɛ⁴⁴"
+  },
+  {
+    "g": "ꆽ",
+    "pinyin": "lie",
+    "ipa": "lɛ³³"
+  },
+  {
+    "g": "ꆾ",
+    "pinyin": "liep",
+    "ipa": "lɛ²¹"
+  },
+  {
+    "g": "ꆿ",
+    "pinyin": "lat",
+    "ipa": "la⁵⁵"
+  },
+  {
+    "g": "ꇀ",
+    "pinyin": "lax",
+    "ipa": "la⁴⁴"
+  },
+  {
+    "g": "ꇁ",
+    "pinyin": "la",
+    "ipa": "la³³"
+  },
+  {
+    "g": "ꇂ",
+    "pinyin": "lap",
+    "ipa": "la²¹"
+  },
+  {
+    "g": "ꇃ",
+    "pinyin": "luot",
+    "ipa": "lɔ⁵⁵"
+  },
+  {
+    "g": "ꇄ",
+    "pinyin": "luox",
+    "ipa": "lɔ⁴⁴"
+  },
+  {
+    "g": "ꇅ",
+    "pinyin": "luo",
+    "ipa": "lɔ³³"
+  },
+  {
+    "g": "ꇆ",
+    "pinyin": "luop",
+    "ipa": "lɔ²¹"
+  },
+  {
+    "g": "ꇇ",
+    "pinyin": "lot",
+    "ipa": "lo⁵⁵"
+  },
+  {
+    "g": "ꇈ",
+    "pinyin": "lox",
+    "ipa": "lo⁴⁴"
+  },
+  {
+    "g": "ꇉ",
+    "pinyin": "lo",
+    "ipa": "lo³³"
+  },
+  {
+    "g": "ꇊ",
+    "pinyin": "lop",
+    "ipa": "lo²¹"
+  },
+  {
+    "g": "ꇋ",
+    "pinyin": "lex",
+    "ipa": "lɯ⁴⁴"
+  },
+  {
+    "g": "ꇌ",
+    "pinyin": "le",
+    "ipa": "lɯ³³"
+  },
+  {
+    "g": "ꇍ",
+    "pinyin": "lep",
+    "ipa": "lɯ²¹"
+  },
+  {
+    "g": "ꇎ",
+    "pinyin": "lut",
+    "ipa": "lu⁵⁵"
+  },
+  {
+    "g": "ꇏ",
+    "pinyin": "lux",
+    "ipa": "lu⁴⁴"
+  },
+  {
+    "g": "ꇐ",
+    "pinyin": "lu",
+    "ipa": "lu³³"
+  },
+  {
+    "g": "ꇑ",
+    "pinyin": "lup",
+    "ipa": "lu²¹"
+  },
+  {
+    "g": "ꇒ",
+    "pinyin": "lurx",
+    "ipa": "lu̱⁴⁴"
+  },
+  {
+    "g": "ꇓ",
+    "pinyin": "lur",
+    "ipa": "lu̱³³"
+  },
+  {
+    "g": "ꇔ",
+    "pinyin": "lyt",
+    "ipa": "lɿ⁵⁵"
+  },
+  {
+    "g": "ꇕ",
+    "pinyin": "lyx",
+    "ipa": "lɿ⁴⁴"
+  },
+  {
+    "g": "ꇖ",
+    "pinyin": "ly",
+    "ipa": "lɿ³³"
+  },
+  {
+    "g": "ꇗ",
+    "pinyin": "lyp",
+    "ipa": "lɿ²¹"
+  },
+  {
+    "g": "ꇘ",
+    "pinyin": "lyrx",
+    "ipa": "lɿ̱⁴⁴"
+  },
+  {
+    "g": "ꇙ",
+    "pinyin": "lyr",
+    "ipa": "lɿ̱³³"
+  },
+  {
+    "g": "ꇚ",
+    "pinyin": "git",
+    "ipa": "ki⁵⁵"
+  },
+  {
+    "g": "ꇛ",
+    "pinyin": "gix",
+    "ipa": "ki⁴⁴"
+  },
+  {
+    "g": "ꇜ",
+    "pinyin": "gi",
+    "ipa": "ki³³"
+  },
+  {
+    "g": "ꇝ",
+    "pinyin": "gip",
+    "ipa": "ki²¹"
+  },
+  {
+    "g": "ꇞ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꇟ",
+    "pinyin": "giex",
+    "ipa": "kɛ⁴⁴"
+  },
+  {
+    "g": "ꇠ",
+    "pinyin": "gie",
+    "ipa": "kɛ³³"
+  },
+  {
+    "g": "ꇡ",
+    "pinyin": "giep",
+    "ipa": "kɛ²¹"
+  },
+  {
+    "g": "ꇢ",
+    "pinyin": "gat",
+    "ipa": "ka⁵⁵"
+  },
+  {
+    "g": "ꇣ",
+    "pinyin": "gax",
+    "ipa": "ka⁴⁴"
+  },
+  {
+    "g": "ꇤ",
+    "pinyin": "ga",
+    "ipa": "ka³³"
+  },
+  {
+    "g": "ꇥ",
+    "pinyin": "gap",
+    "ipa": "ka²¹"
+  },
+  {
+    "g": "ꇦ",
+    "pinyin": "guot",
+    "ipa": "kɔ⁵⁵"
+  },
+  {
+    "g": "ꇧ",
+    "pinyin": "guox",
+    "ipa": "kɔ⁴⁴"
+  },
+  {
+    "g": "ꇨ",
+    "pinyin": "guo",
+    "ipa": "kɔ³³"
+  },
+  {
+    "g": "ꇩ",
+    "pinyin": "guop",
+    "ipa": "kɔ²¹"
+  },
+  {
+    "g": "ꇪ",
+    "pinyin": "got",
+    "ipa": "ko⁵⁵"
+  },
+  {
+    "g": "ꇫ",
+    "pinyin": "gox",
+    "ipa": "ko⁴⁴"
+  },
+  {
+    "g": "ꇬ",
+    "pinyin": "go",
+    "ipa": "ko³³"
+  },
+  {
+    "g": "ꇭ",
+    "pinyin": "gop",
+    "ipa": "ko²¹"
+  },
+  {
+    "g": "ꇮ",
+    "pinyin": "get",
+    "ipa": "kɯ⁵⁵"
+  },
+  {
+    "g": "ꇯ",
+    "pinyin": "gex",
+    "ipa": "kɯ⁴⁴"
+  },
+  {
+    "g": "ꇰ",
+    "pinyin": "ge",
+    "ipa": "kɯ³³"
+  },
+  {
+    "g": "ꇱ",
+    "pinyin": "gep",
+    "ipa": "kɯ²¹"
+  },
+  {
+    "g": "ꇲ",
+    "pinyin": "gut",
+    "ipa": "ku⁵⁵"
+  },
+  {
+    "g": "ꇳ",
+    "pinyin": "gux",
+    "ipa": "ku⁴⁴"
+  },
+  {
+    "g": "ꇴ",
+    "pinyin": "gu",
+    "ipa": "ku³³"
+  },
+  {
+    "g": "ꇵ",
+    "pinyin": "gup",
+    "ipa": "ku²¹"
+  },
+  {
+    "g": "ꇶ",
+    "pinyin": "gurx",
+    "ipa": "ku̱⁴⁴"
+  },
+  {
+    "g": "ꇷ",
+    "pinyin": "gur",
+    "ipa": "ku̱³³"
+  },
+  {
+    "g": "ꇸ",
+    "pinyin": "kit",
+    "ipa": "kʰi⁵⁵"
+  },
+  {
+    "g": "ꇹ",
+    "pinyin": "kix",
+    "ipa": "kʰi⁴⁴"
+  },
+  {
+    "g": "ꇺ",
+    "pinyin": "ki",
+    "ipa": "kʰi³³"
+  },
+  {
+    "g": "ꇻ",
+    "pinyin": "kip",
+    "ipa": "kʰi²¹"
+  },
+  {
+    "g": "ꇼ",
+    "pinyin": "kiex",
+    "ipa": "kʰɛ⁴⁴"
+  },
+  {
+    "g": "ꇽ",
+    "pinyin": "kie",
+    "ipa": "kʰɛ³³"
+  },
+  {
+    "g": "ꇾ",
+    "pinyin": "kiep",
+    "ipa": "kʰɛ²¹"
+  },
+  {
+    "g": "ꇿ",
+    "pinyin": "kat",
+    "ipa": "kʰa⁵⁵"
+  },
+  {
+    "g": "ꈀ",
+    "pinyin": "kax",
+    "ipa": "kʰa⁴⁴"
+  },
+  {
+    "g": "ꈁ",
+    "pinyin": "ka",
+    "ipa": "kʰa³³"
+  },
+  {
+    "g": "ꈂ",
+    "pinyin": "kap",
+    "ipa": "kʰa²¹"
+  },
+  {
+    "g": "ꈃ",
+    "pinyin": "kuox",
+    "ipa": "kʰɔ⁴⁴"
+  },
+  {
+    "g": "ꈄ",
+    "pinyin": "kuo",
+    "ipa": "kʰɔ³³"
+  },
+  {
+    "g": "ꈅ",
+    "pinyin": "kuop",
+    "ipa": "kʰɔ²¹"
+  },
+  {
+    "g": "ꈆ",
+    "pinyin": "kot",
+    "ipa": "kʰo⁵⁵"
+  },
+  {
+    "g": "ꈇ",
+    "pinyin": "kox",
+    "ipa": "kʰo⁴⁴"
+  },
+  {
+    "g": "ꈈ",
+    "pinyin": "ko",
+    "ipa": "kʰo³³"
+  },
+  {
+    "g": "ꈉ",
+    "pinyin": "kop",
+    "ipa": "kʰo²¹"
+  },
+  {
+    "g": "ꈊ",
+    "pinyin": "ket",
+    "ipa": "kʰɯ⁵⁵"
+  },
+  {
+    "g": "ꈋ",
+    "pinyin": "kex",
+    "ipa": "kʰɯ⁴⁴"
+  },
+  {
+    "g": "ꈌ",
+    "pinyin": "ke",
+    "ipa": "kʰɯ³³"
+  },
+  {
+    "g": "ꈍ",
+    "pinyin": "kep",
+    "ipa": "kʰɯ²¹"
+  },
+  {
+    "g": "ꈎ",
+    "pinyin": "kut",
+    "ipa": "kʰu⁵⁵"
+  },
+  {
+    "g": "ꈏ",
+    "pinyin": "kux",
+    "ipa": "kʰu⁴⁴"
+  },
+  {
+    "g": "ꈐ",
+    "pinyin": "ku",
+    "ipa": "kʰu³³"
+  },
+  {
+    "g": "ꈑ",
+    "pinyin": "kup",
+    "ipa": "kʰu²¹"
+  },
+  {
+    "g": "ꈒ",
+    "pinyin": "kurx",
+    "ipa": "kʰu̱⁴⁴"
+  },
+  {
+    "g": "ꈓ",
+    "pinyin": "kur",
+    "ipa": "kʰu̱³³"
+  },
+  {
+    "g": "ꈔ",
+    "pinyin": "ggit",
+    "ipa": "gi⁵⁵"
+  },
+  {
+    "g": "ꈕ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꈖ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꈗ",
+    "pinyin": "ggiex",
+    "ipa": "gɛ⁴⁴"
+  },
+  {
+    "g": "ꈘ",
+    "pinyin": "ggie",
+    "ipa": "gɛ³³"
+  },
+  {
+    "g": "ꈙ",
+    "pinyin": "ggiep",
+    "ipa": "gɛ²¹"
+  },
+  {
+    "g": "ꈚ",
+    "pinyin": "ggat",
+    "ipa": "ga⁵⁵"
+  },
+  {
+    "g": "ꈛ",
+    "pinyin": "ggax",
+    "ipa": "ga⁴⁴"
+  },
+  {
+    "g": "ꈜ",
+    "pinyin": "gga",
+    "ipa": "ga³³"
+  },
+  {
+    "g": "ꈝ",
+    "pinyin": "ggap",
+    "ipa": "ga²¹"
+  },
+  {
+    "g": "ꈞ",
+    "pinyin": "gguot",
+    "ipa": "gɔ⁵⁵"
+  },
+  {
+    "g": "ꈟ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꈠ",
+    "pinyin": "gguo",
+    "ipa": "gɔ³³"
+  },
+  {
+    "g": "ꈡ",
+    "pinyin": "gguop",
+    "ipa": "gɔ²¹"
+  },
+  {
+    "g": "ꈢ",
+    "pinyin": "ggot",
+    "ipa": "go⁵⁵"
+  },
+  {
+    "g": "ꈣ",
+    "pinyin": "ggox",
+    "ipa": "go⁴⁴"
+  },
+  {
+    "g": "ꈤ",
+    "pinyin": "ggo",
+    "ipa": "go³³"
+  },
+  {
+    "g": "ꈥ",
+    "pinyin": "ggop",
+    "ipa": "go²¹"
+  },
+  {
+    "g": "ꈦ",
+    "pinyin": "gget",
+    "ipa": "gɯ⁵⁵"
+  },
+  {
+    "g": "ꈧ",
+    "pinyin": "ggex",
+    "ipa": "gɯ⁴⁴"
+  },
+  {
+    "g": "ꈨ",
+    "pinyin": "gge",
+    "ipa": "gɯ³³"
+  },
+  {
+    "g": "ꈩ",
+    "pinyin": "ggep",
+    "ipa": "gɯ²¹"
+  },
+  {
+    "g": "ꈪ",
+    "pinyin": "ggut",
+    "ipa": "gu⁵⁵"
+  },
+  {
+    "g": "ꈫ",
+    "pinyin": "ggux",
+    "ipa": "gu⁴⁴"
+  },
+  {
+    "g": "ꈬ",
+    "pinyin": "ggu",
+    "ipa": "gu³³"
+  },
+  {
+    "g": "ꈭ",
+    "pinyin": "ggup",
+    "ipa": "gu²¹"
+  },
+  {
+    "g": "ꈮ",
+    "pinyin": "ggurx",
+    "ipa": "gu̱⁴⁴"
+  },
+  {
+    "g": "ꈯ",
+    "pinyin": "ggur",
+    "ipa": "gu̱³³"
+  },
+  {
+    "g": "ꈰ",
+    "pinyin": "mgiex",
+    "ipa": "ŋgɛ⁴⁴"
+  },
+  {
+    "g": "ꈱ",
+    "pinyin": "mgie",
+    "ipa": "ŋgɛ³³"
+  },
+  {
+    "g": "ꈲ",
+    "pinyin": "mgat",
+    "ipa": "ŋga⁵⁵"
+  },
+  {
+    "g": "ꈳ",
+    "pinyin": "mgax",
+    "ipa": "ŋga⁴⁴"
+  },
+  {
+    "g": "ꈴ",
+    "pinyin": "mga",
+    "ipa": "ŋga³³"
+  },
+  {
+    "g": "ꈵ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꈶ",
+    "pinyin": "mguox",
+    "ipa": "ŋgɔ⁴⁴"
+  },
+  {
+    "g": "ꈷ",
+    "pinyin": "mguo",
+    "ipa": "ŋgɔ³³"
+  },
+  {
+    "g": "ꈸ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꈹ",
+    "pinyin": "mgot",
+    "ipa": "ŋgo⁵⁵"
+  },
+  {
+    "g": "ꈺ",
+    "pinyin": "mgox",
+    "ipa": "ŋgo⁴⁴"
+  },
+  {
+    "g": "ꈻ",
+    "pinyin": "mgo",
+    "ipa": "ŋgo³³"
+  },
+  {
+    "g": "ꈼ",
+    "pinyin": "mgop",
+    "ipa": "ŋgo²¹"
+  },
+  {
+    "g": "ꈽ",
+    "pinyin": "mgex",
+    "ipa": "ŋgɯ⁴⁴"
+  },
+  {
+    "g": "ꈾ",
+    "pinyin": "mge",
+    "ipa": "ŋgɯ³³"
+  },
+  {
+    "g": "ꈿ",
+    "pinyin": "mgep",
+    "ipa": "ŋgɯ²¹"
+  },
+  {
+    "g": "ꉀ",
+    "pinyin": "mgut",
+    "ipa": "ŋgu⁵⁵"
+  },
+  {
+    "g": "ꉁ",
+    "pinyin": "mgux",
+    "ipa": "ŋgu⁴⁴"
+  },
+  {
+    "g": "ꉂ",
+    "pinyin": "mgu",
+    "ipa": "ŋgu³³"
+  },
+  {
+    "g": "ꉃ",
+    "pinyin": "mgup",
+    "ipa": "ŋgu²¹"
+  },
+  {
+    "g": "ꉄ",
+    "pinyin": "mgurx",
+    "ipa": "ŋgu̱⁴⁴"
+  },
+  {
+    "g": "ꉅ",
+    "pinyin": "mgur",
+    "ipa": "ŋgu̱³³"
+  },
+  {
+    "g": "ꉆ",
+    "pinyin": "hxit",
+    "ipa": "hi⁵⁵"
+  },
+  {
+    "g": "ꉇ",
+    "pinyin": "hxix",
+    "ipa": "hi⁴⁴"
+  },
+  {
+    "g": "ꉈ",
+    "pinyin": "hxi",
+    "ipa": "hi³³"
+  },
+  {
+    "g": "ꉉ",
+    "pinyin": "hxip",
+    "ipa": "hi²¹"
+  },
+  {
+    "g": "ꉊ",
+    "pinyin": "hxiet",
+    "ipa": "hɛ⁵⁵"
+  },
+  {
+    "g": "ꉋ",
+    "pinyin": "hxiex",
+    "ipa": "hɛ⁴⁴"
+  },
+  {
+    "g": "ꉌ",
+    "pinyin": "hxie",
+    "ipa": "hɛ³³"
+  },
+  {
+    "g": "ꉍ",
+    "pinyin": "hxiep",
+    "ipa": "hɛ²¹"
+  },
+  {
+    "g": "ꉎ",
+    "pinyin": "hxat",
+    "ipa": "ha⁵⁵"
+  },
+  {
+    "g": "ꉏ",
+    "pinyin": "hxax",
+    "ipa": "ha⁴⁴"
+  },
+  {
+    "g": "ꉐ",
+    "pinyin": "hxa",
+    "ipa": "ha³³"
+  },
+  {
+    "g": "ꉑ",
+    "pinyin": "hxap",
+    "ipa": "ha²¹"
+  },
+  {
+    "g": "ꉒ",
+    "pinyin": "hxuot",
+    "ipa": "hɔ⁵⁵"
+  },
+  {
+    "g": "ꉓ",
+    "pinyin": "hxuox",
+    "ipa": "hɔ⁴⁴"
+  },
+  {
+    "g": "ꉔ",
+    "pinyin": "hxuo",
+    "ipa": "hɔ³³"
+  },
+  {
+    "g": "ꉕ",
+    "pinyin": "hxuop",
+    "ipa": "hɔ²¹"
+  },
+  {
+    "g": "ꉖ",
+    "pinyin": "hxot",
+    "ipa": "ho⁵⁵"
+  },
+  {
+    "g": "ꉗ",
+    "pinyin": "hxox",
+    "ipa": "ho⁴⁴"
+  },
+  {
+    "g": "ꉘ",
+    "pinyin": "hxo",
+    "ipa": "ho³³"
+  },
+  {
+    "g": "ꉙ",
+    "pinyin": "hxop",
+    "ipa": "ho²¹"
+  },
+  {
+    "g": "ꉚ",
+    "pinyin": "hxex",
+    "ipa": "hɯ⁴⁴"
+  },
+  {
+    "g": "ꉛ",
+    "pinyin": "hxe",
+    "ipa": "hɯ³³"
+  },
+  {
+    "g": "ꉜ",
+    "pinyin": "hxep",
+    "ipa": "hɯ²¹"
+  },
+  {
+    "g": "ꉝ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꉞ",
+    "pinyin": "ngie",
+    "ipa": "ŋɛ³³"
+  },
+  {
+    "g": "ꉟ",
+    "pinyin": "ngiep",
+    "ipa": "ŋɛ²¹"
+  },
+  {
+    "g": "ꉠ",
+    "pinyin": "ngat",
+    "ipa": "ŋa⁵⁵"
+  },
+  {
+    "g": "ꉡ",
+    "pinyin": "ngax",
+    "ipa": "ŋa⁴⁴"
+  },
+  {
+    "g": "ꉢ",
+    "pinyin": "nga",
+    "ipa": "ŋa³³"
+  },
+  {
+    "g": "ꉣ",
+    "pinyin": "ngap",
+    "ipa": "ŋa²¹"
+  },
+  {
+    "g": "ꉤ",
+    "pinyin": "nguot",
+    "ipa": "ŋɔ⁵⁵"
+  },
+  {
+    "g": "ꉥ",
+    "pinyin": "nguox",
+    "ipa": "ŋɔ⁴⁴"
+  },
+  {
+    "g": "ꉦ",
+    "pinyin": "nguo",
+    "ipa": "ŋɔ³³"
+  },
+  {
+    "g": "ꉧ",
+    "pinyin": "ngot",
+    "ipa": "ŋo⁵⁵"
+  },
+  {
+    "g": "ꉨ",
+    "pinyin": "ngox",
+    "ipa": "ŋo⁴⁴"
+  },
+  {
+    "g": "ꉩ",
+    "pinyin": "ngo",
+    "ipa": "ŋo³³"
+  },
+  {
+    "g": "ꉪ",
+    "pinyin": "ngop",
+    "ipa": "ŋo²¹"
+  },
+  {
+    "g": "ꉫ",
+    "pinyin": "ngex",
+    "ipa": "ŋɯ⁴⁴"
+  },
+  {
+    "g": "ꉬ",
+    "pinyin": "nge",
+    "ipa": "ŋɯ³³"
+  },
+  {
+    "g": "ꉭ",
+    "pinyin": "ngep",
+    "ipa": "ŋɯ²¹"
+  },
+  {
+    "g": "ꉮ",
+    "pinyin": "hit",
+    "ipa": "xi⁵⁵"
+  },
+  {
+    "g": "ꉯ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꉰ",
+    "pinyin": "hie",
+    "ipa": "xɛ³³"
+  },
+  {
+    "g": "ꉱ",
+    "pinyin": "hat",
+    "ipa": "xa⁵⁵"
+  },
+  {
+    "g": "ꉲ",
+    "pinyin": "hax",
+    "ipa": "xa⁴⁴"
+  },
+  {
+    "g": "ꉳ",
+    "pinyin": "ha",
+    "ipa": "xa³³"
+  },
+  {
+    "g": "ꉴ",
+    "pinyin": "hap",
+    "ipa": "xa²¹"
+  },
+  {
+    "g": "ꉵ",
+    "pinyin": "huot",
+    "ipa": "xɔ⁵⁵"
+  },
+  {
+    "g": "ꉶ",
+    "pinyin": "huox",
+    "ipa": "xɔ⁴⁴"
+  },
+  {
+    "g": "ꉷ",
+    "pinyin": "huo",
+    "ipa": "xɔ³³"
+  },
+  {
+    "g": "ꉸ",
+    "pinyin": "huop",
+    "ipa": "xɔ²¹"
+  },
+  {
+    "g": "ꉹ",
+    "pinyin": "hot",
+    "ipa": "xo⁵⁵"
+  },
+  {
+    "g": "ꉺ",
+    "pinyin": "hox",
+    "ipa": "xo⁴⁴"
+  },
+  {
+    "g": "ꉻ",
+    "pinyin": "ho",
+    "ipa": "xo³³"
+  },
+  {
+    "g": "ꉼ",
+    "pinyin": "hop",
+    "ipa": "xo²¹"
+  },
+  {
+    "g": "ꉽ",
+    "pinyin": "hex",
+    "ipa": "xɯ⁴⁴"
+  },
+  {
+    "g": "ꉾ",
+    "pinyin": "he",
+    "ipa": "xɯ³³"
+  },
+  {
+    "g": "ꉿ",
+    "pinyin": "hep",
+    "ipa": "xɯ²¹"
+  },
+  {
+    "g": "ꊀ",
+    "pinyin": "wat",
+    "ipa": "ɣa⁵⁵"
+  },
+  {
+    "g": "ꊁ",
+    "pinyin": "wax",
+    "ipa": "ɣa⁴⁴"
+  },
+  {
+    "g": "ꊂ",
+    "pinyin": "wa",
+    "ipa": "ɣa³³"
+  },
+  {
+    "g": "ꊃ",
+    "pinyin": "wap",
+    "ipa": "ɣa²¹"
+  },
+  {
+    "g": "ꊄ",
+    "pinyin": "wuox",
+    "ipa": "ɣɔ⁴⁴"
+  },
+  {
+    "g": "ꊅ",
+    "pinyin": "wuo",
+    "ipa": "ɣɔ³³"
+  },
+  {
+    "g": "ꊆ",
+    "pinyin": "wuop",
+    "ipa": "ɣɔ²¹"
+  },
+  {
+    "g": "ꊇ",
+    "pinyin": "wox",
+    "ipa": "ɣo⁴⁴"
+  },
+  {
+    "g": "ꊈ",
+    "pinyin": "wo",
+    "ipa": "ɣo³³"
+  },
+  {
+    "g": "ꊉ",
+    "pinyin": "wop",
+    "ipa": "ɣo²¹"
+  },
+  {
+    "g": "ꊊ",
+    "pinyin": "wex",
+    "ipa": "ɣɯ⁴⁴"
+  },
+  {
+    "g": "ꊋ",
+    "pinyin": "we",
+    "ipa": "ɣɯ³³"
+  },
+  {
+    "g": "ꊌ",
+    "pinyin": "wep",
+    "ipa": "ɣɯ²¹"
+  },
+  {
+    "g": "ꊍ",
+    "pinyin": "zit",
+    "ipa": "tsi⁵⁵"
+  },
+  {
+    "g": "ꊎ",
+    "pinyin": "zix",
+    "ipa": "tsi⁴⁴"
+  },
+  {
+    "g": "ꊏ",
+    "pinyin": "zi",
+    "ipa": "tsi³³"
+  },
+  {
+    "g": "ꊐ",
+    "pinyin": "zip",
+    "ipa": "tsi²¹"
+  },
+  {
+    "g": "ꊑ",
+    "pinyin": "ziex",
+    "ipa": "tsɛ⁴⁴"
+  },
+  {
+    "g": "ꊒ",
+    "pinyin": "zie",
+    "ipa": "tsɛ³³"
+  },
+  {
+    "g": "ꊓ",
+    "pinyin": "ziep",
+    "ipa": "tsɛ²¹"
+  },
+  {
+    "g": "ꊔ",
+    "pinyin": "zat",
+    "ipa": "tsa⁵⁵"
+  },
+  {
+    "g": "ꊕ",
+    "pinyin": "zax",
+    "ipa": "tsa⁴⁴"
+  },
+  {
+    "g": "ꊖ",
+    "pinyin": "za",
+    "ipa": "tsa³³"
+  },
+  {
+    "g": "ꊗ",
+    "pinyin": "zap",
+    "ipa": "tsa²¹"
+  },
+  {
+    "g": "ꊘ",
+    "pinyin": "zuox",
+    "ipa": "tsɔ⁴⁴"
+  },
+  {
+    "g": "ꊙ",
+    "pinyin": "zuo",
+    "ipa": "tsɔ³³"
+  },
+  {
+    "g": "ꊚ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꊛ",
+    "pinyin": "zot",
+    "ipa": "tso⁵⁵"
+  },
+  {
+    "g": "ꊜ",
+    "pinyin": "zox",
+    "ipa": "tso⁴⁴"
+  },
+  {
+    "g": "ꊝ",
+    "pinyin": "zo",
+    "ipa": "tso³³"
+  },
+  {
+    "g": "ꊞ",
+    "pinyin": "zop",
+    "ipa": "tso²¹"
+  },
+  {
+    "g": "ꊟ",
+    "pinyin": "zex",
+    "ipa": "tsɯ⁴⁴"
+  },
+  {
+    "g": "ꊠ",
+    "pinyin": "ze",
+    "ipa": "tsɯ³³"
+  },
+  {
+    "g": "ꊡ",
+    "pinyin": "zep",
+    "ipa": "tsɯ²¹"
+  },
+  {
+    "g": "ꊢ",
+    "pinyin": "zut",
+    "ipa": "tsu⁵⁵"
+  },
+  {
+    "g": "ꊣ",
+    "pinyin": "zux",
+    "ipa": "tsu⁴⁴"
+  },
+  {
+    "g": "ꊤ",
+    "pinyin": "zu",
+    "ipa": "tsu³³"
+  },
+  {
+    "g": "ꊥ",
+    "pinyin": "zup",
+    "ipa": "tsu²¹"
+  },
+  {
+    "g": "ꊦ",
+    "pinyin": "zurx",
+    "ipa": "tsu̱⁴⁴"
+  },
+  {
+    "g": "ꊧ",
+    "pinyin": "zur",
+    "ipa": "tsu̱³³"
+  },
+  {
+    "g": "ꊨ",
+    "pinyin": "zyt",
+    "ipa": "tsɿ⁵⁵"
+  },
+  {
+    "g": "ꊩ",
+    "pinyin": "zyx",
+    "ipa": "tsɿ⁴⁴"
+  },
+  {
+    "g": "ꊪ",
+    "pinyin": "zy",
+    "ipa": "tsɿ³³"
+  },
+  {
+    "g": "ꊫ",
+    "pinyin": "zyp",
+    "ipa": "tsɿ²¹"
+  },
+  {
+    "g": "ꊬ",
+    "pinyin": "zyrx",
+    "ipa": "tsɿ̱⁴⁴"
+  },
+  {
+    "g": "ꊭ",
+    "pinyin": "zyr",
+    "ipa": "tsɿ̱³³"
+  },
+  {
+    "g": "ꊮ",
+    "pinyin": "cit",
+    "ipa": "tsʰi⁵⁵"
+  },
+  {
+    "g": "ꊯ",
+    "pinyin": "cix",
+    "ipa": "tsʰi⁴⁴"
+  },
+  {
+    "g": "ꊰ",
+    "pinyin": "ci",
+    "ipa": "tsʰi³³"
+  },
+  {
+    "g": "ꊱ",
+    "pinyin": "cip",
+    "ipa": "tsʰi²¹"
+  },
+  {
+    "g": "ꊲ",
+    "pinyin": "ciet",
+    "ipa": "tsʰɛ⁵⁵"
+  },
+  {
+    "g": "ꊳ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꊴ",
+    "pinyin": "cie",
+    "ipa": "tsʰɛ³³"
+  },
+  {
+    "g": "ꊵ",
+    "pinyin": "ciep",
+    "ipa": "tsʰɛ²¹"
+  },
+  {
+    "g": "ꊶ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꊷ",
+    "pinyin": "cax",
+    "ipa": "tsʰa⁴⁴"
+  },
+  {
+    "g": "ꊸ",
+    "pinyin": "ca",
+    "ipa": "tsʰa³³"
+  },
+  {
+    "g": "ꊹ",
+    "pinyin": "cap",
+    "ipa": "tsʰa²¹"
+  },
+  {
+    "g": "ꊺ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꊻ",
+    "pinyin": "cuo",
+    "ipa": "tsʰɔ³³"
+  },
+  {
+    "g": "ꊼ",
+    "pinyin": "cuop",
+    "ipa": "tsʰɔ²¹"
+  },
+  {
+    "g": "ꊽ",
+    "pinyin": "cot",
+    "ipa": "tsʰo⁵⁵"
+  },
+  {
+    "g": "ꊾ",
+    "pinyin": "cox",
+    "ipa": "tsʰo⁴⁴"
+  },
+  {
+    "g": "ꊿ",
+    "pinyin": "co",
+    "ipa": "tsʰo³³"
+  },
+  {
+    "g": "ꋀ",
+    "pinyin": "cop",
+    "ipa": "tsʰo²¹"
+  },
+  {
+    "g": "ꋁ",
+    "pinyin": "cex",
+    "ipa": "tsʰɯ⁴⁴"
+  },
+  {
+    "g": "ꋂ",
+    "pinyin": "ce",
+    "ipa": "tsʰɯ³³"
+  },
+  {
+    "g": "ꋃ",
+    "pinyin": "cep",
+    "ipa": "tsʰɯ²¹"
+  },
+  {
+    "g": "ꋄ",
+    "pinyin": "cut",
+    "ipa": "tsʰu⁵⁵"
+  },
+  {
+    "g": "ꋅ",
+    "pinyin": "cux",
+    "ipa": "tsʰu⁴⁴"
+  },
+  {
+    "g": "ꋆ",
+    "pinyin": "cu",
+    "ipa": "tsʰu³³"
+  },
+  {
+    "g": "ꋇ",
+    "pinyin": "cup",
+    "ipa": "tsʰu²¹"
+  },
+  {
+    "g": "ꋈ",
+    "pinyin": "curx",
+    "ipa": "tsʰu̱⁴⁴"
+  },
+  {
+    "g": "ꋉ",
+    "pinyin": "cur",
+    "ipa": "tsʰu̱³³"
+  },
+  {
+    "g": "ꋊ",
+    "pinyin": "cyt",
+    "ipa": "tsʰɿ⁵⁵"
+  },
+  {
+    "g": "ꋋ",
+    "pinyin": "cyx",
+    "ipa": "tsʰɿ⁴⁴"
+  },
+  {
+    "g": "ꋌ",
+    "pinyin": "cy",
+    "ipa": "tsʰɿ³³"
+  },
+  {
+    "g": "ꋍ",
+    "pinyin": "cyp",
+    "ipa": "tsʰɿ²¹"
+  },
+  {
+    "g": "ꋎ",
+    "pinyin": "cyrx",
+    "ipa": "tsʰɿ̱⁴⁴"
+  },
+  {
+    "g": "ꋏ",
+    "pinyin": "cyr",
+    "ipa": "tsʰɿ̱³³"
+  },
+  {
+    "g": "ꋐ",
+    "pinyin": "zzit",
+    "ipa": "dzi⁵⁵"
+  },
+  {
+    "g": "ꋑ",
+    "pinyin": "zzix",
+    "ipa": "dzi⁴⁴"
+  },
+  {
+    "g": "ꋒ",
+    "pinyin": "zzi",
+    "ipa": "dzi³³"
+  },
+  {
+    "g": "ꋓ",
+    "pinyin": "zzip",
+    "ipa": "dzi²¹"
+  },
+  {
+    "g": "ꋔ",
+    "pinyin": "zziet",
+    "ipa": "dzɛ⁵⁵"
+  },
+  {
+    "g": "ꋕ",
+    "pinyin": "zziex",
+    "ipa": "dzɛ⁴⁴"
+  },
+  {
+    "g": "ꋖ",
+    "pinyin": "zzie",
+    "ipa": "dzɛ³³"
+  },
+  {
+    "g": "ꋗ",
+    "pinyin": "zziep",
+    "ipa": "dzɛ²¹"
+  },
+  {
+    "g": "ꋘ",
+    "pinyin": "zzat",
+    "ipa": "dza⁵⁵"
+  },
+  {
+    "g": "ꋙ",
+    "pinyin": "zzax",
+    "ipa": "dza⁴⁴"
+  },
+  {
+    "g": "ꋚ",
+    "pinyin": "zza",
+    "ipa": "dza³³"
+  },
+  {
+    "g": "ꋛ",
+    "pinyin": "zzap",
+    "ipa": "dza²¹"
+  },
+  {
+    "g": "ꋜ",
+    "pinyin": "zzox",
+    "ipa": "dzo⁴⁴"
+  },
+  {
+    "g": "ꋝ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋞ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋟ",
+    "pinyin": "zzex",
+    "ipa": "dzɯ⁴⁴"
+  },
+  {
+    "g": "ꋠ",
+    "pinyin": "zze",
+    "ipa": "dzɯ³³"
+  },
+  {
+    "g": "ꋡ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋢ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋣ",
+    "pinyin": "zzu",
+    "ipa": "dzu³³"
+  },
+  {
+    "g": "ꋤ",
+    "pinyin": "zzup",
+    "ipa": "dzu²¹"
+  },
+  {
+    "g": "ꋥ",
+    "pinyin": "zzurx",
+    "ipa": "dzu̱⁴⁴"
+  },
+  {
+    "g": "ꋦ",
+    "pinyin": "zzur",
+    "ipa": "dzu̱³³"
+  },
+  {
+    "g": "ꋧ",
+    "pinyin": "zzyt",
+    "ipa": "dzɿ⁵⁵"
+  },
+  {
+    "g": "ꋨ",
+    "pinyin": "zzyx",
+    "ipa": "dzɿ⁴⁴"
+  },
+  {
+    "g": "ꋩ",
+    "pinyin": "zzy",
+    "ipa": "dzɿ³³"
+  },
+  {
+    "g": "ꋪ",
+    "pinyin": "zzyp",
+    "ipa": "dzɿ²¹"
+  },
+  {
+    "g": "ꋫ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋬ",
+    "pinyin": "zzyr",
+    "ipa": "dzɿ̱³³"
+  },
+  {
+    "g": "ꋭ",
+    "pinyin": "nzit",
+    "ipa": "ndzi⁵⁵"
+  },
+  {
+    "g": "ꋮ",
+    "pinyin": "nzix",
+    "ipa": "ndzi⁴⁴"
+  },
+  {
+    "g": "ꋯ",
+    "pinyin": "nzi",
+    "ipa": "ndzi³³"
+  },
+  {
+    "g": "ꋰ",
+    "pinyin": "nzip",
+    "ipa": "ndzi²¹"
+  },
+  {
+    "g": "ꋱ",
+    "pinyin": "nziex",
+    "ipa": "ndzɛ⁴⁴"
+  },
+  {
+    "g": "ꋲ",
+    "pinyin": "nzie",
+    "ipa": "ndzɛ³³"
+  },
+  {
+    "g": "ꋳ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋴ",
+    "pinyin": "nzat",
+    "ipa": "ndza⁵⁵"
+  },
+  {
+    "g": "ꋵ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋶ",
+    "pinyin": "nza",
+    "ipa": "ndza³³"
+  },
+  {
+    "g": "ꋷ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋸ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꋹ",
+    "pinyin": "nzuo",
+    "ipa": "ndzɔ³³"
+  },
+  {
+    "g": "ꋺ",
+    "pinyin": "nzox",
+    "ipa": "ndzo⁴⁴"
+  },
+  {
+    "g": "ꋻ",
+    "pinyin": "nzop",
+    "ipa": "ndzo²¹"
+  },
+  {
+    "g": "ꋼ",
+    "pinyin": "nzex",
+    "ipa": "ndzɯ⁴⁴"
+  },
+  {
+    "g": "ꋽ",
+    "pinyin": "nze",
+    "ipa": "ndzɯ³³"
+  },
+  {
+    "g": "ꋾ",
+    "pinyin": "nzux",
+    "ipa": "ndzu⁴⁴"
+  },
+  {
+    "g": "ꋿ",
+    "pinyin": "nzu",
+    "ipa": "ndzu³³"
+  },
+  {
+    "g": "ꌀ",
+    "pinyin": "nzup",
+    "ipa": "ndzu²¹"
+  },
+  {
+    "g": "ꌁ",
+    "pinyin": "nzurx",
+    "ipa": "ndzu̱⁴⁴"
+  },
+  {
+    "g": "ꌂ",
+    "pinyin": "nzur",
+    "ipa": "ndzu̱³³"
+  },
+  {
+    "g": "ꌃ",
+    "pinyin": "nzyt",
+    "ipa": "ndzɿ⁵⁵"
+  },
+  {
+    "g": "ꌄ",
+    "pinyin": "nzyx",
+    "ipa": "ndzɿ⁴⁴"
+  },
+  {
+    "g": "ꌅ",
+    "pinyin": "nzy",
+    "ipa": "ndzɿ³³"
+  },
+  {
+    "g": "ꌆ",
+    "pinyin": "nzyp",
+    "ipa": "ndzɿ²¹"
+  },
+  {
+    "g": "ꌇ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꌈ",
+    "pinyin": "nzyr",
+    "ipa": "ndzɿ̱³³"
+  },
+  {
+    "g": "ꌉ",
+    "pinyin": "sit",
+    "ipa": "si⁵⁵"
+  },
+  {
+    "g": "ꌊ",
+    "pinyin": "six",
+    "ipa": "si⁴⁴"
+  },
+  {
+    "g": "ꌋ",
+    "pinyin": "si",
+    "ipa": "si³³"
+  },
+  {
+    "g": "ꌌ",
+    "pinyin": "sip",
+    "ipa": "si²¹"
+  },
+  {
+    "g": "ꌍ",
+    "pinyin": "siex",
+    "ipa": "sɛ⁴⁴"
+  },
+  {
+    "g": "ꌎ",
+    "pinyin": "sie",
+    "ipa": "sɛ³³"
+  },
+  {
+    "g": "ꌏ",
+    "pinyin": "siep",
+    "ipa": "sɛ²¹"
+  },
+  {
+    "g": "ꌐ",
+    "pinyin": "sat",
+    "ipa": "sa⁵⁵"
+  },
+  {
+    "g": "ꌑ",
+    "pinyin": "sax",
+    "ipa": "sa⁴⁴"
+  },
+  {
+    "g": "ꌒ",
+    "pinyin": "sa",
+    "ipa": "sa³³"
+  },
+  {
+    "g": "ꌓ",
+    "pinyin": "sap",
+    "ipa": "sa²¹"
+  },
+  {
+    "g": "ꌔ",
+    "pinyin": "suox",
+    "ipa": "sɔ⁴⁴"
+  },
+  {
+    "g": "ꌕ",
+    "pinyin": "suo",
+    "ipa": "sɔ³³"
+  },
+  {
+    "g": "ꌖ",
+    "pinyin": "suop",
+    "ipa": "sɔ²¹"
+  },
+  {
+    "g": "ꌗ",
+    "pinyin": "sot",
+    "ipa": "so⁵⁵"
+  },
+  {
+    "g": "ꌘ",
+    "pinyin": "sox",
+    "ipa": "so⁴⁴"
+  },
+  {
+    "g": "ꌙ",
+    "pinyin": "so",
+    "ipa": "so³³"
+  },
+  {
+    "g": "ꌚ",
+    "pinyin": "sop",
+    "ipa": "so²¹"
+  },
+  {
+    "g": "ꌛ",
+    "pinyin": "sex",
+    "ipa": "sɯ⁴⁴"
+  },
+  {
+    "g": "ꌜ",
+    "pinyin": "se",
+    "ipa": "sɯ³³"
+  },
+  {
+    "g": "ꌝ",
+    "pinyin": "sep",
+    "ipa": "sɯ²¹"
+  },
+  {
+    "g": "ꌞ",
+    "pinyin": "sut",
+    "ipa": "su⁵⁵"
+  },
+  {
+    "g": "ꌟ",
+    "pinyin": "sux",
+    "ipa": "su⁴⁴"
+  },
+  {
+    "g": "ꌠ",
+    "pinyin": "su",
+    "ipa": "su³³"
+  },
+  {
+    "g": "ꌡ",
+    "pinyin": "sup",
+    "ipa": "su²¹"
+  },
+  {
+    "g": "ꌢ",
+    "pinyin": "surx",
+    "ipa": "su̱⁴⁴"
+  },
+  {
+    "g": "ꌣ",
+    "pinyin": "sur",
+    "ipa": "su̱³³"
+  },
+  {
+    "g": "ꌤ",
+    "pinyin": "syt",
+    "ipa": "sɿ⁵⁵"
+  },
+  {
+    "g": "ꌥ",
+    "pinyin": "syx",
+    "ipa": "sɿ⁴⁴"
+  },
+  {
+    "g": "ꌦ",
+    "pinyin": "sy",
+    "ipa": "sɿ³³"
+  },
+  {
+    "g": "ꌧ",
+    "pinyin": "syp",
+    "ipa": "sɿ²¹"
+  },
+  {
+    "g": "ꌨ",
+    "pinyin": "syrx",
+    "ipa": "sɿ̱⁴⁴"
+  },
+  {
+    "g": "ꌩ",
+    "pinyin": "syr",
+    "ipa": "sɿ̱³³"
+  },
+  {
+    "g": "ꌪ",
+    "pinyin": "ssit",
+    "ipa": "zi⁵⁵"
+  },
+  {
+    "g": "ꌫ",
+    "pinyin": "ssix",
+    "ipa": "zi⁴⁴"
+  },
+  {
+    "g": "ꌬ",
+    "pinyin": "ssi",
+    "ipa": "zi³³"
+  },
+  {
+    "g": "ꌭ",
+    "pinyin": "ssip",
+    "ipa": "zi²¹"
+  },
+  {
+    "g": "ꌮ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꌯ",
+    "pinyin": "ssie",
+    "ipa": "zɛ³³"
+  },
+  {
+    "g": "ꌰ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꌱ",
+    "pinyin": "ssat",
+    "ipa": "za⁵⁵"
+  },
+  {
+    "g": "ꌲ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꌳ",
+    "pinyin": "ssa",
+    "ipa": "za³³"
+  },
+  {
+    "g": "ꌴ",
+    "pinyin": "ssap",
+    "ipa": "za²¹"
+  },
+  {
+    "g": "ꌵ",
+    "pinyin": "ssot",
+    "ipa": "zo⁵⁵"
+  },
+  {
+    "g": "ꌶ",
+    "pinyin": "ssox",
+    "ipa": "zo⁴⁴"
+  },
+  {
+    "g": "ꌷ",
+    "pinyin": "sso",
+    "ipa": "zo³³"
+  },
+  {
+    "g": "ꌸ",
+    "pinyin": "ssop",
+    "ipa": "zo²¹"
+  },
+  {
+    "g": "ꌹ",
+    "pinyin": "ssex",
+    "ipa": "zɯ⁴⁴"
+  },
+  {
+    "g": "ꌺ",
+    "pinyin": "sse",
+    "ipa": "zɯ³³"
+  },
+  {
+    "g": "ꌻ",
+    "pinyin": "ssep",
+    "ipa": "zɯ²¹"
+  },
+  {
+    "g": "ꌼ",
+    "pinyin": "ssut",
+    "ipa": "zu⁵⁵"
+  },
+  {
+    "g": "ꌽ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꌾ",
+    "pinyin": "ssu",
+    "ipa": "zu³³"
+  },
+  {
+    "g": "ꌿ",
+    "pinyin": "ssup",
+    "ipa": "zu²¹"
+  },
+  {
+    "g": "ꍀ",
+    "pinyin": "ssyt",
+    "ipa": "zɿ⁵⁵"
+  },
+  {
+    "g": "ꍁ",
+    "pinyin": "ssyx",
+    "ipa": "zɿ⁴⁴"
+  },
+  {
+    "g": "ꍂ",
+    "pinyin": "ssy",
+    "ipa": "zɿ³³"
+  },
+  {
+    "g": "ꍃ",
+    "pinyin": "ssyp",
+    "ipa": "zɿ²¹"
+  },
+  {
+    "g": "ꍄ",
+    "pinyin": "ssyrx",
+    "ipa": "zɿ̱⁴⁴"
+  },
+  {
+    "g": "ꍅ",
+    "pinyin": "ssyr",
+    "ipa": "zɿ̱³³"
+  },
+  {
+    "g": "ꍆ",
+    "pinyin": "zhat",
+    "ipa": "tʂa⁵⁵"
+  },
+  {
+    "g": "ꍇ",
+    "pinyin": "zhax",
+    "ipa": "tʂa⁴⁴"
+  },
+  {
+    "g": "ꍈ",
+    "pinyin": "zha",
+    "ipa": "tʂa³³"
+  },
+  {
+    "g": "ꍉ",
+    "pinyin": "zhap",
+    "ipa": "tʂa²¹"
+  },
+  {
+    "g": "ꍊ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꍋ",
+    "pinyin": "zhuo",
+    "ipa": "tʂɔ³³"
+  },
+  {
+    "g": "ꍌ",
+    "pinyin": "zhuop",
+    "ipa": "tʂɔ²¹"
+  },
+  {
+    "g": "ꍍ",
+    "pinyin": "zhot",
+    "ipa": "tʂo⁵⁵"
+  },
+  {
+    "g": "ꍎ",
+    "pinyin": "zhox",
+    "ipa": "tʂo⁴⁴"
+  },
+  {
+    "g": "ꍏ",
+    "pinyin": "zho",
+    "ipa": "tʂo³³"
+  },
+  {
+    "g": "ꍐ",
+    "pinyin": "zhop",
+    "ipa": "tʂo²¹"
+  },
+  {
+    "g": "ꍑ",
+    "pinyin": "zhet",
+    "ipa": "tʂɯ⁵⁵"
+  },
+  {
+    "g": "ꍒ",
+    "pinyin": "zhex",
+    "ipa": "tʂɯ⁴⁴"
+  },
+  {
+    "g": "ꍓ",
+    "pinyin": "zhe",
+    "ipa": "tʂɯ³³"
+  },
+  {
+    "g": "ꍔ",
+    "pinyin": "zhep",
+    "ipa": "tʂɯ²¹"
+  },
+  {
+    "g": "ꍕ",
+    "pinyin": "zhut",
+    "ipa": "tʂu⁵⁵"
+  },
+  {
+    "g": "ꍖ",
+    "pinyin": "zhux",
+    "ipa": "tʂu⁴⁴"
+  },
+  {
+    "g": "ꍗ",
+    "pinyin": "zhu",
+    "ipa": "tʂu³³"
+  },
+  {
+    "g": "ꍘ",
+    "pinyin": "zhup",
+    "ipa": "tʂu²¹"
+  },
+  {
+    "g": "ꍙ",
+    "pinyin": "zhurx",
+    "ipa": "tʂu̱⁴⁴"
+  },
+  {
+    "g": "ꍚ",
+    "pinyin": "zhur",
+    "ipa": "tʂu̱³³"
+  },
+  {
+    "g": "ꍛ",
+    "pinyin": "zhyt",
+    "ipa": "tʂɿ⁵⁵"
+  },
+  {
+    "g": "ꍜ",
+    "pinyin": "zhyx",
+    "ipa": "tʂɿ⁴⁴"
+  },
+  {
+    "g": "ꍝ",
+    "pinyin": "zhy",
+    "ipa": "tʂɿ³³"
+  },
+  {
+    "g": "ꍞ",
+    "pinyin": "zhyp",
+    "ipa": "tʂɿ²¹"
+  },
+  {
+    "g": "ꍟ",
+    "pinyin": "zhyrx",
+    "ipa": "tʂɿ̱⁴⁴"
+  },
+  {
+    "g": "ꍠ",
+    "pinyin": "zhyr",
+    "ipa": "tʂɿ̱³³"
+  },
+  {
+    "g": "ꍡ",
+    "pinyin": "chat",
+    "ipa": "tʂʰa⁵⁵"
+  },
+  {
+    "g": "ꍢ",
+    "pinyin": "chax",
+    "ipa": "tʂʰa⁴⁴"
+  },
+  {
+    "g": "ꍣ",
+    "pinyin": "cha",
+    "ipa": "tʂʰa³³"
+  },
+  {
+    "g": "ꍤ",
+    "pinyin": "chap",
+    "ipa": "tʂʰa²¹"
+  },
+  {
+    "g": "ꍥ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꍦ",
+    "pinyin": "chuox",
+    "ipa": "tʂʰɔ⁴⁴"
+  },
+  {
+    "g": "ꍧ",
+    "pinyin": "chuo",
+    "ipa": "tʂʰɔ³³"
+  },
+  {
+    "g": "ꍨ",
+    "pinyin": "chuop",
+    "ipa": "tʂʰɔ²¹"
+  },
+  {
+    "g": "ꍩ",
+    "pinyin": "chot",
+    "ipa": "tʂʰo⁵⁵"
+  },
+  {
+    "g": "ꍪ",
+    "pinyin": "chox",
+    "ipa": "tʂʰo⁴⁴"
+  },
+  {
+    "g": "ꍫ",
+    "pinyin": "cho",
+    "ipa": "tʂʰo³³"
+  },
+  {
+    "g": "ꍬ",
+    "pinyin": "chop",
+    "ipa": "tʂʰo²¹"
+  },
+  {
+    "g": "ꍭ",
+    "pinyin": "chet",
+    "ipa": "tʂʰɯ⁵⁵"
+  },
+  {
+    "g": "ꍮ",
+    "pinyin": "chex",
+    "ipa": "tʂʰɯ⁴⁴"
+  },
+  {
+    "g": "ꍯ",
+    "pinyin": "che",
+    "ipa": "tʂʰɯ³³"
+  },
+  {
+    "g": "ꍰ",
+    "pinyin": "chep",
+    "ipa": "tʂʰɯ²¹"
+  },
+  {
+    "g": "ꍱ",
+    "pinyin": "chux",
+    "ipa": "tʂʰu⁴⁴"
+  },
+  {
+    "g": "ꍲ",
+    "pinyin": "chu",
+    "ipa": "tʂʰu³³"
+  },
+  {
+    "g": "ꍳ",
+    "pinyin": "chup",
+    "ipa": "tʂʰu²¹"
+  },
+  {
+    "g": "ꍴ",
+    "pinyin": "churx",
+    "ipa": "tʂʰu̱⁴⁴"
+  },
+  {
+    "g": "ꍵ",
+    "pinyin": "chur",
+    "ipa": "tʂʰu̱³³"
+  },
+  {
+    "g": "ꍶ",
+    "pinyin": "chyt",
+    "ipa": "tʂʰɿ⁵⁵"
+  },
+  {
+    "g": "ꍷ",
+    "pinyin": "chyx",
+    "ipa": "tʂʰɿ⁴⁴"
+  },
+  {
+    "g": "ꍸ",
+    "pinyin": "chy",
+    "ipa": "tʂʰɿ³³"
+  },
+  {
+    "g": "ꍹ",
+    "pinyin": "chyp",
+    "ipa": "tʂʰɿ²¹"
+  },
+  {
+    "g": "ꍺ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꍻ",
+    "pinyin": "chyr",
+    "ipa": "tʂʰɿ̱³³"
+  },
+  {
+    "g": "ꍼ",
+    "pinyin": "rrax",
+    "ipa": "dʐa⁴⁴"
+  },
+  {
+    "g": "ꍽ",
+    "pinyin": "rra",
+    "ipa": "dʐa³³"
+  },
+  {
+    "g": "ꍾ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꍿ",
+    "pinyin": "rruo",
+    "ipa": "dʐɔ³³"
+  },
+  {
+    "g": "ꎀ",
+    "pinyin": "rrot",
+    "ipa": "dʐo⁵⁵"
+  },
+  {
+    "g": "ꎁ",
+    "pinyin": "rrox",
+    "ipa": "dʐo⁴⁴"
+  },
+  {
+    "g": "ꎂ",
+    "pinyin": "rro",
+    "ipa": "dʐo³³"
+  },
+  {
+    "g": "ꎃ",
+    "pinyin": "rrop",
+    "ipa": "dʐo²¹"
+  },
+  {
+    "g": "ꎄ",
+    "pinyin": "rret",
+    "ipa": "dʐɯ⁵⁵"
+  },
+  {
+    "g": "ꎅ",
+    "pinyin": "rrex",
+    "ipa": "dʐɯ⁴⁴"
+  },
+  {
+    "g": "ꎆ",
+    "pinyin": "rre",
+    "ipa": "dʐɯ³³"
+  },
+  {
+    "g": "ꎇ",
+    "pinyin": "rrep",
+    "ipa": "dʐɯ²¹"
+  },
+  {
+    "g": "ꎈ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꎉ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꎊ",
+    "pinyin": "rru",
+    "ipa": "dʐu³³"
+  },
+  {
+    "g": "ꎋ",
+    "pinyin": "rrup",
+    "ipa": "dʐu²¹"
+  },
+  {
+    "g": "ꎌ",
+    "pinyin": "rrurx",
+    "ipa": "dʐu̱⁴⁴"
+  },
+  {
+    "g": "ꎍ",
+    "pinyin": "rrur",
+    "ipa": "dʐu̱³³"
+  },
+  {
+    "g": "ꎎ",
+    "pinyin": "rryt",
+    "ipa": "dʐɿ⁵⁵"
+  },
+  {
+    "g": "ꎏ",
+    "pinyin": "rryx",
+    "ipa": "dʐɿ⁴⁴"
+  },
+  {
+    "g": "ꎐ",
+    "pinyin": "rry",
+    "ipa": "dʐɿ³³"
+  },
+  {
+    "g": "ꎑ",
+    "pinyin": "rryp",
+    "ipa": "dʐɿ²¹"
+  },
+  {
+    "g": "ꎒ",
+    "pinyin": "rryrx",
+    "ipa": "dʐɿ̱⁴⁴"
+  },
+  {
+    "g": "ꎓ",
+    "pinyin": "rryr",
+    "ipa": "dʐɿ̱³³"
+  },
+  {
+    "g": "ꎔ",
+    "pinyin": "nrat",
+    "ipa": "ndʐa⁵⁵"
+  },
+  {
+    "g": "ꎕ",
+    "pinyin": "nrax",
+    "ipa": "ndʐa⁴⁴"
+  },
+  {
+    "g": "ꎖ",
+    "pinyin": "nra",
+    "ipa": "ndʐa³³"
+  },
+  {
+    "g": "ꎗ",
+    "pinyin": "nrap",
+    "ipa": "ndʐa²¹"
+  },
+  {
+    "g": "ꎘ",
+    "pinyin": "nrox",
+    "ipa": "ndʐo⁴⁴"
+  },
+  {
+    "g": "ꎙ",
+    "pinyin": "nro",
+    "ipa": "ndʐo³³"
+  },
+  {
+    "g": "ꎚ",
+    "pinyin": "nrop",
+    "ipa": "ndʐo²¹"
+  },
+  {
+    "g": "ꎛ",
+    "pinyin": "nret",
+    "ipa": "ndʐɯ⁵⁵"
+  },
+  {
+    "g": "ꎜ",
+    "pinyin": "nrex",
+    "ipa": "ndʐɯ⁴⁴"
+  },
+  {
+    "g": "ꎝ",
+    "pinyin": "nre",
+    "ipa": "ndʐɯ³³"
+  },
+  {
+    "g": "ꎞ",
+    "pinyin": "nrep",
+    "ipa": "ndʐɯ²¹"
+  },
+  {
+    "g": "ꎟ",
+    "pinyin": "nrut",
+    "ipa": "ndʐu⁵⁵"
+  },
+  {
+    "g": "ꎠ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꎡ",
+    "pinyin": "nru",
+    "ipa": "ndʐu³³"
+  },
+  {
+    "g": "ꎢ",
+    "pinyin": "nrup",
+    "ipa": "ndʐu²¹"
+  },
+  {
+    "g": "ꎣ",
+    "pinyin": "nrurx",
+    "ipa": "ndʐu̱⁴⁴"
+  },
+  {
+    "g": "ꎤ",
+    "pinyin": "nrur",
+    "ipa": "ndʐu̱³³"
+  },
+  {
+    "g": "ꎥ",
+    "pinyin": "nryt",
+    "ipa": "ndʐɿ⁵⁵"
+  },
+  {
+    "g": "ꎦ",
+    "pinyin": "nryx",
+    "ipa": "ndʐɿ⁴⁴"
+  },
+  {
+    "g": "ꎧ",
+    "pinyin": "nry",
+    "ipa": "ndʐɿ³³"
+  },
+  {
+    "g": "ꎨ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꎩ",
+    "pinyin": "nryrx",
+    "ipa": "ndʐɿ̱⁴⁴"
+  },
+  {
+    "g": "ꎪ",
+    "pinyin": "nryr",
+    "ipa": "ndʐɿ̱³³"
+  },
+  {
+    "g": "ꎫ",
+    "pinyin": "shat",
+    "ipa": "ʂa⁵⁵"
+  },
+  {
+    "g": "ꎬ",
+    "pinyin": "shax",
+    "ipa": "ʂa⁴⁴"
+  },
+  {
+    "g": "ꎭ",
+    "pinyin": "sha",
+    "ipa": "ʂa³³"
+  },
+  {
+    "g": "ꎮ",
+    "pinyin": "shap",
+    "ipa": "ʂa²¹"
+  },
+  {
+    "g": "ꎯ",
+    "pinyin": "shuox",
+    "ipa": "ʂɔ⁴⁴"
+  },
+  {
+    "g": "ꎰ",
+    "pinyin": "shuo",
+    "ipa": "ʂɔ³³"
+  },
+  {
+    "g": "ꎱ",
+    "pinyin": "shuop",
+    "ipa": "ʂɔ²¹"
+  },
+  {
+    "g": "ꎲ",
+    "pinyin": "shot",
+    "ipa": "ʂo⁵⁵"
+  },
+  {
+    "g": "ꎳ",
+    "pinyin": "shox",
+    "ipa": "ʂo⁴⁴"
+  },
+  {
+    "g": "ꎴ",
+    "pinyin": "sho",
+    "ipa": "ʂo³³"
+  },
+  {
+    "g": "ꎵ",
+    "pinyin": "shop",
+    "ipa": "ʂo²¹"
+  },
+  {
+    "g": "ꎶ",
+    "pinyin": "shet",
+    "ipa": "ʂɯ⁵⁵"
+  },
+  {
+    "g": "ꎷ",
+    "pinyin": "shex",
+    "ipa": "ʂɯ⁴⁴"
+  },
+  {
+    "g": "ꎸ",
+    "pinyin": "she",
+    "ipa": "ʂɯ³³"
+  },
+  {
+    "g": "ꎹ",
+    "pinyin": "shep",
+    "ipa": "ʂɯ²¹"
+  },
+  {
+    "g": "ꎺ",
+    "pinyin": "shut",
+    "ipa": "ʂu⁵⁵"
+  },
+  {
+    "g": "ꎻ",
+    "pinyin": "shux",
+    "ipa": "ʂu⁴⁴"
+  },
+  {
+    "g": "ꎼ",
+    "pinyin": "shu",
+    "ipa": "ʂu³³"
+  },
+  {
+    "g": "ꎽ",
+    "pinyin": "shup",
+    "ipa": "ʂu²¹"
+  },
+  {
+    "g": "ꎾ",
+    "pinyin": "shurx",
+    "ipa": "ʂu̱⁴⁴"
+  },
+  {
+    "g": "ꎿ",
+    "pinyin": "shur",
+    "ipa": "ʂu̱³³"
+  },
+  {
+    "g": "ꏀ",
+    "pinyin": "shyt",
+    "ipa": "ʂɿ⁵⁵"
+  },
+  {
+    "g": "ꏁ",
+    "pinyin": "shyx",
+    "ipa": "ʂɿ⁴⁴"
+  },
+  {
+    "g": "ꏂ",
+    "pinyin": "shy",
+    "ipa": "ʂɿ³³"
+  },
+  {
+    "g": "ꏃ",
+    "pinyin": "shyp",
+    "ipa": "ʂɿ²¹"
+  },
+  {
+    "g": "ꏄ",
+    "pinyin": "shyrx",
+    "ipa": "ʂɿ̱⁴⁴"
+  },
+  {
+    "g": "ꏅ",
+    "pinyin": "shyr",
+    "ipa": "ʂɿ̱³³"
+  },
+  {
+    "g": "ꏆ",
+    "pinyin": "rat",
+    "ipa": "ʐa⁵⁵"
+  },
+  {
+    "g": "ꏇ",
+    "pinyin": "rax",
+    "ipa": "ʐa⁴⁴"
+  },
+  {
+    "g": "ꏈ",
+    "pinyin": "ra",
+    "ipa": "ʐa³³"
+  },
+  {
+    "g": "ꏉ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꏊ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꏋ",
+    "pinyin": "ruo",
+    "ipa": "ʐɔ³³"
+  },
+  {
+    "g": "ꏌ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꏍ",
+    "pinyin": "rot",
+    "ipa": "ʐo⁵⁵"
+  },
+  {
+    "g": "ꏎ",
+    "pinyin": "rox",
+    "ipa": "ʐo⁴⁴"
+  },
+  {
+    "g": "ꏏ",
+    "pinyin": "ro",
+    "ipa": "ʐo³³"
+  },
+  {
+    "g": "ꏐ",
+    "pinyin": "rop",
+    "ipa": "ʐo²¹"
+  },
+  {
+    "g": "ꏑ",
+    "pinyin": "rex",
+    "ipa": "ʐɯ⁴⁴"
+  },
+  {
+    "g": "ꏒ",
+    "pinyin": "re",
+    "ipa": "ʐɯ³³"
+  },
+  {
+    "g": "ꏓ",
+    "pinyin": "rep",
+    "ipa": "ʐɯ²¹"
+  },
+  {
+    "g": "ꏔ",
+    "pinyin": "rut",
+    "ipa": "ʐu⁵⁵"
+  },
+  {
+    "g": "ꏕ",
+    "pinyin": "rux",
+    "ipa": "ʐu⁴⁴"
+  },
+  {
+    "g": "ꏖ",
+    "pinyin": "ru",
+    "ipa": "ʐu³³"
+  },
+  {
+    "g": "ꏗ",
+    "pinyin": "rup",
+    "ipa": "ʐu²¹"
+  },
+  {
+    "g": "ꏘ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꏙ",
+    "pinyin": "rur",
+    "ipa": "ʐu̱³³"
+  },
+  {
+    "g": "ꏚ",
+    "pinyin": "ryt",
+    "ipa": "ʐɿ⁵⁵"
+  },
+  {
+    "g": "ꏛ",
+    "pinyin": "ryx",
+    "ipa": "ʐɿ⁴⁴"
+  },
+  {
+    "g": "ꏜ",
+    "pinyin": "ry",
+    "ipa": "ʐɿ³³"
+  },
+  {
+    "g": "ꏝ",
+    "pinyin": "ryp",
+    "ipa": "ʐɿ²¹"
+  },
+  {
+    "g": "ꏞ",
+    "pinyin": "ryrx",
+    "ipa": "ʐɿ̱⁴⁴"
+  },
+  {
+    "g": "ꏟ",
+    "pinyin": "ryr",
+    "ipa": "ʐɿ̱³³"
+  },
+  {
+    "g": "ꏠ",
+    "pinyin": "jit",
+    "ipa": "tɕi⁵⁵"
+  },
+  {
+    "g": "ꏡ",
+    "pinyin": "jix",
+    "ipa": "tɕi⁴⁴"
+  },
+  {
+    "g": "ꏢ",
+    "pinyin": "ji",
+    "ipa": "tɕi³³"
+  },
+  {
+    "g": "ꏣ",
+    "pinyin": "jip",
+    "ipa": "tɕi²¹"
+  },
+  {
+    "g": "ꏤ",
+    "pinyin": "jiet",
+    "ipa": "tɕɛ⁵⁵"
+  },
+  {
+    "g": "ꏥ",
+    "pinyin": "jiex",
+    "ipa": "tɕɛ⁴⁴"
+  },
+  {
+    "g": "ꏦ",
+    "pinyin": "jie",
+    "ipa": "tɕɛ³³"
+  },
+  {
+    "g": "ꏧ",
+    "pinyin": "jiep",
+    "ipa": "tɕɛ²¹"
+  },
+  {
+    "g": "ꏨ",
+    "pinyin": "juot",
+    "ipa": "tɕɔ⁵⁵"
+  },
+  {
+    "g": "ꏩ",
+    "pinyin": "juox",
+    "ipa": "tɕɔ⁴⁴"
+  },
+  {
+    "g": "ꏪ",
+    "pinyin": "juo",
+    "ipa": "tɕɔ³³"
+  },
+  {
+    "g": "ꏫ",
+    "pinyin": "juop",
+    "ipa": "tɕɔ²¹"
+  },
+  {
+    "g": "ꏬ",
+    "pinyin": "jot",
+    "ipa": "tɕo⁵⁵"
+  },
+  {
+    "g": "ꏭ",
+    "pinyin": "jox",
+    "ipa": "tɕo⁴⁴"
+  },
+  {
+    "g": "ꏮ",
+    "pinyin": "jo",
+    "ipa": "tɕo³³"
+  },
+  {
+    "g": "ꏯ",
+    "pinyin": "jop",
+    "ipa": "tɕo²¹"
+  },
+  {
+    "g": "ꏰ",
+    "pinyin": "jut",
+    "ipa": "tɕu⁵⁵"
+  },
+  {
+    "g": "ꏱ",
+    "pinyin": "jux",
+    "ipa": "tɕu⁴⁴"
+  },
+  {
+    "g": "ꏲ",
+    "pinyin": "ju",
+    "ipa": "tɕu³³"
+  },
+  {
+    "g": "ꏳ",
+    "pinyin": "jup",
+    "ipa": "tɕu²¹"
+  },
+  {
+    "g": "ꏴ",
+    "pinyin": "jurx",
+    "ipa": "tɕu̱⁴⁴"
+  },
+  {
+    "g": "ꏵ",
+    "pinyin": "jur",
+    "ipa": "tɕu̱³³"
+  },
+  {
+    "g": "ꏶ",
+    "pinyin": "jyt",
+    "ipa": "tɕɿ⁵⁵"
+  },
+  {
+    "g": "ꏷ",
+    "pinyin": "jyx",
+    "ipa": "tɕɿ⁴⁴"
+  },
+  {
+    "g": "ꏸ",
+    "pinyin": "jy",
+    "ipa": "tɕɿ³³"
+  },
+  {
+    "g": "ꏹ",
+    "pinyin": "jyp",
+    "ipa": "tɕɿ²¹"
+  },
+  {
+    "g": "ꏺ",
+    "pinyin": "jyrx",
+    "ipa": "tɕɿ̱⁴⁴"
+  },
+  {
+    "g": "ꏻ",
+    "pinyin": "jyr",
+    "ipa": "tɕɿ̱³³"
+  },
+  {
+    "g": "ꏼ",
+    "pinyin": "qit",
+    "ipa": "tɕʰi⁵⁵"
+  },
+  {
+    "g": "ꏽ",
+    "pinyin": "qix",
+    "ipa": "tɕʰi⁴⁴"
+  },
+  {
+    "g": "ꏾ",
+    "pinyin": "qi",
+    "ipa": "tɕʰi³³"
+  },
+  {
+    "g": "ꏿ",
+    "pinyin": "qip",
+    "ipa": "tɕʰi²¹"
+  },
+  {
+    "g": "ꐀ",
+    "pinyin": "qiet",
+    "ipa": "tɕʰɛ⁵⁵"
+  },
+  {
+    "g": "ꐁ",
+    "pinyin": "qiex",
+    "ipa": "tɕʰɛ⁴⁴"
+  },
+  {
+    "g": "ꐂ",
+    "pinyin": "qie",
+    "ipa": "tɕʰɛ³³"
+  },
+  {
+    "g": "ꐃ",
+    "pinyin": "qiep",
+    "ipa": "tɕʰɛ²¹"
+  },
+  {
+    "g": "ꐄ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꐅ",
+    "pinyin": "quox",
+    "ipa": "tɕʰɔ⁴⁴"
+  },
+  {
+    "g": "ꐆ",
+    "pinyin": "quo",
+    "ipa": "tɕʰɔ³³"
+  },
+  {
+    "g": "ꐇ",
+    "pinyin": "quop",
+    "ipa": "tɕʰɔ²¹"
+  },
+  {
+    "g": "ꐈ",
+    "pinyin": "qot",
+    "ipa": "tɕʰo⁵⁵"
+  },
+  {
+    "g": "ꐉ",
+    "pinyin": "qox",
+    "ipa": "tɕʰo⁴⁴"
+  },
+  {
+    "g": "ꐊ",
+    "pinyin": "qo",
+    "ipa": "tɕʰo³³"
+  },
+  {
+    "g": "ꐋ",
+    "pinyin": "qop",
+    "ipa": "tɕʰo²¹"
+  },
+  {
+    "g": "ꐌ",
+    "pinyin": "qut",
+    "ipa": "tɕʰu⁵⁵"
+  },
+  {
+    "g": "ꐍ",
+    "pinyin": "qux",
+    "ipa": "tɕʰu⁴⁴"
+  },
+  {
+    "g": "ꐎ",
+    "pinyin": "qu",
+    "ipa": "tɕʰu³³"
+  },
+  {
+    "g": "ꐏ",
+    "pinyin": "qup",
+    "ipa": "tɕʰu²¹"
+  },
+  {
+    "g": "ꐐ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꐑ",
+    "pinyin": "qur",
+    "ipa": "tɕʰu̱³³"
+  },
+  {
+    "g": "ꐒ",
+    "pinyin": "qyt",
+    "ipa": "tɕʰɿ⁵⁵"
+  },
+  {
+    "g": "ꐓ",
+    "pinyin": "qyx",
+    "ipa": "tɕʰɿ⁴⁴"
+  },
+  {
+    "g": "ꐔ",
+    "pinyin": "qy",
+    "ipa": "tɕʰɿ³³"
+  },
+  {
+    "g": "ꐕ",
+    "pinyin": "qyp",
+    "ipa": "tɕʰɿ²¹"
+  },
+  {
+    "g": "ꐖ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꐗ",
+    "pinyin": "qyr",
+    "ipa": "tɕʰɿ̱³³"
+  },
+  {
+    "g": "ꐘ",
+    "pinyin": "jjit",
+    "ipa": "dʑi⁵⁵"
+  },
+  {
+    "g": "ꐙ",
+    "pinyin": "jjix",
+    "ipa": "dʑi⁴⁴"
+  },
+  {
+    "g": "ꐚ",
+    "pinyin": "jji",
+    "ipa": "dʑi³³"
+  },
+  {
+    "g": "ꐛ",
+    "pinyin": "jjip",
+    "ipa": "dʑi²¹"
+  },
+  {
+    "g": "ꐜ",
+    "pinyin": "jjiet",
+    "ipa": "dʑɛ⁵⁵"
+  },
+  {
+    "g": "ꐝ",
+    "pinyin": "jjiex",
+    "ipa": "dʑɛ⁴⁴"
+  },
+  {
+    "g": "ꐞ",
+    "pinyin": "jjie",
+    "ipa": "dʑɛ³³"
+  },
+  {
+    "g": "ꐟ",
+    "pinyin": "jjiep",
+    "ipa": "dʑɛ²¹"
+  },
+  {
+    "g": "ꐠ",
+    "pinyin": "jjuox",
+    "ipa": "dʑɔ⁴⁴"
+  },
+  {
+    "g": "ꐡ",
+    "pinyin": "jjuo",
+    "ipa": "dʑɔ³³"
+  },
+  {
+    "g": "ꐢ",
+    "pinyin": "jjuop",
+    "ipa": "dʑɔ²¹"
+  },
+  {
+    "g": "ꐣ",
+    "pinyin": "jjot",
+    "ipa": "dʑo⁵⁵"
+  },
+  {
+    "g": "ꐤ",
+    "pinyin": "jjox",
+    "ipa": "dʑo⁴⁴"
+  },
+  {
+    "g": "ꐥ",
+    "pinyin": "jjo",
+    "ipa": "dʑo³³"
+  },
+  {
+    "g": "ꐦ",
+    "pinyin": "jjop",
+    "ipa": "dʑo²¹"
+  },
+  {
+    "g": "ꐧ",
+    "pinyin": "jjut",
+    "ipa": "dʑu⁵⁵"
+  },
+  {
+    "g": "ꐨ",
+    "pinyin": "jjux",
+    "ipa": "dʑu⁴⁴"
+  },
+  {
+    "g": "ꐩ",
+    "pinyin": "jju",
+    "ipa": "dʑu³³"
+  },
+  {
+    "g": "ꐪ",
+    "pinyin": "jjup",
+    "ipa": "dʑu²¹"
+  },
+  {
+    "g": "ꐫ",
+    "pinyin": "jjurx",
+    "ipa": "dʑu̱⁴⁴"
+  },
+  {
+    "g": "ꐬ",
+    "pinyin": "jjur",
+    "ipa": "dʑu̱³³"
+  },
+  {
+    "g": "ꐭ",
+    "pinyin": "jjyt",
+    "ipa": "dʑɿ⁵⁵"
+  },
+  {
+    "g": "ꐮ",
+    "pinyin": "jjyx",
+    "ipa": "dʑɿ⁴⁴"
+  },
+  {
+    "g": "ꐯ",
+    "pinyin": "jjy",
+    "ipa": "dʑɿ³³"
+  },
+  {
+    "g": "ꐰ",
+    "pinyin": "jjyp",
+    "ipa": "dʑɿ²¹"
+  },
+  {
+    "g": "ꐱ",
+    "pinyin": "njit",
+    "ipa": "ndʑi⁵⁵"
+  },
+  {
+    "g": "ꐲ",
+    "pinyin": "njix",
+    "ipa": "ndʑi⁴⁴"
+  },
+  {
+    "g": "ꐳ",
+    "pinyin": "nji",
+    "ipa": "ndʑi³³"
+  },
+  {
+    "g": "ꐴ",
+    "pinyin": "njip",
+    "ipa": "ndʑi²¹"
+  },
+  {
+    "g": "ꐵ",
+    "pinyin": "njiet",
+    "ipa": "ndʑɛ⁵⁵"
+  },
+  {
+    "g": "ꐶ",
+    "pinyin": "njiex",
+    "ipa": "ndʑɛ⁴⁴"
+  },
+  {
+    "g": "ꐷ",
+    "pinyin": "njie",
+    "ipa": "ndʑɛ³³"
+  },
+  {
+    "g": "ꐸ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꐹ",
+    "pinyin": "njuox",
+    "ipa": "ndʑɔ⁴⁴"
+  },
+  {
+    "g": "ꐺ",
+    "pinyin": "njuo",
+    "ipa": "ndʑɔ³³"
+  },
+  {
+    "g": "ꐻ",
+    "pinyin": "njot",
+    "ipa": "ndʑo⁵⁵"
+  },
+  {
+    "g": "ꐼ",
+    "pinyin": "njox",
+    "ipa": "ndʑo⁴⁴"
+  },
+  {
+    "g": "ꐽ",
+    "pinyin": "njo",
+    "ipa": "ndʑo³³"
+  },
+  {
+    "g": "ꐾ",
+    "pinyin": "njop",
+    "ipa": "ndʑo²¹"
+  },
+  {
+    "g": "ꐿ",
+    "pinyin": "njux",
+    "ipa": "ndʑu⁴⁴"
+  },
+  {
+    "g": "ꑀ",
+    "pinyin": "nju",
+    "ipa": "ndʑu³³"
+  },
+  {
+    "g": "ꑁ",
+    "pinyin": "njup",
+    "ipa": "ndʑu²¹"
+  },
+  {
+    "g": "ꑂ",
+    "pinyin": "njurx",
+    "ipa": "ndʑu̱⁴⁴"
+  },
+  {
+    "g": "ꑃ",
+    "pinyin": "njur",
+    "ipa": "ndʑu̱³³"
+  },
+  {
+    "g": "ꑄ",
+    "pinyin": "njyt",
+    "ipa": "ndʑɿ⁵⁵"
+  },
+  {
+    "g": "ꑅ",
+    "pinyin": "njyx",
+    "ipa": "ndʑɿ⁴⁴"
+  },
+  {
+    "g": "ꑆ",
+    "pinyin": "njy",
+    "ipa": "ndʑɿ³³"
+  },
+  {
+    "g": "ꑇ",
+    "pinyin": "njyp",
+    "ipa": "ndʑɿ²¹"
+  },
+  {
+    "g": "ꑈ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꑉ",
+    "pinyin": "njyr",
+    "ipa": "ndʑɿ̱³³"
+  },
+  {
+    "g": "ꑊ",
+    "pinyin": "nyit",
+    "ipa": "ȵi⁵⁵"
+  },
+  {
+    "g": "ꑋ",
+    "pinyin": "nyix",
+    "ipa": "ȵi⁴⁴"
+  },
+  {
+    "g": "ꑌ",
+    "pinyin": "nyi",
+    "ipa": "ȵi³³"
+  },
+  {
+    "g": "ꑍ",
+    "pinyin": "nyip",
+    "ipa": "ȵi²¹"
+  },
+  {
+    "g": "ꑎ",
+    "pinyin": "nyiet",
+    "ipa": "ȵɛ⁵⁵"
+  },
+  {
+    "g": "ꑏ",
+    "pinyin": "nyiex",
+    "ipa": "ȵɛ⁴⁴"
+  },
+  {
+    "g": "ꑐ",
+    "pinyin": "nyie",
+    "ipa": "ȵɛ³³"
+  },
+  {
+    "g": "ꑑ",
+    "pinyin": "nyiep",
+    "ipa": "ȵɛ²¹"
+  },
+  {
+    "g": "ꑒ",
+    "pinyin": "nyuox",
+    "ipa": "ȵɔ⁴⁴"
+  },
+  {
+    "g": "ꑓ",
+    "pinyin": "nyuo",
+    "ipa": "ȵɔ³³"
+  },
+  {
+    "g": "ꑔ",
+    "pinyin": "nyuop",
+    "ipa": "ȵɔ²¹"
+  },
+  {
+    "g": "ꑕ",
+    "pinyin": "nyot",
+    "ipa": "ȵo⁵⁵"
+  },
+  {
+    "g": "ꑖ",
+    "pinyin": "nyox",
+    "ipa": "ȵo⁴⁴"
+  },
+  {
+    "g": "ꑗ",
+    "pinyin": "nyo",
+    "ipa": "ȵo³³"
+  },
+  {
+    "g": "ꑘ",
+    "pinyin": "nyop",
+    "ipa": "ȵo²¹"
+  },
+  {
+    "g": "ꑙ",
+    "pinyin": "nyut",
+    "ipa": "ȵu⁵⁵"
+  },
+  {
+    "g": "ꑚ",
+    "pinyin": "nyux",
+    "ipa": "ȵu⁴⁴"
+  },
+  {
+    "g": "ꑛ",
+    "pinyin": "nyu",
+    "ipa": "ȵu³³"
+  },
+  {
+    "g": "ꑜ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꑝ",
+    "pinyin": "xit",
+    "ipa": "ɕi⁵⁵"
+  },
+  {
+    "g": "ꑞ",
+    "pinyin": "xix",
+    "ipa": "ɕi⁴⁴"
+  },
+  {
+    "g": "ꑟ",
+    "pinyin": "xi",
+    "ipa": "ɕi³³"
+  },
+  {
+    "g": "ꑠ",
+    "pinyin": "xip",
+    "ipa": "ɕi²¹"
+  },
+  {
+    "g": "ꑡ",
+    "pinyin": "xiet",
+    "ipa": "ɕɛ⁵⁵"
+  },
+  {
+    "g": "ꑢ",
+    "pinyin": "xiex",
+    "ipa": "ɕɛ⁴⁴"
+  },
+  {
+    "g": "ꑣ",
+    "pinyin": "xie",
+    "ipa": "ɕɛ³³"
+  },
+  {
+    "g": "ꑤ",
+    "pinyin": "xiep",
+    "ipa": "ɕɛ²¹"
+  },
+  {
+    "g": "ꑥ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꑦ",
+    "pinyin": "xuo",
+    "ipa": "ɕɔ³³"
+  },
+  {
+    "g": "ꑧ",
+    "pinyin": "xot",
+    "ipa": "ɕo⁵⁵"
+  },
+  {
+    "g": "ꑨ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꑩ",
+    "pinyin": "xo",
+    "ipa": "ɕo³³"
+  },
+  {
+    "g": "ꑪ",
+    "pinyin": "xop",
+    "ipa": "ɕo²¹"
+  },
+  {
+    "g": "ꑫ",
+    "pinyin": "xyt",
+    "ipa": "ɕɿ⁵⁵"
+  },
+  {
+    "g": "ꑬ",
+    "pinyin": "xyx",
+    "ipa": "ɕɿ⁴⁴"
+  },
+  {
+    "g": "ꑭ",
+    "pinyin": "xy",
+    "ipa": "ɕɿ³³"
+  },
+  {
+    "g": "ꑮ",
+    "pinyin": "xyp",
+    "ipa": "ɕɿ²¹"
+  },
+  {
+    "g": "ꑯ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꑰ",
+    "pinyin": "xyr",
+    "ipa": "ɕɿ̱³³"
+  },
+  {
+    "g": "ꑱ",
+    "pinyin": "yit",
+    "ipa": "ʑi⁵⁵"
+  },
+  {
+    "g": "ꑲ",
+    "pinyin": "yix",
+    "ipa": "ʑi⁴⁴"
+  },
+  {
+    "g": "ꑳ",
+    "pinyin": "yi",
+    "ipa": "ʑi³³"
+  },
+  {
+    "g": "ꑴ",
+    "pinyin": "yip",
+    "ipa": "ʑi²¹"
+  },
+  {
+    "g": "ꑵ",
+    "pinyin": "yiet",
+    "ipa": "ʑɛ⁵⁵"
+  },
+  {
+    "g": "ꑶ",
+    "pinyin": "yiex",
+    "ipa": "ʑɛ⁴⁴"
+  },
+  {
+    "g": "ꑷ",
+    "pinyin": "yie",
+    "ipa": "ʑɛ³³"
+  },
+  {
+    "g": "ꑸ",
+    "pinyin": "yiep",
+    "ipa": "ʑɛ²¹"
+  },
+  {
+    "g": "ꑹ",
+    "pinyin": "yuot",
+    "ipa": "ʑɔ⁵⁵"
+  },
+  {
+    "g": "ꑺ",
+    "pinyin": "yuox",
+    "ipa": "ʑɔ⁴⁴"
+  },
+  {
+    "g": "ꑻ",
+    "pinyin": "yuo",
+    "ipa": "ʑɔ³³"
+  },
+  {
+    "g": "ꑼ",
+    "pinyin": "yuop",
+    "ipa": "ʑɔ²¹"
+  },
+  {
+    "g": "ꑽ",
+    "pinyin": "yot",
+    "ipa": "ʑo⁵⁵"
+  },
+  {
+    "g": "ꑾ",
+    "pinyin": "yox",
+    "ipa": "ʑo⁴⁴"
+  },
+  {
+    "g": "ꑿ",
+    "pinyin": "yo",
+    "ipa": "ʑo³³"
+  },
+  {
+    "g": "ꒀ",
+    "pinyin": "yop",
+    "ipa": "ʑo²¹"
+  },
+  {
+    "g": "ꒁ",
+    "pinyin": null,
+    "ipa": null,
+    "error": "related entry not found"
+  },
+  {
+    "g": "ꒂ",
+    "pinyin": "yux",
+    "ipa": "ʑu⁴⁴"
+  },
+  {
+    "g": "ꒃ",
+    "pinyin": "yu",
+    "ipa": "ʑu³³"
+  },
+  {
+    "g": "ꒄ",
+    "pinyin": "yup",
+    "ipa": "ʑu²¹"
+  },
+  {
+    "g": "ꒅ",
+    "pinyin": "yurx",
+    "ipa": "ʑu̱⁴⁴"
+  },
+  {
+    "g": "ꒆ",
+    "pinyin": "yur",
+    "ipa": "ʑu̱³³"
+  },
+  {
+    "g": "ꒇ",
+    "pinyin": "yyt",
+    "ipa": "ʑɿ⁵⁵"
+  },
+  {
+    "g": "ꒈ",
+    "pinyin": "yyx",
+    "ipa": "ʑɿ⁴⁴"
+  },
+  {
+    "g": "ꒉ",
+    "pinyin": "yy",
+    "ipa": "ʑɿ³³"
+  },
+  {
+    "g": "ꒊ",
+    "pinyin": "yyp",
+    "ipa": "ʑɿ²¹"
+  },
+  {
+    "g": "ꒋ",
+    "pinyin": "yyrx",
+    "ipa": "ʑɿ̱⁴⁴"
+  },
+  {
+    "g": "ꒌ",
+    "pinyin": "yyr",
+    "ipa": "ʑɿ̱³³"
+  }
+]

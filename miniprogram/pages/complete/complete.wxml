@@ -1,13 +1,5 @@
+<snapshot id="mySnapshot">
 <view class="page complete-page">
-  <view class="status-bar-slot" style="height: {{statusBarHeight}}px;"></view>
-
-  <view class="app-header">
-    <view class="header-btn" bindtap="onBack" aria-role="button" aria-label="返回">‹</view>
-    <text class="header-title">{{mode === 'review' ? '回顾完成' : '学习完成'}}</text>
-    <text class="header-side">···</text>
-  </view>
-
-  <scroll-view class="scroll" scroll-y>
     <block wx:if="{{mode === 'review'}}">
       <view class="empty">
         <image src="/assets/mascot/mascot-celebrate.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝完成回顾" />
@@ -65,5 +57,5 @@
       </view>
       <view class="continue-btn" bindtap="continueLearn" hover-class="continue-pressed" aria-role="button">继续学习　›</view>
     </block>
-  </scroll-view>
 </view>
+</snapshot>
