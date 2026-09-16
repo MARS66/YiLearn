@@ -2,7 +2,6 @@ import { WORDS, TOTAL_WORDS, displayText } from '../../data/words'
 import { loadProgress, markWordLearned, recordReview } from '../../utils/progress'
 import { getStatusBarHeight } from '../../utils/system'
 import { playFeedback } from '../../utils/feedback'
-import { getAudioList } from '../../utils/getAudio'
 
 interface CardData {
   g: string

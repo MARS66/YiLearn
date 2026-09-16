@@ -192,37 +192,26 @@
       }
     }
 
-    .poster-quote {
-      width: 58%;
-      margin-top: 38rpx;
-      padding-top: 34rpx;
-      border-top: 2rpx solid #555;
-      font-size: 31rpx;
-      font-weight: 700;
-      line-height: 1.7;
-    }
+ 
 
     .share-seal {
-      position: absolute;
-      z-index: 2;
-      right: 30rpx;
-      bottom: 38rpx;
-      width: 236rpx;
-      padding: 14rpx 12rpx 12rpx;
-      border-radius: 28rpx;
-      background: #fff;
-      color: var(--fg);
-      text-align: center;
-      box-sizing: border-box;
-
+      margin-top: 34rpx;
+      border-top: 2rpx solid #555;
+      display: flex;
+      align-items: center;
+      padding: 30rpx 0;
       .share-code {
-        display: block;
-        width: 190rpx;
-        height: 190rpx;
-        margin: 0 auto 4rpx;
-        border-radius: 18rpx;
+        display: inline-block;
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 50%;
+        margin-right: 24rpx;
       }
-
+      .poster-quote {
+          font-size: 31rpx;
+          font-weight: 700;
+          line-height: 1.7;
+        }
       .share-seal-copy {
         font-size: 18rpx;
         white-space: nowrap;

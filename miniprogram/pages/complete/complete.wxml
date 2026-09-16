@@ -1,5 +1,7 @@
 <snapshot id="mySnapshot">
 <view class="page complete-page">
+    <view class="status-bar-slot" style="height: {{statusBarHeight}}px;"></view>
+
     <block wx:if="{{mode === 'review'}}">
       <view class="empty">
         <image src="/assets/mascot/mascot-celebrate.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝完成回顾" />
@@ -41,19 +43,18 @@
             </view>
           </view>
         </view>
-        <view class="poster-quote">
-          <text>每一个新字，</text>
-          <text>都是文化延续的一步。</text>
-        </view>
-        <view class="share-seal">
-          <image class="share-code" src="/assets/scancode.jpg" mode="aspectFit" aria-label="小程序码" />
-          <text class="share-seal-copy">长按识别，一起识字</text>
-        </view>
+        <view  class="share-seal">
+          <image class="share-code" src="/assets/scancode.jpg" mode="heightFix" aria-label="小程序码" />
+          <view class="poster-quote">
+            <text>你的每一步，</text>
+            <text>都在延续彝文。</text>
+          </view>
+         </view>
       </view>
 
       <view class="actions">
-        <view class="secondary" bindtap="savePoster" hover-class="action-pressed" aria-role="button">保存海报</view>
-        <view class="primary" bindtap="sharePoster" hover-class="tap-state" aria-role="button">分享给朋友</view>
+        <view class="primary" bindtap="savePoster" hover-class="action-pressed" aria-role="button">保存海报</view>
+        <!-- <view class="primary" bindtap="sharePoster" hover-class="tap-state" aria-role="button">分享给朋友</view> -->
       </view>
       <view class="continue-btn" bindtap="continueLearn" hover-class="continue-pressed" aria-role="button">继续学习　›</view>
     </block>

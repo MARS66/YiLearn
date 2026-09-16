@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/profile/profile",
-    "pages/index/index",
-    "pages/learn/learn",
     "pages/dictionary/dictionary",
+    "pages/index/index",
     "pages/complete/complete",
+    "pages/profile/profile",
     "pages/detail/detail",
+    "pages/learn/learn",
     "pages/achievements/achievements",
     "pages/storage-info/storage-info"
   ],
@@ -41,17 +41,13 @@
     ]
   },
   "style": "v2",
+  "componentFramework": "glass-easel",
   "rendererOptions": {
     "skyline": {
       "defaultDisplayBlock": true,
-      "defaultContentBox": true,
-      "tagNameStyleIsolation": "legacy",
-      "disableABTest": true,
-      "sdkVersionBegin": "3.0.0",
-      "sdkVersionEnd": "15.255.255"
+      "defaultContentBox": true
     }
   },
-  "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
 }
