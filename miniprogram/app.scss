@@ -68,19 +68,6 @@ page {
   font-size: 56rpx;
   color: var(--fg);
 }
-.header-title {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 44rpx;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-.header-side {
-  min-width: 88rpx;
-  text-align: right;
-  font-weight: 800;
-  font-size: 28rpx;
-}
 
 /* ---------- 按钮 ---------- */
 .primary {
@@ -148,6 +135,9 @@ page {
 }
 .final {
   color: var(--yellow);
+}
+.tone{
+  color: var(--muted);
 }
 .glyph {
   font-family: var(--font-yi);

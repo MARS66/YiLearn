@@ -9,8 +9,12 @@ interface CardData {
   final: string
   radical: string
   strokes: string
-  group: string
+  phrases: { yi: string; han: string } | null
+  tone: string
+  audioUrl: string
 }
+
+let wordAudioCtx: WechatMiniprogram.InnerAudioContext | null = null
 
 function shuffle<T>(arr: T[]): T[] {
   const a = arr.slice()
@@ -21,6 +25,11 @@ function shuffle<T>(arr: T[]): T[] {
     a[j] = t
   }
   return a
+}
+
+function pickPhrases(phrases: { yi: string; han: string }[] | undefined): { yi: string; han: string } | null {
+  if (!phrases || phrases.length === 0) return null
+  return shuffle(phrases)[0] ?? null
 }
 
 let sessionWords: number[] = []
@@ -34,7 +43,7 @@ Page({
     progress: '1 / 10',
     percent: 0,
     bars: [] as boolean[],
-    card: { g: '', initial: '', final: '', radical: '', strokes: '', group: '' } as CardData,
+    card: { g: '', initial: '', final: '', radical: '', strokes: '', phrases: null, tone: '', audioUrl: '' } as CardData,
     revealed: false,
     prevDisabled: true,
     nextText: '下一个',
@@ -120,7 +129,9 @@ Page({
         final: w.final,
         radical: displayText(w.radical),
         strokes: displayText(w.strokes),
-        group: displayText(w.group),
+        phrases: pickPhrases(w.phrases),
+        tone: w.tone,
+        audioUrl: w.audioUrl,
       },
     })
 
@@ -153,6 +164,21 @@ Page({
       this.setData({ revealed: true })
       // 资料揭晓反馈（遵循声音/振动设置）
       playFeedback()
+    }
+  },
+  onPlayAudio() {
+    const url = this.data.card.audioUrl
+    if (!url) return
+    try {
+      if (!wordAudioCtx) {
+        wordAudioCtx = wx.createInnerAudioContext()
+        wordAudioCtx.obeyMuteSwitch = false
+      }
+      wordAudioCtx.stop()
+      wordAudioCtx.src = url
+      wordAudioCtx.play()
+    } catch (e) {
+      /* 播放失败时忽略 */
     }
   },
   onBack() {

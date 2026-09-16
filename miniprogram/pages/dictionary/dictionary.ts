@@ -1,172 +1,112 @@
-import { WORDS } from '../../data/words'
-import { loadProgress } from '../../utils/progress'
-import { getStatusBarHeight } from '../../utils/system'
+import { WORDS, TOTAL_WORDS, displayText } from '../../data/words'
+import { YI_INITIALS,YI_FINALS,YI_RADICAL } from '../../data/yidict-pinyin'
 
-interface GlyphItem {
+interface Option {
+  value: string
+  label: string
+  selected: boolean
+}
+
+interface ResultItem {
   index: number
-  py: string
   g: string
-  learned: boolean
+  py: string
+  initial: string
+  final: string
+  radicalText: string
+  strokesText: string
 }
-
-interface Group {
-  letter: string
-  items: GlyphItem[]
-}
-
-// 凉山规范彝文：44 声母（含零声母）、10 韵母，与 words.ts 拼音拆分保持一致
-const INITIALS = [
-  '', 'b', 'p', 'bb', 'nb', 'hm', 'm', 'f', 'v',
-  'd', 't', 'dd', 'nd', 'hn', 'n', 'hl', 'l',
-  'g', 'k', 'gg', 'mg', 'hx', 'ng', 'h', 'w',
-  'z', 'c', 'zz', 'nz', 's', 'ss',
-  'zh', 'ch', 'rr', 'nr', 'sh', 'r',
-  'j', 'q', 'jj', 'nj', 'ny', 'x', 'y',
-]
-const FINALS = ['i', 'ie', 'a', 'uo', 'o', 'e', 'u', 'ur', 'y', 'yr']
-const TONE_CHARS = ['t', 'x', 'p']
-
-const EMPTY_LABEL = '-'
-const ZERO_INITIAL_LABEL = '无'
-
-/** 从完整拼音拆出声母与基本韵母（韵母不含声调字母） */
-function splitPinyin(py: string): { sheng: string; yun: string } {
-  for (const ini of INITIALS) {
-    if (!ini) continue
-    if (!py.startsWith(ini)) continue
-    const rest = py.slice(ini.length)
-    const isFinal = (r: string) => FINALS.some(f => r === f || r === f + 't' || r === f + 'x' || r === f + 'p')
-    if (isFinal(rest)) {
-      const yun = TONE_CHARS.some(t => rest.endsWith(t)) ? rest.slice(0, -1) : rest
-      return { sheng: ini, yun }
-    }
-  }
-  // 零声母：整段为韵母（含声调），去掉声调字母即为基本韵母
-  let rest = py
-  if (TONE_CHARS.some(t => rest.endsWith(t))) rest = rest.slice(0, -1)
-  return { sheng: '', yun: rest }
-}
-
-/** 按当前筛选 tab 返回某字所属的分组标签 */
-function groupKeyOf(tab: string, py: string, radical: string, strokes: number): string {
-  switch (tab) {
-    case '声母': {
-      const { sheng } = splitPinyin(py)
-      return sheng || ZERO_INITIAL_LABEL
-    }
-    case '韵母':
-      return splitPinyin(py).yun
-    case '部首':
-      return radical || EMPTY_LABEL
-    case '笔画':
-      return strokes > 0 ? String(strokes) : EMPTY_LABEL
-    default:
-      return py.charAt(0)
-  }
+type CondField = 'initial' | 'final' | 'radical' | 'strokes'
+function selectedSet(options: Option[]): Set<string> {
+  return new Set(options.filter(o => o.selected).map(o => o.value))
 }
 
 Page({
   data: {
-    statusBarHeight: 20,
-    tabs: ['拼音', '声母', '韵母', '部首', '笔画'] as string[],
-    activeTab: '拼音',
-    indexOptions: [] as string[],
-    activeIndex: '全部',
-    query: '',
-    groups: [] as Group[],
-    empty: false,
+    totalWords: TOTAL_WORDS,
+    exactQuery: '',
+    initialOptions: YI_INITIALS.map(i => ({ value: i, label: i, selected: false })) as Option[],
+    finalOptions: YI_FINALS.map(i => ({ value: i, label: i, selected: false })) as Option[],
+    radicalOptions: YI_RADICAL.map(i => ({ value: i, label: i, selected: false })) as Option[],
+    strokeOptions: [1,2,3,4,5,6,7,8].map(i => ({ value: i.toString(), label: i.toString()+"画", selected: false })) as Option[],
+    resultList: [] as ResultItem[],
+    hasCondition: false,
   },
   onLoad() {
-    this.setData({ statusBarHeight: getStatusBarHeight() })
+    this.refresh()
   },
   onShow() {
-    this.rebuild()
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().setData({ selected: 1 })
     }
   },
-  buildOptions(tab: string): string[] {
-    const keys: string[] = []
-    const seen: Record<string, boolean> = {}
-    WORDS.forEach(w => {
-      const key = groupKeyOf(tab, w.py, w.radical, w.strokes)
-      if (!seen[key]) {
-        seen[key] = true
-        keys.push(key)
-      }
-    })
+  /** 按精确查询 + 已选条件重新计算结果列表 */
+  refresh() {
+    const { exactQuery, initialOptions, finalOptions, radicalOptions, strokeOptions } = this.data
+    const q = exactQuery.trim().toLowerCase()
+    const selInitial = selectedSet(initialOptions)
+    const selFinal = selectedSet(finalOptions)
+    const selRadical = selectedSet(radicalOptions)
+    const selStroke = selectedSet(strokeOptions)
+    const hasCondition =
+      q.length > 0 || selInitial.size > 0 || selFinal.size > 0 || selRadical.size > 0 || selStroke.size > 0
 
-    let list: string[]
-    if (tab === '声母') {
-      list = INITIALS.map(i => i || ZERO_INITIAL_LABEL).filter(k => seen[k])
-    } else if (tab === '韵母') {
-      list = FINALS.filter(f => seen[f])
-    } else if (tab === '笔画') {
-      list = keys.sort((a, b) => {
-        if (a === EMPTY_LABEL) return 1
-        if (b === EMPTY_LABEL) return -1
-        return Number(a) - Number(b)
+    const list: ResultItem[] = []
+    WORDS.forEach((w, i) => {
+      if (q && w.g !== q && w.py !== q) return
+      if (selInitial.size > 0 && !selInitial.has(String(w.initial))) return
+      if (selFinal.size > 0 && !selFinal.has(String(w.final))) return
+      if (selRadical.size > 0 && !selRadical.has(String(w.radical))) return
+      if (selStroke.size > 0 && !selStroke.has(String(w.strokes))) return
+      list.push({
+        index: i,
+        g: w.g,
+        py: w.py,
+        initial: w.initial,
+        final: w.final,
+        radicalText: displayText(w.radical),
+        strokesText: displayText(w.strokes),
       })
-    } else {
-      list = keys
-    }
-    return ['全部'].concat(list)
-  },
-  rebuild() {
-    const p = loadProgress()
-    const learned = p.learnedWords
-    const query = (this.data.query || '').trim()
-    const tab = this.data.activeTab
-
-    const indexOptions = this.buildOptions(tab)
-    const activeIndex = indexOptions.indexOf(this.data.activeIndex) >= 0 ? this.data.activeIndex : '全部'
-
-    const filtered = WORDS.filter(w => {
-      const matchQuery = !query || w.g.indexOf(query) >= 0 || w.py.indexOf(query) >= 0
-      const matchIndex = activeIndex === '全部' || groupKeyOf(tab, w.py, w.radical, w.strokes) === activeIndex
-      return matchQuery && matchIndex
     })
 
-    const groupMap: Record<string, GlyphItem[]> = {}
-    for (let i = 0; i < WORDS.length; i++) {
-      const w = WORDS[i]
-      const key = groupKeyOf(tab, w.py, w.radical, w.strokes)
-      if (activeIndex !== '全部' && key !== activeIndex) continue
-      if (query && w.g.indexOf(query) < 0 && w.py.indexOf(query) < 0) continue
-      if (!groupMap[key]) groupMap[key] = []
-      groupMap[key].push({ index: i, py: w.py, g: w.g, learned: !!learned[String(i)] })
+    this.setData({ resultList: list, hasCondition })
+  },
+  onExactInput(e: { detail: { value: string } }) {
+    this.setData({ exactQuery: e.detail.value })
+  },
+  onExactSearch(e: { detail: { value: string } }) {
+    this.setData({ exactQuery: e.detail.value })
+    this.refresh()
+  },
+  selectOption(options: Option[], value: string): Option[] {
+    return options.map(o => ({ ...o, selected: o.value === value ? !o.selected : false }))
+  },
+  onChipTap(e: { currentTarget: { dataset: { cat: string; value: string } } }) {
+    const cat = e.currentTarget.dataset.cat as CondField
+    const value = String(e.currentTarget.dataset.value)
+    if (cat === 'initial') {
+      this.setData({ initialOptions: this.selectOption(this.data.initialOptions, value) })
+    } else if (cat === 'final') {
+      this.setData({ finalOptions: this.selectOption(this.data.finalOptions, value) })
+    } else if (cat === 'radical') {
+      this.setData({ radicalOptions: this.selectOption(this.data.radicalOptions, value) })
+    } else if (cat === 'strokes') {
+      this.setData({ strokeOptions: this.selectOption(this.data.strokeOptions, value) })
     }
-
-    const groups = indexOptions
-      .filter(opt => opt !== '全部')
-      .map(letter => ({ letter, items: groupMap[letter] || [] }))
-      .filter(g => g.items.length > 0)
-
+    this.refresh()
+  },
+  resetConditions() {
+    const clear = (options: Option[]) => options.map(o => ({ ...o, selected: false }))
     this.setData({
-      indexOptions,
-      activeIndex,
-      groups,
-      empty: filtered.length === 0,
+      exactQuery: '',
+      initialOptions: clear(this.data.initialOptions),
+      finalOptions: clear(this.data.finalOptions),
+      radicalOptions: clear(this.data.radicalOptions),
+      strokeOptions: clear(this.data.strokeOptions),
     })
+    this.refresh()
   },
-  onSearchInput(e: WechatMiniprogram.Input) {
-    this.setData({ query: e.detail.value })
-    this.rebuild()
-  },
-  onTabTap(e: WechatMiniprogram.TouchEvent) {
-    this.setData({ activeTab: e.currentTarget.dataset.tab, activeIndex: '全部' })
-    this.rebuild()
-  },
-  onIndexTap(e: WechatMiniprogram.TouchEvent) {
-    this.setData({ activeIndex: e.currentTarget.dataset.index })
-    this.rebuild()
-  },
-  onWordTap(e: WechatMiniprogram.TouchEvent) {
-    const index = e.currentTarget.dataset.index
-    wx.navigateTo({ url: '/pages/detail/detail?index=' + index })
-  },
-  clearFilter() {
-    this.setData({ query: '', activeIndex: '全部' })
-    this.rebuild()
+  goDetail(e: { currentTarget: { dataset: { index: number } } }) {
+    wx.navigateTo({ url: `/pages/detail/detail?index=${e.currentTarget.dataset.index}` })
   },
 })

@@ -3,8 +3,8 @@
     <view class="hero">
        <view class="encourage hero-heading">
         <text class="hero-date">{{dateText}}</text>
-        <text class="hero-h2">你好，</text>
-        <text class="hero-h2">今天也来学一点</text>
+        <text class="hero-h2">{{greeting}}</text>
+        <text class="hero-h2">{{encouragement}}</text>
       </view>
       <view class="streak-chip"><text class="iconfont streak-icon icon-daka-copy"></text> 连续学习 <text class="streak-num">{{streak}}</text> 天</view>
       <image class="hero-mascot" src="/assets/mascot/mascot-leaning-calm.png" mode="widthFix" aria-role="img" aria-label="小火种安静地陪伴学习" />
@@ -24,6 +24,7 @@
           <view class="pinyin">
             <text class="initial">{{nextWord.initial}}</text>
             <text wx:if="{{nextWord.final}}" class="final">{{nextWord.final}}</text>
+            <text wx:if="{{nextWord.tone}}" class="tone">{{nextWord.tone}}</text>
           </view>
           <view class="glyph">{{nextWord.g}}</view> 
         </view>
