@@ -238,19 +238,19 @@ interface AchievementDef {
 
 /** 识字类成就 */
 const LITERACY_ACHIEVEMENTS: AchievementDef[] = [
-  { id: 'first', name: '初识彝文', desc: '学习第一个彝文字', image: '/assets/a1.png' },
-  { id: 'under100', name: '小有积累', desc: '累计学习不足 100 字', image: '/assets/a2.png' },
-  { id: 'hundred', name: '百字同行', desc: '累计学习 100～581 字', image: '/assets/a3.png' },
-  { id: 'half', name: '半程同行', desc: '累计学习 582～999 字', image: '/assets/a4.png' },
-  { id: 'inheritor', name: '彝文传承者', desc: '累计学习 1000 字以上', image: '/assets/a5.png' },
+  { id: 'first', name: '初识彝文', desc: '学习第一个彝文字', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/d4ec0d8798a165abb6364ad677bb817a.png' },
+  { id: 'under100', name: '小有积累', desc: '累计学习不足 100 字', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/e752693a933105211b5c5e4b5440ec94.png' },
+  { id: 'hundred', name: '百字同行', desc: '累计学习 100～581 字', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/6f2d70fadb8e4d512f403d7d081de9df.png' },
+  { id: 'half', name: '半程同行', desc: '累计学习 582～999 字', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/5fd2b1d5a3d475a55270a53c56009831.png' },
+  { id: 'inheritor', name: '彝文传承者', desc: '累计学习 1000 字以上', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/0f4c934d500b5f9e4fe1a5a3dba0ff4b.png' },
 ]
 
 /** 连续学习类成就 */
 const STREAK_ACHIEVEMENTS: AchievementDef[] = [
-  { id: 'streak3', name: '连续学习 3 天', desc: '连续学习达到 3 天', image: '/assets/3.png' },
-  { id: 'streak7', name: '连续学习 7 天', desc: '连续学习达到 7 天', image: '/assets/7.png' },
-  { id: 'streak30', name: '连续学习 30 天', desc: '连续学习达到 30 天', image: '/assets/30.png' },
-  { id: 'streak100', name: '连续学习 100 天', desc: '连续学习达到 100 天', image: '/assets/100.png' },
+  { id: 'streak3', name: '连续学习 3 天', desc: '连续学习达到 3 天', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/1282dc1111b4e32a9aa3d47ad2ef2432.png' },
+  { id: 'streak7', name: '连续学习 7 天', desc: '连续学习达到 7 天', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/c33dc084e42d74d56b4216f029fa2c36.png' },
+  { id: 'streak30', name: '连续学习 30 天', desc: '连续学习达到 30 天', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/f01185e6a52ac163131d36143cccd2f7.png' },
+  { id: 'streak100', name: '连续学习 100 天', desc: '连续学习达到 100 天', image: 'https://bee-reg-ab.imagency.cn/mr/6209/26/0c9d490882d729fcae5113a59c470152.png' },
 ]
 
 function evaluateAchievements(defs: AchievementDef[], p: UserProgress): Achievement[] {

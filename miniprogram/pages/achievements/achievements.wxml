@@ -1,7 +1,7 @@
 <view class="page achievements-page">
   <view class="scroll" >
     <view class="achievements-empty">
-      <image class="empty-img" src="/assets/mascot/mascot-celebrate.png" mode="heightFix" />
+      <image class="empty-img" src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="heightFix" />
       <view class="encourage empty-title">每一步都值得记住</view>
     </view>
     <view class="panel achievement-row">

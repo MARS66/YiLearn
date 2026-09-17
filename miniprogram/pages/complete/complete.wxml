@@ -4,7 +4,7 @@
 
     <block wx:if="{{mode === 'review'}}">
       <view class="empty">
-        <image src="/assets/mascot/mascot-celebrate.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝完成回顾" />
+        <image src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝完成回顾" />
         <view class="empty-title">已回顾 {{reviewCount}} 个彝文字</view>
         <view class="empty-copy">没有分数，也不用判断对错。想再看看时，随时回来。</view>
       </view>
@@ -17,7 +17,7 @@
     <block wx:else>
       <view class="poster">
         <view class="poster-brand">
-          <image class="poster-logo" src="/assets/logo.png" mode="aspectFit" aria-hidden="true" />
+          <image class="poster-logo" src="https://bee-reg-ab.imagency.cn/mr/6209/26/6e1a3757e4c132864cb01331f80857b0.png" mode="aspectFit" aria-hidden="true" />
           <view class="poster-brand-copy">
             <text class="poster-brand-name">彝学 YiLearn</text>
             <text class="poster-brand-small">每天认识 10 个彝文字</text>
@@ -28,7 +28,7 @@
           <text class="poster-title-line">今天又认识了</text>
           <view class="poster-result"><text class="poster-big">{{newCount}}</text><text>个彝文字</text></view>
         </view>
-        <image class="poster-img" src="/assets/mascot/mascot-celebrate.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝今天的学习" />
+        <image class="poster-img" src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝今天的学习" />
         <view class="poster-stats">
           <view class="poster-stat"><text class="poster-stat-value">{{streak}} 天</text><text class="poster-stat-label">连续学习</text></view>
           <view class="poster-stat"><text class="poster-stat-value">{{totalLearned}}</text><text class="poster-stat-label">累计识字</text></view>

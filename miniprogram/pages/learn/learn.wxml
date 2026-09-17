@@ -3,7 +3,7 @@
   <block wx:if="{{empty}}">
     <scroll-view class="learn-scroll" scroll-y>
       <view class="empty">
-        <image src="/assets/mascot/mascot-peek-curious.png" mode="widthFix" aria-role="img" aria-label="小火种邀请你先认识第一个字" />
+        <image src="https://bee-reg-ab.imagency.cn/mr/6209/26/f3aae776781130467ebdb59e37032ceb.png" mode="widthFix" aria-role="img" aria-label="小火种邀请你先认识第一个字" />
         <view class="empty-title">还没有可回顾的文字</view>
         <view class="empty-copy">先认识第一个字，再来回顾吧。</view>
         <view class="primary" bindtap="goFirstLearn" hover-class="tap-state" aria-role="button">先认识第一个字</view>
@@ -52,14 +52,17 @@
               <text class="fact-value" wx:if="{{card.tone===''}}">中平调</text>
             </view>
           </view>
-          <view class="facts facts-group">
-            <view class="fact">
+          <view class="facts-group">
+            <view class="grop">
               <text class="fact-label">常用词组</text>
-              <view class="fact-value" wx:if="{{!card.phrases}}">-</view>
-              <view class="fact-value fact-phrase" wx:else>
+              <view class="fact-value fact-phrase">
                 <view>
-                  <view class="phrase-yi">{{card.phrases.yi}}</view>
-                  <view class="phrase-han">{{card.phrases.han}}</view>
+                  <view class="phrase-yi" wx:if="{{!card.phrases.yi}}">暂无词组</view>
+                  <view class="phrase-yi">{{card.phrases.yi}} {{card.phrases.han}}</view>
+                </view>
+                <view class="btn">
+                   <view class="play-icon iconfont icon-shengyin" catchtap="onPlayPhraseAudio" aria-role="button" aria-label="播放彝语词组"></view>
+                   <view class="refresh-icon iconfont icon-shuaxin" catchtap="onRefreshPhrase" aria-role="button" aria-label="换一组词组"></view>
                 </view>
               </view>
             </view>

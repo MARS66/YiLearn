@@ -5,7 +5,7 @@
       <view class="profile-h2">都在延续彝文</view>
       <image 
       class="profile-mascot" 
-      src="/assets/mascot/mascot-fire-seed.png"
+      src="https://bee-reg-ab.imagency.cn/mr/6209/26/4eca71a78854dc92d13fc7116b1d66b6.png"
        mode="heightFix" aria-role="img" aria-label="小火种为学习进度加油" />
     </view>
 

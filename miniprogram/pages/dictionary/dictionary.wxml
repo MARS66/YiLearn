@@ -4,7 +4,7 @@
       <view class="header-title">彝文字典</view>
       <view class="header-side">共 {{totalWords}} 字</view>
     </view>
-     <image class="header-mascot" src="/assets/mascot/mascot-reading.png" mode="heightFix" aria-role="img" aria-label="小火种安静地陪伴学习" />
+     <image class="header-mascot" src="https://bee-reg-ab.imagency.cn/mr/6209/26/c8d683c8a4ce8ab57710e69c4cde3072.png" mode="heightFix" aria-role="img" aria-label="小火种安静地陪伴学习" />
   </view>
 
   <view class="scroll">
@@ -119,7 +119,7 @@
       </view>
 
       <view wx:else class="empty result-empty">
-        <image class="empty-icon" src="/assets/mascot/mascot-welcome.png" mode="heightFix" aria-role="img" aria-label="未找到匹配结果" />
+        <image class="empty-icon" src="https://bee-reg-ab.imagency.cn/mr/6209/26/b3c1edaf0379b84c8151b493e7a774c5.png" mode="heightFix" aria-role="img" aria-label="未找到匹配结果" />
         <text class="empty-copy">{{!hasCondition?'快来查询试试啊':'换一个条件试试吧'}}</text>
       </view>
     </view>

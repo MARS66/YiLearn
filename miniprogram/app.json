@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/dictionary/dictionary",
     "pages/index/index",
+    "pages/achievements/achievements",
+    "pages/learn/learn",
+    "pages/dictionary/dictionary",
     "pages/complete/complete",
     "pages/profile/profile",
     "pages/detail/detail",
-    "pages/learn/learn",
-    "pages/achievements/achievements",
     "pages/storage-info/storage-info"
   ],
   "window": {

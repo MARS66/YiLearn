@@ -63,7 +63,7 @@ Page({
       latestStreak: { 
           name: latestStreak ? latestStreak.name : '连续学习 3 天',
           unlocked: !!latestStreak, 
-          image: latestStreak ? latestStreak.image : '/assets/3.png'
+          image: latestStreak ? latestStreak.image : 'https://bee-reg-ab.imagency.cn/mr/6209/26/1282dc1111b4e32a9aa3d47ad2ef2432.png'
         },
       dateText: `${now.getMonth() + 1}月${now.getDate()}日`,
         greeting: `${timeGreeting(now)}，`,

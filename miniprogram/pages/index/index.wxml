@@ -7,7 +7,7 @@
         <text class="hero-h2">{{encouragement}}</text>
       </view>
       <view class="streak-chip"><text class="iconfont streak-icon icon-daka-copy"></text> 连续学习 <text class="streak-num">{{streak}}</text> 天</view>
-      <image class="hero-mascot" src="/assets/mascot/mascot-leaning-calm.png" mode="widthFix" aria-role="img" aria-label="小火种安静地陪伴学习" />
+      <image class="hero-mascot" src="https://bee-reg-ab.imagency.cn/mr/6209/26/b2e77f2f36e9a2fff7cdbd4ea4191b63.png" mode="widthFix" aria-role="img" aria-label="小火种安静地陪伴学习" />
     </view>
 
     <view class="study-card">
