@@ -1,20 +1,22 @@
-<view class="page achievements-page">
-  <view class="scroll" >
-    <view class="achievements-empty">
-      <image class="empty-img" src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="heightFix" />
-      <view class="encourage empty-title">每一步都值得记住</view>
-    </view>
-    <view class="panel achievement-row">
-      <view wx:for="{{literacyAchievements}}" wx:key="id" class="badge">
-        <image class="badge-img {{item.unlocked ? '' : 'locked'}}" src="{{item.image}}" mode="heightFix" />
-        <text class="badge-name">{{item.name}}</text>
-        <text class="badge-desc">{{item.desc}}</text>
+<custom-layout>
+  <view class="page achievements-page">
+    <view class="scroll" >
+      <view class="achievements-empty">
+        <image class="empty-img" src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="heightFix" />
+        <view class="encourage empty-title">每一步都值得记住</view>
       </view>
-      <view wx:for="{{streakAchievements}}" wx:key="id" class="badge">
-        <image class="badge-img {{item.unlocked ? '' : 'locked'}}" src="{{item.image}}" mode="heightFix" />
-        <text class="badge-name">{{item.name}}</text>
-        <text class="badge-desc">{{item.desc}}</text>
+      <view class="panel achievement-row">
+        <view wx:for="{{literacyAchievements}}" wx:key="id" class="badge">
+          <image class="badge-img {{item.unlocked ? '' : 'locked'}}" src="{{item.image}}" mode="heightFix" />
+          <text class="badge-name">{{item.name}}</text>
+          <text class="badge-desc">{{item.desc}}</text>
+        </view>
+        <view wx:for="{{streakAchievements}}" wx:key="id" class="badge">
+          <image class="badge-img {{item.unlocked ? '' : 'locked'}}" src="{{item.image}}" mode="heightFix" />
+          <text class="badge-name">{{item.name}}</text>
+          <text class="badge-desc">{{item.desc}}</text>
+        </view>
       </view>
     </view>
   </view>
-</view>
+</custom-layout>

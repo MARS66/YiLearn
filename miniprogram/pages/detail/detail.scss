@@ -1,37 +1,153 @@
-/* 单字详情（detail） */
 .detail-page {
-  height: 100vh;
+  padding: 30rpx 36rpx 40rpx;
+  box-sizing: border-box;
+  .detail-seq {
+    margin: 0 8rpx 24rpx;
+    font-size: 30rpx;
+    font-weight: 600;
+  }
 }
 
-.detail-card {
-  text-align: center;
-  padding: 52rpx;
-  border-radius: var(--r-lg);
-  background: var(--ink);
-  color: #ffffff;
-  box-sizing: border-box;
-}
-.detail-card .pinyin {
-  font-size: 56rpx;
-}
-.detail-card-glyph {
-  font-size: 300rpx;
-  margin: 12rpx 0;
-}
-.detail-status {
-  display: inline-flex;
-  align-items: center;
-  padding: 12rpx 24rpx;
-  border-radius: 999rpx;
-  background: var(--soft-red);
-  color: var(--red);
-  font-size: 26rpx;
-  font-weight: 800;
-}
-.detail-note {
-  display: block;
-  color: var(--muted);
-  line-height: 1.7;
-  margin-top: 24rpx;
-  font-size: 26rpx;
-}
+.memory-card {
+        position: relative;
+        overflow: hidden;
+        padding: 50rpx 36rpx 48rpx;
+        border: 2rpx solid #514f4a;
+        border-radius: 56rpx;
+        background: radial-gradient(circle at 80% 18%, #2c2b27 0, transparent 40%), var(--ink);
+        box-shadow: var(--shadow);
+        color: #fff;
+        box-sizing: border-box;
+        .memory-card-hidden{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background: radial-gradient(circle at 80% 18%, #2c2b27 0, transparent 40%), var(--ink);
+          align-items: center;
+        }
+        .play-audio {
+          position: absolute;
+          top: 80rpx;
+          right:0rpx;
+          width: 80rpx;
+          height: 80rpx;
+          text-align: center;
+          line-height: 80rpx;
+          font-weight: 900;
+          background: var(--red);
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40rpx;
+          z-index: 10;
+          color: var(--white);
+          cursor: pointer;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          height: 28rpx;
+          background: repeating-linear-gradient(55deg, rgba(102,35,26,.9) 0 18rpx, rgba(25,24,22,.2) 18rpx 36rpx);
+        }
+
+        .memory-pinyin {
+          font-size: 58rpx;
+          line-height: 1;
+        }
+
+        .memory-glyph {
+          margin: 20rpx 0 40rpx;
+          font-size: 300rpx;
+          line-height: 300rpx;
+        }
+
+        .memory-bars {
+          margin: 0 0 44rpx;
+
+          view.on {
+            background: linear-gradient(90deg, #e13c2f, #ff684f);
+          }
+        }
+
+        .facts {
+          .fact {
+            min-height: 128rpx;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .fact-label {
+              font-size: 28rpx;
+            }
+
+            .fact-value {
+              margin-top: 12rpx;
+              font-size: 38rpx;
+              font-weight: 800;
+            }
+          }
+        }
+
+        .facts-group {
+          border-top:  1rpx solid #595959;
+          padding: 10rpx 0;
+          .grop {
+            display: block;
+            padding: 10rpx 20rpx;
+            width: 100%;
+            box-sizing: border-box;
+            .fact-label{
+              text-align: left;
+            }
+            .fact-value {
+              text-align: left;
+              font-size: 40rpx;
+              font-weight: normal;
+            }
+            .fact-phrase {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              justify-content: space-between;
+              .phrase-yi {
+                font-size: 40rpx;
+                font-weight: 800;
+              }
+              .phrase-han {
+                font-size: 30rpx;
+                color: rgba(255, 255, 255, .72);
+              }
+              .btn{
+                display: flex;
+                align-items: center;
+                gap: 40rpx;
+                .iconfont{
+                  height: 60rpx;
+                  width: 60rpx;
+                  text-align: center;
+                  line-height: 60rpx;
+                  border-radius: 50%;
+                  background: #595959;
+                  font-size: 40rpx;
+                  color: var(--white);
+                }
+              }
+            }
+            .fact-phrase + .fact-phrase {
+              margin-top: 24rpx;
+            }
+          }
+        }
+
+        .tap-hint {
+          color: #d5d1c9;
+          font-size: 28rpx;
+          text-align: center;
+        }
+      }

@@ -1,80 +1,86 @@
-<view class="page learn-page">
-  
-  <block wx:if="{{empty}}">
-    <scroll-view class="learn-scroll" scroll-y>
-      <view class="empty">
-        <image src="https://bee-reg-ab.imagency.cn/mr/6209/26/f3aae776781130467ebdb59e37032ceb.png" mode="widthFix" aria-role="img" aria-label="小火种邀请你先认识第一个字" />
-        <view class="empty-title">还没有可回顾的文字</view>
-        <view class="empty-copy">先认识第一个字，再来回顾吧。</view>
-        <view class="primary" bindtap="goFirstLearn" hover-class="tap-state" aria-role="button">先认识第一个字</view>
-      </view>
-    </scroll-view>
-  </block>
+<custom-layout title="学习中心">
+  <view class="page learn-page">
+    
+    <block wx:if="{{empty}}">
+      <scroll-view class="learn-scroll" scroll-y>
+        <view class="empty">
+          <image src="https://bee-reg-ab.imagency.cn/mr/6209/26/f3aae776781130467ebdb59e37032ceb.png" mode="widthFix" aria-role="img" aria-label="小火种邀请你先认识第一个字" />
+          <view class="empty-title">还没有可回顾的文字</view>
+          <view class="empty-copy">先认识第一个字，再来回顾吧。</view>
+          <view class="primary" bindtap="goFirstLearn" hover-class="tap-state" aria-role="button">先认识第一个字</view>
+        </view>
+      </scroll-view>
+    </block>
 
-  <block wx:else>
-    <view class="learn-progress" aria-label="学习进度 {{percent}}%">
-      <view class="progress-bar memory-bars">
-        <view wx:for="{{bars}}" wx:key="index" class="{{item ? 'on' : ''}}"></view>
+    <block wx:else>
+      <view class="learn-progress" aria-label="学习进度 {{percent}}%">
+        <view class="progress-bar memory-bars">
+          <view wx:for="{{bars}}" wx:key="index" class="{{item ? 'on' : ''}}"></view>
+        </view>
+        <view class="progress-percent">{{percent}}%</view>
       </view>
-      <view class="progress-percent">{{percent}}%</view>
-    </view>
-    <view class="learn-scroll" >
-      <view class="learn-intro">
-        
-        <view class="mode-pill">
-          <text class="mode-icon iconfont {{mode === 'review' ? 'icon-fuxi' : 'icon-shu'}}">
-          </text>{{mode === 'review' ? '巩固复习' : '正在学习'}}</view>
-        <view class="encourage">{{encourage}}</view>
-      </view>
-
-      <view class="learn-stage-wrap">
-        <image class="learn-mascot" src="{{mascot}}" mode="heightFix" aria-role="img" aria-label="小火种陪伴识字" />
-        <view class="memory-card {{mode === 'review' && !revealed ? 'memory-card-hidden' : ''}}" bindtap="onCardTap" aria-role="{{mode === 'review' && !revealed ? 'button' : 'img'}}" aria-label="{{mode === 'review' && !revealed ? '点击查看读音与资料' : '彝文记忆卡'}}">
-          <view class="play-audio iconfont icon-shengyin" bindtap="onPlayAudio"></view>
-          <view class="memory-card-hidden" wx:if="{{mode === 'review' && !revealed}}">
-            <view class="glyph memory-glyph">{{card.g}}</view>
-            <view class="tap-hint">点击卡片查看读音与资料</view>
-          </view>
-          <view class="pinyin memory-pinyin">
-            <text class="initial">{{card.initial}}</text>
-            <text wx:if="{{card.final}}" class="final">{{card.final}}</text>
-            <text wx:if="{{card.tone}}" class="tone">{{card.tone}}</text>
-          </view>
-          <view class="glyph memory-glyph">{{card.g}}</view>
-          <view class="facts">
-            <view class="fact"><text class="fact-label">部首</text><text class="fact-value">{{card.radical}}</text></view>
-            <view class="fact"><text class="fact-label">总笔画</text><text class="fact-value">{{card.strokes}}</text></view>
-            <view class="fact">
-              <text class="fact-label">音调</text>
-              <text class="fact-value" wx:if="{{card.tone==='t'}}">高平调</text>
-              <text class="fact-value" wx:if="{{card.tone==='x'}}">次高调</text>
-              <text class="fact-value" wx:if="{{card.tone==='p'}}">低平调</text>
-              <text class="fact-value" wx:if="{{card.tone===''}}">中平调</text>
+      <view class="learn-scroll" >
+        <view class="learn-intro">
+          
+          <view class="mode-pill {{mode === 'review' ? 'pill-review' : ''}}" bindtap="onToggleMode" hover-class="mode-pill-pressed" aria-role="switch" aria-checked="{{mode === 'review'}}" aria-label="切换学习与巩固模式">
+            <view class="mode-knob">
+              <text class="iconfont"></text>
             </view>
+            <view class="mode-text text-learn">学习模式</view>
+            <view class="mode-text text-review">巩固模式</view>
           </view>
-          <view class="facts-group">
-            <view class="grop">
-              <text class="fact-label">常用词组</text>
-              <view class="fact-value fact-phrase">
-                <view>
-                  <view class="phrase-yi" wx:if="{{!card.phrases.yi}}">暂无词组</view>
-                  <view class="phrase-yi">{{card.phrases.yi}} {{card.phrases.han}}</view>
-                </view>
-                <view class="btn">
-                   <view class="play-icon iconfont icon-shengyin" catchtap="onPlayPhraseAudio" aria-role="button" aria-label="播放彝语词组"></view>
-                   <view class="refresh-icon iconfont icon-shuaxin" catchtap="onRefreshPhrase" aria-role="button" aria-label="换一组词组"></view>
+          <view class="encourage">{{encourage}}</view>
+        </view>
+
+        <view class="learn-stage-wrap">
+          <image class="learn-mascot" src="{{mascot}}" mode="heightFix" aria-role="img" aria-label="小火种陪伴识字" />
+          <view class="memory-card {{mode === 'review' && !revealed ? 'memory-card-hidden' : ''}}" bindtap="onCardTap" aria-role="{{mode === 'review' && !revealed ? 'button' : 'img'}}" aria-label="{{mode === 'review' && !revealed ? '点击查看读音与资料' : '彝文记忆卡'}}">
+            <view class="play-audio iconfont icon-shengyin" bindtap="onPlayAudio"></view>
+            <view class="memory-card-hidden" wx:if="{{mode === 'review' && !revealed}}">
+              <view class="glyph memory-glyph">{{card.g}}</view>
+              <view class="tap-hint">点击卡片查看读音与资料</view>
+            </view>
+            <view class="pinyin memory-pinyin">
+              <text class="initial">{{card.initial}}</text>
+              <text wx:if="{{card.final}}" class="final">{{card.final}}</text>
+              <text wx:if="{{card.tone}}" class="tone">{{card.tone}}</text>
+            </view>
+            <view class="glyph memory-glyph">{{card.g}}</view>
+            <view class="facts">
+              <view class="fact"><text class="fact-label">部首</text><text class="fact-value">{{card.radical}}</text></view>
+              <view class="fact"><text class="fact-label">总笔画</text><text class="fact-value">{{card.strokes}}</text></view>
+              <view class="fact">
+                <text class="fact-label">音调</text>
+                <text class="fact-value" wx:if="{{card.tone==='t'}}">高平调</text>
+                <text class="fact-value" wx:if="{{card.tone==='x'}}">次高调</text>
+                <text class="fact-value" wx:if="{{card.tone==='p'}}">低平调</text>
+                <text class="fact-value" wx:if="{{card.tone===''}}">中平调</text>
+              </view>
+            </view>
+            <view class="facts-group">
+              <view class="grop">
+                <text class="fact-label">常用词组</text>
+                <view class="fact-value fact-phrase">
+                  <view>
+                    <view class="phrase-yi" wx:if="{{!card.phrases.yi}}">暂无词组</view>
+                    <view class="phrase-yi">{{card.phrases.yi}} {{card.phrases.han}}</view>
+                  </view>
+                  <view class="btn">
+                    <view class="play-icon iconfont icon-shengyin" catchtap="onPlayPhraseAudio" aria-role="button" aria-label="播放彝语词组"></view>
+                    <view class="refresh-icon iconfont icon-shuaxin" catchtap="onRefreshPhrase" aria-role="button" aria-label="换一组词组"></view>
+                  </view>
                 </view>
               </view>
             </view>
           </view>
         </view>
       </view>
-    </view>
 
-    <view class="actions">
-      <view class="secondary {{prevDisabled ? 'disabled' : ''}}" bindtap="onPrev" hover-class="action-pressed" aria-role="button" aria-disabled="{{prevDisabled}}">上一个</view>
-      <view class="primary" bindtap="onNext" hover-class="tap-state" aria-role="button">{{nextText}}
+      <view class="actions">
+        <view class="secondary {{prevDisabled ? 'disabled' : ''}}" bindtap="onPrev" hover-class="action-pressed" aria-role="button" aria-disabled="{{prevDisabled}}">上一个</view>
+        <view class="primary" bindtap="onNext" hover-class="tap-state" aria-role="button">{{nextText}}
+        </view>
       </view>
-    </view>
-  </block>
-</view>
+    </block>
+  </view>
+</custom-layout>

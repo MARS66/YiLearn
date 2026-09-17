@@ -61,17 +61,71 @@
       padding: 20rpx 12rpx 40rpx;
       box-sizing: border-box;
       .mode-pill {
-        display: inline-flex;
-        align-items: center;
-        padding: 10rpx 20rpx;
+        $pill-w: 220rpx;
+        $pill-h: 66rpx;
+        $knob: 46rpx;
+        $gap: 10rpx;
+        $text-inset: 20rpx;
+        $text-w: 144rpx;
+
+        position: relative;
+        width: $pill-w;
+        height: $pill-h;
         border-radius: 999rpx;
-        background: var(--red);
-        color: var(--white);
-        font-size: 36rpx;
-        font-weight: 900;
-        .mode-icon {
-          font-size: 46rpx;
-          margin-right: 18rpx;
+        background: var(--yellow);
+        overflow: hidden;
+        cursor: pointer;
+        transition: background .4s;
+        .mode-knob {
+          position: absolute;
+          left: $gap;
+          top: $gap;
+          width: $knob;
+          height: $knob;
+          border-radius: 50%;
+          background: var(--white);
+          box-shadow: 0 4rpx 12rpx rgba(0,0,0,.25);
+          transition: transform .4s;
+          z-index: 2;
+          .iconfont {
+            display: block;
+            width: $knob;
+            height: $knob;
+            line-height: $knob;
+            text-align: center;
+            color: var(--red);
+            font-size: 36rpx;
+          }
+        }
+        .mode-text {
+          position: absolute;
+          top: 50%;
+          font-size: 36rpx;
+          font-weight: 800;
+          color: var(--white);
+          white-space: nowrap;
+          pointer-events: none;
+          transition: transform .4s;
+        }
+        .text-learn {
+          right: $text-inset;
+          transform: translateY(-50%);
+        }
+        .text-review {
+          left: $text-inset;
+          transform: translate(-#{$text-w + 24rpx}, -50%);
+        }
+        &.pill-review {
+          background: var(--red);
+          .mode-knob {
+            transform: translateX($pill-w - 2 * $gap - $knob);
+          }
+          .text-learn {
+            transform: translate(#{$text-w + 24rpx}, -50%);
+          }
+          .text-review {
+            transform: translate(0, -50%);
+          }
         }
       }
 
@@ -272,6 +326,10 @@
 .tap-state {
   background: var(--red-dark);
   opacity: .9;
+}
+
+.mode-pill-pressed {
+  opacity: .85;
 }
 
 @media (max-width: 360px) {

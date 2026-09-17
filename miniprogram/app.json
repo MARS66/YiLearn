@@ -1,15 +1,19 @@
 {
   "pages": [
+    "pages/learn/learn",
     "pages/index/index",
     "pages/achievements/achievements",
-    "pages/learn/learn",
     "pages/dictionary/dictionary",
     "pages/complete/complete",
     "pages/profile/profile",
     "pages/detail/detail",
     "pages/storage-info/storage-info"
   ],
+  "usingComponents": {
+    "custom-layout": "/components/custom-layout/custom-layout"
+  },
   "window": {
+    "navigationStyle": "custom",
     "navigationBarTextStyle": "black",
     "navigationBarBackgroundColor": "#FAF7F0",
     "backgroundColor": "#FAF7F0"
@@ -24,19 +28,19 @@
         "pagePath": "pages/index/index",
         "iconPath": "assets/index.png",
         "selectedIconPath": "assets/index-active.png",
-        "text": "学习"
+        "text": "每日学习"
       },
       {
         "pagePath": "pages/dictionary/dictionary",
         "iconPath": "assets/dictionary.png",
         "selectedIconPath": "assets/dictionary-active.png",
-        "text": "字典"
+        "text": "文字检索"
       },
       {
         "pagePath": "pages/profile/profile",
         "iconPath": "assets/profile.png",
         "selectedIconPath": "assets/profile-active.png",
-        "text": "我的"
+        "text": "我的成就"
       }
     ]
   },

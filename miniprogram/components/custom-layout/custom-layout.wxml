@@ -1,0 +1,15 @@
+
+<view class="custom-layout" style="padding-top: {{headerInfo.statusBarHeight}}px;">
+    <view 
+    class="custom-layout-header"
+    wx:if="{{showHeader}}" 
+    style="
+    height: {{headerInfo.navBarHeight}}px;
+    ">
+        <view class="iconfont icon-fanhui" bindtap="goBack" hover-class="tap-state" aria-role="button" aria-label="返回"> </view>
+        <view class="custom-layout-header-title"> {{title}}</view>
+    </view>
+    <scroll-view class="custom-layout-content" scroll-y="{{true}}">
+        <slot></slot>
+    </scroll-view>
+</view>

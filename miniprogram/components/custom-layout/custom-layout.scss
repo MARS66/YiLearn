@@ -1,0 +1,32 @@
+/* components/custom-layout/custom-layout.wxss */
+@import '../../assets/icons/index.scss';
+.custom-layout{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: var(--fg);
+    .custom-layout-header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        box-sizing: border-box;
+        .iconfont{
+            position: absolute;
+            left: 32rpx;
+            top: 0;
+            font-size: 34rpx;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .custom-layout-content{
+        flex: 1;
+        min-height: 0;
+    }
+}

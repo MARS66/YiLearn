@@ -1,62 +1,64 @@
-<snapshot id="mySnapshot">
-<view class="page complete-page">
-    <view class="status-bar-slot" style="height: {{statusBarHeight}}px;"></view>
-
-    <block wx:if="{{mode === 'review'}}">
-      <view class="empty">
-        <image src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝完成回顾" />
-        <view class="empty-title">已回顾 {{reviewCount}} 个彝文字</view>
-        <view class="empty-copy">没有分数，也不用判断对错。想再看看时，随时回来。</view>
-      </view>
-      <view class="actions">
-        <view class="secondary" bindtap="goHome" hover-class="action-pressed" aria-role="button">完成回顾</view>
-        <view class="primary" bindtap="goReview" hover-class="tap-state" aria-role="button">再回顾一组</view>
-      </view>
-    </block>
-
-    <block wx:else>
-      <view class="poster">
-        <view class="poster-brand">
-          <image class="poster-logo" src="https://bee-reg-ab.imagency.cn/mr/6209/26/6e1a3757e4c132864cb01331f80857b0.png" mode="aspectFit" aria-hidden="true" />
-          <view class="poster-brand-copy">
-            <text class="poster-brand-name">彝学 YiLearn</text>
-            <text class="poster-brand-small">每天认识 10 个彝文字</text>
-          </view>
+<custom-layout>
+  <snapshot id="mySnapshot">
+  <view class="page complete-page">
+      <view class="status-bar-slot" style="height: {{statusBarHeight}}px;"></view>
+  
+      <block wx:if="{{mode === 'review'}}">
+        <view class="empty">
+          <image src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝完成回顾" />
+          <view class="empty-title">已回顾 {{reviewCount}} 个彝文字</view>
+          <view class="empty-copy">没有分数，也不用判断对错。想再看看时，随时回来。</view>
         </view>
-        <text class="poster-date">生成于 {{dateText}}</text>
-        <view class="poster-title">
-          <text class="poster-title-line">今天又认识了</text>
-          <view class="poster-result"><text class="poster-big">{{newCount}}</text><text>个彝文字</text></view>
+        <view class="actions">
+          <view class="secondary" bindtap="goHome" hover-class="action-pressed" aria-role="button">完成回顾</view>
+          <view class="primary" bindtap="goReview" hover-class="tap-state" aria-role="button">再回顾一组</view>
         </view>
-        <image class="poster-img" src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝今天的学习" />
-        <view class="poster-stats">
-          <view class="poster-stat"><text class="poster-stat-value">{{streak}} 天</text><text class="poster-stat-label">连续学习</text></view>
-          <view class="poster-stat"><text class="poster-stat-value">{{totalLearned}}</text><text class="poster-stat-label">累计识字</text></view>
-          <view class="poster-stat"><text class="poster-stat-value">{{todayLearned}}</text><text class="poster-stat-label">今日识字</text></view>
-        </view>
-        <view class="poster-week">
-          <text class="poster-week-title">▮ 本周学习记录</text>
-          <view class="week">
-            <view wx:for="{{week}}" wx:key="index" class="day {{item.done ? 'done' : ''}}">
-              <text>{{item.label}}</text>
-              <view class="day-i">{{item.done ? '✓' : ''}}</view>
+      </block>
+  
+      <block wx:else>
+        <view class="poster">
+          <view class="poster-brand">
+            <image class="poster-logo" src="https://bee-reg-ab.imagency.cn/mr/6209/26/6e1a3757e4c132864cb01331f80857b0.png" mode="aspectFit" aria-hidden="true" />
+            <view class="poster-brand-copy">
+              <text class="poster-brand-name">彝学 YiLearn</text>
+              <text class="poster-brand-small">每天认识 10 个彝文字</text>
             </view>
           </view>
-        </view>
-        <view  class="share-seal">
-          <image class="share-code" src="/assets/scancode.jpg" mode="heightFix" aria-label="小程序码" />
-          <view class="poster-quote">
-            <text>你的每一步，</text>
-            <text>都在延续彝文。</text>
+          <text class="poster-date">生成于 {{dateText}}</text>
+          <view class="poster-title">
+            <text class="poster-title-line">今天又认识了</text>
+            <view class="poster-result"><text class="poster-big">{{newCount}}</text><text>个彝文字</text></view>
           </view>
-         </view>
-      </view>
-
-      <view class="actions">
-        <view class="primary" bindtap="savePoster" hover-class="action-pressed" aria-role="button">保存海报</view>
-        <!-- <view class="primary" bindtap="sharePoster" hover-class="tap-state" aria-role="button">分享给朋友</view> -->
-      </view>
-      <view class="continue-btn" bindtap="continueLearn" hover-class="continue-pressed" aria-role="button">继续学习　›</view>
-    </block>
-</view>
-</snapshot>
+          <image class="poster-img" src="https://bee-reg-ab.imagency.cn/mr/6209/26/f8a7f6f5031ae294ca89946c47079643.png" mode="widthFix" aria-role="img" aria-label="小火种庆祝今天的学习" />
+          <view class="poster-stats">
+            <view class="poster-stat"><text class="poster-stat-value">{{streak}} 天</text><text class="poster-stat-label">连续学习</text></view>
+            <view class="poster-stat"><text class="poster-stat-value">{{totalLearned}}</text><text class="poster-stat-label">累计识字</text></view>
+            <view class="poster-stat"><text class="poster-stat-value">{{todayLearned}}</text><text class="poster-stat-label">今日识字</text></view>
+          </view>
+          <view class="poster-week">
+            <text class="poster-week-title">▮ 本周学习记录</text>
+            <view class="week">
+              <view wx:for="{{week}}" wx:key="index" class="day {{item.done ? 'done' : ''}}">
+                <text>{{item.label}}</text>
+                <view class="day-i">{{item.done ? '✓' : ''}}</view>
+              </view>
+            </view>
+          </view>
+          <view  class="share-seal">
+            <image class="share-code" src="/assets/scancode.jpg" mode="heightFix" aria-label="小程序码" />
+            <view class="poster-quote">
+              <text>你的每一步，</text>
+              <text>都在延续彝文。</text>
+            </view>
+           </view>
+        </view>
+  
+        <view class="actions">
+          <view class="primary" bindtap="savePoster" hover-class="action-pressed" aria-role="button">保存海报</view>
+          <!-- <view class="primary" bindtap="sharePoster" hover-class="tap-state" aria-role="button">分享给朋友</view> -->
+        </view>
+        <view class="continue-btn" bindtap="continueLearn" hover-class="continue-pressed" aria-role="button">继续学习　›</view>
+      </block>
+  </view>
+  </snapshot>
+</custom-layout>

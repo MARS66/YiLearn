@@ -1,20 +1,21 @@
 import { WORDS, TOTAL_WORDS, displayText } from '../../data/words'
-import { loadProgress } from '../../utils/progress'
-import { getStatusBarHeight } from '../../utils/system'
+import { playFeedback } from '../../utils/feedback'
+import { playWordAudio, playPhraseAudio } from '../../utils/audio'
+
+interface CardData {
+  g: string
+  initial: string
+  final: string
+  radical: string
+  strokes: string
+  phrases: { yi: string; han: string }[]
+  tone: string
+  audioUrl: string
+}
 
 Page({
   data: {
-    statusBarHeight: 20,
-    learned: false,
-    g: '',
-    initial: '',
-    final: '',
-    py: '',
-    finalText: '',
-    radical: '',
-    strokes: '',
-    remain: '',
-    group: '',
+    card: { g: '', initial: '', final: '', radical: '', strokes: '', phrases: [], tone: '', audioUrl: '' } as CardData,
     seqText: '',
   },
   onLoad(options: Record<string, string | undefined>) {
@@ -25,21 +26,39 @@ Page({
       setTimeout(() => wx.navigateBack(), 600)
       return
     }
-    const p = loadProgress()
     this.setData({
-      statusBarHeight: getStatusBarHeight(),
-      learned: !!p.learnedWords[String(index)],
-      g: w.g,
-      initial: w.initial,
-      final: w.final,
-      py: w.py,
-      finalText: displayText(w.final),
-      radical: displayText(w.radical),
-      strokes: displayText(w.strokes),
-      remain: displayText(w.remain),
-      group: displayText(w.group),
+      card: {
+        g: w.g,
+        initial: w.initial,
+        final: w.final,
+        radical: displayText(w.radical),
+        strokes: displayText(w.strokes),
+        phrases: w.phrases ?? [],
+        tone: w.tone,
+        audioUrl: w.audioUrl,
+      },
       seqText: `${index + 1} / ${TOTAL_WORDS}`,
     })
+  },
+  onPlayAudio() {
+    const url = this.data.card.audioUrl
+    if (!url) return
+    playFeedback()
+    try {
+      playWordAudio(url)
+    } catch (e) {
+      wx.showToast({ title: '音频播放失败，请检查网络', icon: 'none' })
+    }
+  },
+  onPlayPhraseAudio(e: { currentTarget: { dataset: { yi?: string } } }) {
+    const yi = e.currentTarget.dataset.yi
+    if (!yi) return
+    playFeedback()
+    try {
+      playPhraseAudio(yi)
+    } catch (err) {
+      wx.showToast({ title: '音频播放失败，请检查网络', icon: 'none' })
+    }
   },
   onBack() {
     const pages = getCurrentPages()

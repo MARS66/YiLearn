@@ -1,127 +1,129 @@
-<view class="page dict-page">
-  <view class="app-header">
-    <view class="header-title">
-      <view class="header-title">彝文字典</view>
-      <view class="header-side">共 {{totalWords}} 字</view>
+<custom-layout show-header="{{false}}">
+  <view class="page dict-page">
+    <view class="app-header">
+      <view class="header-title">
+        <view class="header-title">彝文字典</view>
+        <view class="header-side">共 {{totalWords}} 字</view>
+      </view>
+      <image class="header-mascot" src="https://bee-reg-ab.imagency.cn/mr/6209/26/c8d683c8a4ce8ab57710e69c4cde3072.png" mode="heightFix" aria-role="img" aria-label="小火种安静地陪伴学习" />
     </view>
-     <image class="header-mascot" src="https://bee-reg-ab.imagency.cn/mr/6209/26/c8d683c8a4ce8ab57710e69c4cde3072.png" mode="heightFix" aria-role="img" aria-label="小火种安静地陪伴学习" />
-  </view>
 
-  <view class="scroll">
-    <!-- 模块一：精确查询 -->
-    <view class="panel search-panel">
-      <view class="search-bar">
-        <input
-          class="search-input"
-          type="text"
-          placeholder="输入彝文或拼音，如：ꀀ 或 a"
-          placeholder-class="search-placeholder"
-          value="{{exactQuery}}"
-          confirm-type="search"
-          bindinput="onExactSearch"
-          bindchange="onExactSearch"
-        />
-      </view>
-    
-      <view class="cond-group">
-        <view class="cond-label">声母</view>
-        <scroll-view class="cond-scroll" scroll-x enhanced show-scrollbar="{{false}}">
-          <view class="chip-row">
-            <view
-              wx:for="{{initialOptions}}"
-              wx:key="value"
-              class="chip {{item.selected ? 'chip-on' : ''}}"
-              data-cat="initial"
-              data-value="{{item.value}}"
-              hover-class="tap-pressed"
-              bindtap="onChipTap"
-            >{{item.label||'无声母'}}</view>
-          </view>
-        </scroll-view>
-      </view>
-
-      <view class="cond-group">
-        <view class="cond-label">韵母</view>
-        <scroll-view class="cond-scroll" scroll-x enhanced show-scrollbar="{{false}}">
-          <view class="chip-row">
-            <view
-              wx:for="{{finalOptions}}"
-              wx:key="value"
-              class="chip {{item.selected ? 'chip-on' : ''}}"
-              data-cat="final"
-              data-value="{{item.value}}"
-              hover-class="tap-pressed"
-              bindtap="onChipTap"
-            >{{item.label}}</view>
-          </view>
-        </scroll-view>
-      </view>
-
-      <view class="cond-group">
-        <view class="cond-label">部首</view>
-        <scroll-view class="cond-scroll" scroll-x enhanced show-scrollbar="{{false}}">
-          <view class="chip-row">
-            <view
-              wx:for="{{radicalOptions}}"
-              wx:key="value"
-              class="chip {{item.selected ? 'chip-on' : ''}}"
-              data-cat="radical"
-              data-value="{{item.value}}"
-              hover-class="tap-pressed"
-              bindtap="onChipTap"
-            >{{item.label}}</view>
-          </view>
-        </scroll-view>
-      </view>
-
-      <view class="cond-group">
-        <view class="cond-label">笔画</view>
-        <scroll-view class="cond-scroll" scroll-x enhanced show-scrollbar="{{false}}">
-          <view class="chip-row">
-            <view
-              wx:for="{{strokeOptions}}"
-              wx:key="value"
-              class="chip {{item.selected ? 'chip-on' : ''}}"
-              data-cat="strokes"
-              data-value="{{item.value}}"
-              hover-class="tap-pressed"
-              bindtap="onChipTap"
-            >{{item.label}}</view>
-          </view>
-        </scroll-view>
-      </view>
-    </view>
-    <!-- 模块三：查询结果列表 -->
-    <view class="panel result-panel">
-      <view class="section-title result-title">
-        <text>查询结果</text>
-        <text class="muted result-count">{{resultList.length}} / {{totalWords}}</text>
-      </view>
-      <view wx:if="{{hasCondition && resultList.length > 0}}" class="result-list">
-        <view
-          wx:for="{{resultList}}"
-          wx:key="index"
-          class="result-item"
-          data-index="{{item.index}}"
-          hover-class="row-pressed"
-          bindtap="goDetail"
-        >
-          <view class="result-glyph">{{item.g}}</view>
-          <view class="result-info">
-            <text class="result-py">{{item.py}}</text>
-            <view class="result-tags">
-              <text class="tag">部首 {{item.radicalText}}</text>
-              <text class="tag">笔画 {{item.strokesText}}</text>
+    <view class="scroll">
+      <!-- 模块一：精确查询 -->
+      <view class="panel search-panel">
+        <view class="search-bar">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="输入彝文或拼音，如：ꀀ 或 a"
+            placeholder-class="search-placeholder"
+            value="{{exactQuery}}"
+            confirm-type="search"
+            bindinput="onExactSearch"
+            bindchange="onExactSearch"
+          />
+        </view>
+      
+        <view class="cond-group">
+          <view class="cond-label">声母</view>
+          <scroll-view class="cond-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+            <view class="chip-row">
+              <view
+                wx:for="{{initialOptions}}"
+                wx:key="value"
+                class="chip {{item.selected ? 'chip-on' : ''}}"
+                data-cat="initial"
+                data-value="{{item.value}}"
+                hover-class="tap-pressed"
+                bindtap="onChipTap"
+              >{{item.label||'无声母'}}</view>
             </view>
-          </view>
-          <view class="result-arrow">›</view>
+          </scroll-view>
+        </view>
+
+        <view class="cond-group">
+          <view class="cond-label">韵母</view>
+          <scroll-view class="cond-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+            <view class="chip-row">
+              <view
+                wx:for="{{finalOptions}}"
+                wx:key="value"
+                class="chip {{item.selected ? 'chip-on' : ''}}"
+                data-cat="final"
+                data-value="{{item.value}}"
+                hover-class="tap-pressed"
+                bindtap="onChipTap"
+              >{{item.label}}</view>
+            </view>
+          </scroll-view>
+        </view>
+
+        <view class="cond-group">
+          <view class="cond-label">部首</view>
+          <scroll-view class="cond-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+            <view class="chip-row">
+              <view
+                wx:for="{{radicalOptions}}"
+                wx:key="value"
+                class="chip {{item.selected ? 'chip-on' : ''}}"
+                data-cat="radical"
+                data-value="{{item.value}}"
+                hover-class="tap-pressed"
+                bindtap="onChipTap"
+              >{{item.label}}</view>
+            </view>
+          </scroll-view>
+        </view>
+
+        <view class="cond-group">
+          <view class="cond-label">笔画</view>
+          <scroll-view class="cond-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+            <view class="chip-row">
+              <view
+                wx:for="{{strokeOptions}}"
+                wx:key="value"
+                class="chip {{item.selected ? 'chip-on' : ''}}"
+                data-cat="strokes"
+                data-value="{{item.value}}"
+                hover-class="tap-pressed"
+                bindtap="onChipTap"
+              >{{item.label}}</view>
+            </view>
+          </scroll-view>
         </view>
       </view>
+      <!-- 模块三：查询结果列表 -->
+      <view class="panel result-panel">
+        <view class="section-title result-title">
+          <text>查询结果</text>
+          <text class="muted result-count">{{resultList.length}} / {{totalWords}}</text>
+        </view>
+        <view wx:if="{{hasCondition && resultList.length > 0}}" class="result-list">
+          <view
+            wx:for="{{resultList}}"
+            wx:key="index"
+            class="result-item"
+            data-index="{{item.index}}"
+            hover-class="row-pressed"
+            bindtap="goDetail"
+          >
+            <view class="result-glyph">{{item.g}}</view>
+            <view class="result-info">
+              <text class="result-py">{{item.py}}</text>
+              <view class="result-tags">
+                <text class="tag">部首 {{item.radicalText}}</text>
+                <text class="tag">笔画 {{item.strokesText}}</text>
+              </view>
+            </view>
+            <view class="result-arrow">›</view>
+          </view>
+        </view>
 
-      <view wx:else class="empty result-empty">
-        <image class="empty-icon" src="https://bee-reg-ab.imagency.cn/mr/6209/26/b3c1edaf0379b84c8151b493e7a774c5.png" mode="heightFix" aria-role="img" aria-label="未找到匹配结果" />
-        <text class="empty-copy">{{!hasCondition?'快来查询试试啊':'换一个条件试试吧'}}</text>
+        <view wx:else class="empty result-empty">
+          <image class="empty-icon" src="https://bee-reg-ab.imagency.cn/mr/6209/26/b3c1edaf0379b84c8151b493e7a774c5.png" mode="heightFix" aria-role="img" aria-label="未找到匹配结果" />
+          <text class="empty-copy">{{!hasCondition?'快来查询试试啊':'换一个条件试试吧'}}</text>
+        </view>
       </view>
     </view>
   </view>
-</view>
+</custom-layout>
