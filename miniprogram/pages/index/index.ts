@@ -4,6 +4,7 @@ import {
   getTotalLearned,
   getTodayLearnCount,
   getCurrentStreak,
+  getDailyGoal,
   computeStreakAchievements,
 } from '../../utils/progress'
 import { currentWeekKeys } from '../../utils/date'
@@ -14,8 +15,6 @@ interface WeekItem {
   done: boolean
   dayNum: string
 }
-
-const DAILY_GOAL = 10
 
 function timeGreeting(now: Date): string {
   const h = now.getHours()
@@ -80,6 +79,7 @@ Page({
     const p = loadProgress()
     const totalLearned = getTotalLearned(p)
     const todayLearned = getTodayLearnCount(p)
+    const dailyGoal = getDailyGoal(p)
     const idx = p.nextWordIndex
     const allLearned = idx >= TOTAL_WORDS
     const nextWord = allLearned
@@ -87,9 +87,9 @@ Page({
       : { g: WORDS[idx].g, initial: WORDS[idx].initial, final: WORDS[idx].final, tone: WORDS[idx].tone }
 
     const bars: boolean[] = []
-    for (let i = 0; i < DAILY_GOAL; i++) bars.push(i < todayLearned)
+    for (let i = 0; i < dailyGoal; i++) bars.push(i < todayLearned)
 
-    const percent = Math.min(100, Math.round((todayLearned / DAILY_GOAL) * 100))
+    const percent = Math.min(100, Math.round((todayLearned / dailyGoal) * 100))
 
     let buttonText: string
     if (allLearned) buttonText = '开始回顾'

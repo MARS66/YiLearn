@@ -3,6 +3,7 @@ import {
   getTotalLearned,
   getTodayLearnCount,
   getCurrentStreak,
+  getDailyGoal,
   getWeekCheckIn,
 } from '../../utils/progress'
 import { getStatusBarHeight } from '../../utils/system'
@@ -21,6 +22,7 @@ Page({
     streak: 0,
     totalLearned: 0,
     todayLearned: 0,
+    dailyGoal: 10,
     week: [] as WeekItem[],
     dateText: '',
   },
@@ -37,6 +39,7 @@ Page({
       streak: getCurrentStreak(p),
       totalLearned: getTotalLearned(p),
       todayLearned,
+      dailyGoal: getDailyGoal(p),
       week: getWeekCheckIn(p) as WeekItem[],
       dateText: this.formatNow(),
     })

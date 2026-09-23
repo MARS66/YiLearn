@@ -314,6 +314,74 @@
   }
 }
 
+/* ---- 学习计划行 / 弹窗 ---- */
+.plan-goal {
+  margin: 0 4rpx;
+  font-weight: 900;
+}
+
+.plan-chips {
+  margin-top: 28rpx;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+
+  .plan-chip {
+    min-height: 84rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3rpx solid var(--line);
+    border-radius: 999rpx;
+    background: #ffffff;
+    font-size: 30rpx;
+    font-weight: 800;
+    color: var(--fg);
+    box-sizing: border-box;
+
+    &.on {
+      border-color: var(--red);
+      background: var(--soft-red);
+      color: var(--red);
+    }
+  }
+}
+
+.plan-custom {
+  margin-top: 24rpx;
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  padding: 0 28rpx;
+  min-height: 88rpx;
+  border: 3rpx solid var(--line);
+  border-radius: 999rpx;
+  background: #ffffff;
+  box-sizing: border-box;
+
+  .plan-custom-label {
+    flex: none;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: var(--muted);
+  }
+  .plan-custom-input {
+    flex: 1;
+    min-width: 0;
+    font-size: 30rpx;
+    font-weight: 800;
+  }
+  .plan-custom-unit {
+    flex: none;
+    font-size: 26rpx;
+    color: var(--muted);
+  }
+}
+
+.chip-pressed {
+  opacity: 0.7;
+}
+
 /* hover / 状态工具类（供各 tab 页共用，保留顶层） */
 .switch-pressed {
   opacity: .72;

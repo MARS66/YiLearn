@@ -19,9 +19,9 @@
     "enhance": true,
     "showShadowRootInWxmlPanel": false,
     "packNpmRelationList": [
-      { 
-        "packageJsonPath" : "./package.json" ,
-        "miniprogramNpmDistDir" : "./miniprogram/" 
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./miniprogram/"
       }
     ],
     "ignoreUploadUnusedFiles": true,
@@ -54,5 +54,6 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wx945b747dd7c0d81c"
+  "appid": "wxbc8d15085437ce7c",
+  "isGameTourist": false
 }

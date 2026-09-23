@@ -5,6 +5,8 @@ import {
   getTotalLearned,
   getTodayLearnCount,
   getCurrentStreak,
+  getDailyGoal,
+  setDailyGoal,
   getWeekCheckIn,
   setSound,
   setVibration,
@@ -12,6 +14,7 @@ import {
   computeStreakAchievements,
 } from '../../utils/progress'
 import { getStatusBarHeight } from '../../utils/system'
+import { playFeedback } from '../../utils/feedback'
 
 interface WeekItem {
   label: string
@@ -25,7 +28,8 @@ interface BadgePreview {
 }
 
 const HALF_WORDS = 582
-const DAILY_GOAL = 10
+/** 每日目标快速选项（可在弹窗中自定义任意字数） */
+const PLAN_PRESETS = [5, 10, 20, 30, 50]
 
 Page({
   data: {
@@ -45,6 +49,12 @@ Page({
     vibration: true,
     badges: [] as BadgePreview[],
     modalVisible: false,
+    dailyGoal: 10,
+    planPresets: PLAN_PRESETS,
+    planModalVisible: false,
+    planSelected: 1,
+    planUseCustom: false,
+    planCustomValue: '',
   },
   onLoad() {
     this.setData({ statusBarHeight: getStatusBarHeight() })
@@ -59,9 +69,10 @@ Page({
     const p = loadProgress()
     const totalLearned = getTotalLearned(p)
     const todayLearned = getTodayLearnCount(p)
-    const percent = Math.min(100, Math.round((todayLearned / DAILY_GOAL) * 100))
+    const dailyGoal = getDailyGoal(p)
+    const percent = Math.min(100, Math.round((todayLearned / dailyGoal) * 100))
     const bars: boolean[] = []
-    for (let i = 0; i < DAILY_GOAL; i++) bars.push(i < todayLearned)
+    for (let i = 0; i < dailyGoal; i++) bars.push(i < todayLearned)
 
     const latestLiteracy = [...computeLiteracyAchievements(p)].reverse().find(a => a.unlocked)
     const latestStreak = [...computeStreakAchievements(p)].reverse().find(a => a.unlocked)
@@ -69,6 +80,7 @@ Page({
       totalLearned,
       percent,
       halfRemaining: Math.max(0, HALF_WORDS - totalLearned),
+      dailyGoal,
       streak: getCurrentStreak(p),
       longestStreak: p.longestStreak,
       todayLearned,
@@ -112,5 +124,43 @@ Page({
     this.setData({ modalVisible: false })
     this.refresh()
     wx.showToast({ title: '本地学习记录已清除', icon: 'none' })
+  },
+  /* ------------------- 学习计划 ------------------- */
+  openPlanModal() {
+    const goal = this.data.dailyGoal
+    const idx = PLAN_PRESETS.indexOf(goal)
+    this.setData({
+      planModalVisible: true,
+      planSelected: idx >= 0 ? idx : 1,
+      planUseCustom: idx < 0,
+      planCustomValue: idx < 0 ? String(goal) : '',
+    })
+  },
+  closePlanModal() {
+    this.setData({ planModalVisible: false })
+  },
+  onSelectPlanPreset(e: WechatMiniprogram.TouchEvent) {
+    const idx = Number(e.currentTarget.dataset.index)
+    playFeedback()
+    this.setData({ planSelected: idx, planUseCustom: false })
+  },
+  onPlanCustomInput(e: WechatMiniprogram.Input) {
+    this.setData({ planCustomValue: e.detail.value, planUseCustom: true })
+  },
+  confirmPlan() {
+    let goal: number
+    if (this.data.planUseCustom) {
+      goal = parseInt(this.data.planCustomValue, 10)
+      if (!goal || goal <= 0) {
+        wx.showToast({ title: '请输入有效的学习字数', icon: 'none' })
+        return
+      }
+    } else {
+      goal = PLAN_PRESETS[this.data.planSelected]
+    }
+    setDailyGoal(goal)
+    this.setData({ planModalVisible: false })
+    this.refresh()
+    wx.showToast({ title: `每日计划已更新为 ${goal} 字`, icon: 'none' })
   },
 })

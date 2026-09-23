@@ -21,7 +21,7 @@
             <image class="poster-logo" src="https://bee-reg-ab.imagency.cn/mr/6209/26/6e1a3757e4c132864cb01331f80857b0.png" mode="aspectFit" aria-hidden="true" />
             <view class="poster-brand-copy">
               <text class="poster-brand-name">彝学 YiLearn</text>
-              <text class="poster-brand-small">每天认识 10 个彝文字</text>
+              <text class="poster-brand-small">每天认识 {{dailyGoal}} 个彝文字</text>
             </view>
           </view>
           <text class="poster-date">生成于 {{dateText}}</text>

@@ -1,0 +1,46 @@
+<view class="page onboard-page" style="padding-top: {{statusBarHeight}}px;">
+  <view class="onboard-scroll">
+    <view class="onboard-hero">
+      <image class="onboard-mascot" src="https://bee-reg-ab.imagency.cn/mr/6209/26/b2e77f2f36e9a2fff7cdbd4ea4191b63.png" mode="widthFix" aria-role="img" aria-label="小火种欢迎你" />
+      <view class="onboard-title">欢迎来到彝学</view>
+      <view class="onboard-sub">先定个小目标，认识彝文更轻松</view>
+    </view>
+
+    <view class="onboard-question">
+      <text class="onboard-q">每天计划学习</text>
+      <text class="onboard-q onboard-q-red">多少个彝文字？</text>
+    </view>
+
+    <view class="onboard-chips">
+      <view
+        wx:for="{{presets}}"
+        wx:key="*this"
+        class="onboard-chip {{!useCustom && selected === index ? 'on' : ''}}"
+        data-index="{{index}}"
+        bindtap="onSelectPreset"
+        hover-class="chip-pressed"
+        aria-role="button"
+        aria-label="每天学习 {{item}} 个字"
+      >{{item}} 字</view>
+    </view>
+
+    <view class="onboard-custom">
+      <text class="onboard-custom-label">自定义</text>
+      <input
+        class="onboard-custom-input"
+        type="number"
+        placeholder="输入字数"
+        value="{{customValue}}"
+        bindinput="onCustomInput"
+        aria-label="自定义每天学习字数"
+      />
+      <text class="onboard-custom-unit">字</text>
+    </view>
+
+    <view class="onboard-tip">之后随时可以在「我的」里调整计划</view>
+
+    <view class="onboard-footer">
+      <view class="primary onboard-cta" bindtap="confirm" hover-class="tap-state" aria-role="button" aria-label="开始学习">开始学习</view>
+    </view>
+  </view>
+</view>

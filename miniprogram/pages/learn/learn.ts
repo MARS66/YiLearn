@@ -1,5 +1,5 @@
 import { WORDS, TOTAL_WORDS, displayText } from '../../data/words'
-import { loadProgress, markWordLearned, recordReview } from '../../utils/progress'
+import { loadProgress, markWordLearned, recordReview, getDailyGoal } from '../../utils/progress'
 import { getStatusBarHeight } from '../../utils/system'
 import { playFeedback } from '../../utils/feedback'
 
@@ -333,7 +333,8 @@ Page({
     if (this.data.mode === 'learn') {
       const start = p.nextWordIndex
       const remaining = Math.max(0, TOTAL_WORDS - start)
-      const total = Math.min(10, remaining)
+      // 学习模式每组数量 = 用户每日计划学习字数（复习仍固定 10 个）
+      const total = Math.min(getDailyGoal(p), remaining)
       if (total === 0) {
         wx.switchTab({ url: '/pages/index/index' })
         return

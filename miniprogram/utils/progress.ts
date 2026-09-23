@@ -13,6 +13,14 @@ export interface WordProgress {
   learnedAt: number
 }
 
+/** 用户自定义学习计划 */
+export interface UserPlan {
+  /** 每天计划学习字数 */
+  dailyGoal: number
+  /** 是否已完成首次进入引导设置 */
+  onboarded: boolean
+}
+
 export interface UserProgress {
   version: 2
   nextWordIndex: number
@@ -28,6 +36,18 @@ export interface UserProgress {
     sound: boolean
     vibration: boolean
   }
+  plan: UserPlan
+}
+
+/** 每日目标字数允许范围（1–50） */
+export const DAILY_GOAL_MIN = 1
+export const DAILY_GOAL_MAX = 50
+export const DEFAULT_DAILY_GOAL = 10
+
+function clampDailyGoal(g: number): number {
+  const n = Math.floor(g)
+  if (!isFinite(n) || n <= 0) return DEFAULT_DAILY_GOAL
+  return Math.min(DAILY_GOAL_MAX, Math.max(DAILY_GOAL_MIN, n))
 }
 
 export interface Achievement {
@@ -51,6 +71,7 @@ function defaultProgress(): UserProgress {
     totalReviewCount: 0,
     unlockedAchievements: {},
     settings: { sound: true, vibration: true },
+    plan: { dailyGoal: DEFAULT_DAILY_GOAL, onboarded: false },
   }
 }
 
@@ -94,6 +115,7 @@ function normalize(raw: any): UserProgress {
     studyDates: p.studyDates || [],
     unlockedAchievements: p.unlockedAchievements || {},
     settings: { ...d.settings, ...(p.settings || {}) },
+    plan: { ...d.plan, ...(p.plan || {}) },
   }
 }
 
@@ -223,6 +245,35 @@ export function setSound(enabled: boolean): UserProgress {
 export function setVibration(enabled: boolean): UserProgress {
   const p = loadProgress()
   p.settings.vibration = enabled
+  saveProgress(p)
+  return p
+}
+
+/* --------------------------- 学习计划 --------------------------- */
+
+/** 当前每日计划学习字数（始终返回有效值） */
+export function getDailyGoal(p: UserProgress): number {
+  return clampDailyGoal(p.plan.dailyGoal)
+}
+
+/** 是否已完成首次进入引导 */
+export function isOnboarded(p: UserProgress): boolean {
+  return !!p.plan.onboarded
+}
+
+/** 首次引导完成：写入每日目标并标记已引导 */
+export function completeOnboarding(goal: number): UserProgress {
+  const p = loadProgress()
+  p.plan.dailyGoal = clampDailyGoal(goal)
+  p.plan.onboarded = true
+  saveProgress(p)
+  return p
+}
+
+/** 修改每日计划学习字数（在「我的」页） */
+export function setDailyGoal(goal: number): UserProgress {
+  const p = loadProgress()
+  p.plan.dailyGoal = clampDailyGoal(goal)
   saveProgress(p)
   return p
 }

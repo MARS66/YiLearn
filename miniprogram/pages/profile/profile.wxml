@@ -79,6 +79,13 @@
       </view>
 
       <view class="panel settings-panel">
+        <view class="setting" bindtap="openPlanModal" hover-class="row-pressed" aria-role="button" aria-label="修改每日计划学习字数">
+          <view class="setting-text">
+            <text class="setting-text-title"><text class="iconfont icon-shijian"></text>每日计划学习</text>
+            <text class="setting-text-desc">每天认识 <text class="red plan-goal">{{dailyGoal}}</text> 个字</text>
+          </view>
+          <text class="setting-value">›</text>
+        </view>
         <view class="setting">
           <view class="setting-text">
             <text class="setting-text-title"><text class="iconfont icon-shengyin"></text>声音</text>
@@ -100,6 +107,41 @@
         <view class="setting" bindtap="goStorage" hover-class="row-pressed" aria-role="button">
           <text class="setting-text-title"><text class="iconfont icon-jurassic_data"></text>本地存储说明</text>
           <text class="setting-value">›</text>
+        </view>
+      </view>
+
+      <view wx:if="{{planModalVisible}}" class="modal-wrap" bindtap="closePlanModal">
+        <view class="modal" catchtap="noop">
+          <view class="modal-title">每日计划学习</view>
+          <view class="modal-copy">选择每天想认识的彝文字数，随时可以再改。</view>
+          <view class="plan-chips">
+            <view
+              wx:for="{{planPresets}}"
+              wx:key="*this"
+              class="plan-chip {{!planUseCustom && planSelected === index ? 'on' : ''}}"
+              data-index="{{index}}"
+              bindtap="onSelectPlanPreset"
+              hover-class="chip-pressed"
+              aria-role="button"
+              aria-label="每天学习 {{item}} 个字"
+            >{{item}} 字</view>
+          </view>
+          <view class="plan-custom">
+            <text class="plan-custom-label">自定义</text>
+            <input
+              class="plan-custom-input"
+              type="number"
+              placeholder="输入字数"
+              value="{{planCustomValue}}"
+              bindinput="onPlanCustomInput"
+              aria-label="自定义每天学习字数"
+            />
+            <text class="plan-custom-unit">字</text>
+          </view>
+          <view class="modal-actions">
+            <view class="secondary" bindtap="closePlanModal" hover-class="row-pressed" aria-role="button">取消</view>
+            <view class="primary" bindtap="confirmPlan" hover-class="row-pressed" aria-role="button">保存</view>
+          </view>
         </view>
       </view>
     </view>
