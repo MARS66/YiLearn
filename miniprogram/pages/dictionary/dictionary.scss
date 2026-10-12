@@ -39,14 +39,14 @@
       min-width: 0;
       height: 88rpx;
       padding: 0 32rpx;
-      border: 2rpx solid var(--line);
+      border: var(--border-w-thin) solid var(--line);
       border-radius: 999rpx;
-      background: #ffffff;
+      background: var(--surface-2);
       font-size: 30rpx;
       box-sizing: border-box;
     }
     .search-placeholder {
-      color: var(--muted);
+      color: var(--placeholder);
       font-size: 26rpx;
     }
     .search-btn {
@@ -106,9 +106,9 @@
       justify-content: center;
       min-height: 64rpx;
       padding: 0 28rpx;
-      border: 2rpx solid var(--line);
+      border: var(--border-w-thin) solid var(--line);
       border-radius: 999rpx;
-      background: #ffffff;
+      background: var(--surface-2);
       color: var(--fg);
       font-size: 27rpx;
       box-sizing: border-box;
@@ -116,7 +116,7 @@
       &.chip-on {
         border-color: var(--red);
         background: var(--red);
-        color: #ffffff;
+        color: var(--on-dark);
         font-weight: 800;
       }
     }
@@ -147,7 +147,7 @@
       align-items: center;
       gap: 24rpx;
       padding: 24rpx 0;
-      border-top: 1rpx solid var(--line2);
+      border-top: 1rpx solid var(--divider);
 
       &:first-child {
         border-top: 0;
@@ -164,7 +164,7 @@
       background: var(--soft-red);
       font-family: var(--font-yi);
       font-size: 60rpx;
-      color: var(--red-dark);
+      color: var(--red);
     }
     .result-info {
       flex: 1;
@@ -183,15 +183,15 @@
     }
     .tag {
       padding: 4rpx 16rpx;
-      border: 1rpx solid #f3dca2;
+      border: 1rpx solid var(--divider);
       border-radius: 999rpx;
-      background: #fff8e7;
-      color: #b87900;
+      background: var(--bg);
+      color: var(--fg-2);
       font-size: 22rpx;
     }
     .result-arrow {
       flex: none;
-      color: var(--line);
+      color: var(--muted);
       font-size: 44rpx;
     }
 

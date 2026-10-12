@@ -47,11 +47,11 @@
     overflow: hidden;
     min-height: 1180rpx;
     padding: 38rpx 40rpx;
-    border: 2rpx solid #53504b;
-    border-radius: 56rpx;
-    background: radial-gradient(circle at 80% 18%, #312f29 0, transparent 40%), var(--ink);
+    border: var(--border-w) solid var(--line);
+    border-radius: var(--r-lg);
+    background: var(--card-bg);
     box-shadow: var(--shadow);
-    color: #fff;
+    color: var(--on-dark);
     box-sizing: border-box;
 
     &::after {
@@ -61,8 +61,7 @@
       bottom: 0;
       left: 0;
       height: 34rpx;
-      background: rgba(111,37,27,.95);
-      background: repeating-linear-gradient(55deg, rgba(111,37,27,.95) 0 20rpx, rgba(24,23,21,.2) 20rpx 40rpx);
+      background: var(--pattern);
     }
 
     .poster-brand {
@@ -85,7 +84,7 @@
         }
 
         .poster-brand-small {
-          color: #cac5bd;
+          color: var(--on-dark-2);
           font-size: 24rpx;
         }
       }
@@ -95,7 +94,7 @@
       position: absolute;
       top: 42rpx;
       right: 34rpx;
-      color: #c9c4bd;
+      color: var(--on-dark-2);
       font-size: 22rpx;
     }
 
@@ -145,7 +144,7 @@
       .poster-stat {
         flex: 1;
         min-height: 152rpx;
-        border-right: 1rpx solid #575757;
+        border-right: 1rpx solid var(--on-dark-line);
         text-align: center;
 
         &:last-child {
@@ -161,7 +160,7 @@
         }
 
         .poster-stat-label {
-          color: #d6d1ca;
+          color: var(--on-dark-2);
           font-size: 25rpx;
         }
       }
@@ -170,9 +169,9 @@
     .poster-week {
       margin-top: 34rpx;
       padding: 28rpx 24rpx;
-      border: 2rpx solid #4a4945;
-      border-radius: 32rpx;
-      background: rgba(255,255,255,.035);
+      border: var(--border-w-thin) solid var(--on-dark-line);
+      border-radius: var(--r-sm);
+      background: var(--card-inset);
 
       .poster-week-title {
         display: block;
@@ -182,13 +181,14 @@
       }
 
       .day {
-        color: #c9c4bd;
+        color: var(--on-dark-2);
         font-size: 20rpx;
       }
 
       .day-i {
         width: 58rpx;
         height: 58rpx;
+        border-color: var(--on-dark-line);
       }
     }
 
@@ -196,7 +196,7 @@
 
     .share-seal {
       margin-top: 34rpx;
-      border-top: 2rpx solid #555;
+      border-top: var(--border-w-thin) solid var(--on-dark-line);
       display: flex;
       align-items: center;
       padding: 30rpx 0;
@@ -234,7 +234,7 @@
 
 /* hover / 状态工具类（供各页共用，保留顶层） */
 .action-pressed {
-  background: rgba(23,22,20,.08);
+  background: var(--pressed);
 }
 
 .tap-state {

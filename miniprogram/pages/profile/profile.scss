@@ -30,11 +30,11 @@
       overflow: hidden;
       min-height: 310rpx;
       padding: 26rpx 36rpx;
-      border: 2rpx solid #504e49;
-      border-radius: 54rpx;
-      background: radial-gradient(circle at 78% 20%, #302f2b 0, transparent 42%), var(--ink);
+      border: var(--border-w) solid var(--line);
+      border-radius: var(--r-lg);
+      background: var(--card-bg);
       box-shadow: var(--shadow);
-      color: #fff;
+      color: var(--on-dark);
       box-sizing: border-box;
 
       &::after {
@@ -44,7 +44,7 @@
         bottom: 0;
         width: 270rpx;
         height: 28rpx;
-        background: repeating-linear-gradient(55deg, rgba(111,37,27,.95) 0 18rpx, transparent 18rpx 36rpx);
+        background: var(--pattern);
       }
 
       .progress-panel-title {
@@ -83,7 +83,7 @@
         .big-small {
           display: flex;
           flex-direction: column;
-          color: #e0dcd5;
+          color: var(--on-dark-2);
           font-size: 30rpx;
           line-height: 1.3;
         }
@@ -92,8 +92,8 @@
       .yellow-chip {
         padding: 17rpx 24rpx;
         border-radius: 36rpx;
-        background: #e9c916;
-        color: var(--ink);
+        background: var(--yellow);
+        color: var(--fg);
         font-size: 26rpx;
         font-weight: normal;
         text-align: center;
@@ -109,7 +109,7 @@
           display: inline;
           margin: 0 8rpx;
           font-weight: 900;
-          color: var(--red);
+          color: var(--red-dark);
           font-size: 50rpx;
         }
       }
@@ -134,10 +134,10 @@
     .week-card {
       margin-top: 18rpx;
       padding: 22rpx 28rpx 24rpx;
-      border: 2rpx solid var(--line2);
-      border-radius: 38rpx;
+      border: var(--border-w) solid var(--line);
+      border-radius: var(--r-md);
       background: var(--surface);
-      box-shadow: 0 12rpx 30rpx rgba(35,24,16,.04);
+      box-shadow: var(--shadow-hard-sm);
       .week-summary {
         display: flex;
         align-items: center;
@@ -178,7 +178,7 @@
 
       .stat {
         min-height: 96rpx;
-        border-right: 1rpx solid var(--line);
+        border-right: 1rpx solid var(--divider);
         text-align: center;
         font-size: 24rpx;
         .iconfont {
@@ -207,13 +207,13 @@
 
     /* ---- 成就面板 ---- */
     .achievement-panel {
-      border-radius: 38rpx;
-      box-shadow: 0 12rpx 30rpx rgba(35,24,16,.04);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow-hard-sm);
       background: var(--surface);
       .achievement-heading {
         padding-top: 0;
         padding-bottom: 10px;
-        border-bottom: 1rpx solid var(--line);
+        border-bottom: 1rpx solid var(--divider);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -241,7 +241,7 @@
           overflow: hidden;
           min-height: 190rpx;
           padding: 16rpx 20rpx 18rpx;
-          background: linear-gradient(145deg, #fffdf8, #fff5dd);
+          background: var(--soft-yellow);
 
           &.locked {
             opacity: .52;
@@ -331,9 +331,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3rpx solid var(--line);
+    border: var(--border-w) solid var(--line);
     border-radius: 999rpx;
-    background: #ffffff;
+    background: var(--surface-2);
     font-size: 30rpx;
     font-weight: 800;
     color: var(--fg);
@@ -354,9 +354,9 @@
   gap: 16rpx;
   padding: 0 28rpx;
   min-height: 88rpx;
-  border: 3rpx solid var(--line);
+  border: var(--border-w) solid var(--line);
   border-radius: 999rpx;
-  background: #ffffff;
+  background: var(--surface-2);
   box-sizing: border-box;
 
   .plan-custom-label {

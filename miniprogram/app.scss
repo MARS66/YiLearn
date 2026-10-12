@@ -4,23 +4,88 @@
  */
  @import './assets/icons/index.scss';
 page {
-  /* 颜色 token */
-  --bg: #FAF7F0;
-  --surface: #ffffff72;
-  --fg: #171614;
-  --muted: #6F6B65;
-  --line: #DED9D0;
-  --line2: #ded9d05e;
-  --red: #E13C2F;
-  --red-dark: #B92A20;
-  --yellow: #F2B632;
+  /* ============ YiStudy 品牌色 · 原色层（改色只需改这里） ============ */
+  /* 奶白系 */
+  --cream-100: #F6F0E0; /* 漆器奶白 · 品牌主背景 */
+  --cream-50:  #FBF8F0; /* 纸白 · 卡片 / 浅层容器 */
+  /* 黑系 */
+  --black-900: #16161A; /* 舞黑 · 核心结构色 */
+  --black-700: #343438; /* 炭黑 · 次级正文 / 黑底纹样 */
+  --black-500: #737378; /* 石墨灰 · 辅助文字 */
+  --black-200: #D8D5CC; /* 雾灰 · 禁用 / 分割 */
+  /* 红系 */
+  --red-600: #C8102E;   /* 舞红 · 品牌红 */
+  --red-500: #E33B2E;   /* 火焰红 · CTA / 互动 */
+  --red-100: #F7DDD7;   /* 浅朱红 · 红色浅背景 */
+  /* 黄系 */
+  --yellow-500: #F2A900;/* 舞黄 · 品牌黄 */
+  --yellow-400: #FFC33D;/* 太阳黄 · 奖励 / 高光 */
+  --yellow-100: #FBEBC2;/* 浅麦黄 · 黄色浅背景 */
+  /* 绿系 */
+  --green-600: #2F7D5B; /* 藤青 · 完成状态 */
+  --green-100: #DDEBE3; /* 浅藤青 · 完成浅背景 */
+
+  /* 小火 IP 专属同源暖色阶（红橙黄，与 UI 同源但更鲜活） */
+  --ip-red: #D93625;    /* 外焰 / 轮廓 */
+  --ip-orange: #FF6B2C; /* 主体外焰 */
+  --ip-warm: #FF982E;   /* 中层 */
+  --ip-yellow: #FFD34E; /* 内焰 */
+  --ip-core: #FFE98A;   /* 面部高光 */
+  --ip-black: #241C1A;  /* 眼睛 / 轮廓 */
+
+  /* ============ 语义 token（引用原色，勿直接写死色值） ============ */
+  --bg: var(--cream-100);       /* 品牌主背景 */
+  --surface: var(--cream-50);   /* 卡片 / 浅层容器 */
+  --surface-2: var(--cream-50); /* 浮层 / 二级容器 */
+  --card-bg: var(--black-900);  /* 舞黑核心容器（学习卡 / 海报 / 进度面板） */
+
+  --fg: var(--black-900);      /* 一级文字 / 核心结构 */
+  --fg-2: var(--black-700);    /* 二级文字 */
+  --muted: var(--black-500);   /* 辅助文字 */
+  --placeholder: var(--black-500);
+
+  --line: var(--black-900);    /* 结构边框（舞黑，粗边框） */
+  --line2: var(--black-200);   /* 兼容旧名：弱分割 */
+  --divider: var(--black-200); /* 分割线 / 禁用 */
+
+  --red: var(--red-500);       /* 红 = 行动 / 当前 / 交互 */
+  --red-brand: var(--red-600); /* 品牌红 */
+  --red-dark: var(--red-600);  /* 按压态 */
+  --yellow: var(--yellow-400);       /* 黄 = 获得 / 奖励 / 高光 */
+  --yellow-brand: var(--yellow-500); /* 品牌黄 */
+  --green: var(--green-600);         /* 绿 = 完成 / 安定（<3%） */
+  --soft-red: var(--red-100);        /* 红色浅背景 */
+  --soft-yellow: var(--yellow-100);  /* 黄色浅背景 */
+  --soft-green: var(--green-100);    /* 完成浅背景 */
+
+  /* 舞黑容器上的反色内容 */
+  --on-dark: var(--cream-50);       /* 黑底一级文字 */
+  --on-dark-2: var(--black-200);    /* 黑底二级 / 辅助文字 */
+  --on-dark-line: var(--black-700); /* 黑底分割线 / 纹样 */
+  --on-dark-faint: rgba(251, 248, 240, 0.08); /* 黑底大水印字形 */
+
+  /* 火焰纹样：黑底上「看第二眼才发现」 */
+  --pattern: repeating-linear-gradient(45deg, var(--black-700) 0 16rpx, transparent 16rpx 32rpx);
+  --card-inset: rgba(251, 248, 240, 0.04);
+  --decor: rgba(251, 248, 240, 0.2); /* 浅色几何装饰叠加（非玻璃拟态） */
+  --progress-fill: var(--red);   /* 学习进度填充：红=当前 */
+
+  /* 新粗野主义结构：粗边框 + 硬阴影 + 大圆角，不用模糊阴影 / 玻璃拟态 */
+  --border-w: 3rpx;
+  --border-w-thin: 2rpx;
+  --shadow-hard: 8rpx 8rpx 0 var(--black-900);
+  --shadow-hard-sm: 5rpx 5rpx 0 var(--black-900);
+  --shadow: var(--shadow-hard);
+  --shadow-soft: 6rpx 6rpx 0 rgba(22, 22, 26, 0.14);
+  --shadow-knob: 3rpx 3rpx 0 var(--black-900);
+  --cta-ring: inset 0 0 0 3rpx var(--on-dark); /* 黑卡上按钮的奶白描边 */
+  --overlay: rgba(22, 22, 26, 0.5);
+  --pressed: rgba(22, 22, 26, 0.08);
+
   --white: #ffffff;
-  --ink: #171614;
-  --soft-red: #FCE8E4;
-  --shadow: 0 24rpx 68rpx rgba(35, 24, 16, 0.09);
-  --r-sm: 28rpx;
+  --r-sm: 32rpx;
   --r-md: 40rpx;
-  --r-lg: 56rpx;
+  --r-lg: 48rpx;
 
   /* 字体 token */
   --font-display: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
@@ -80,7 +145,9 @@ page {
   font-weight: 800;
   font-size: 32rpx;
   background: var(--red);
-  color: #ffffff;
+  color: var(--on-dark);
+  border: var(--border-w) solid var(--line);
+  box-shadow: var(--shadow-hard-sm);
   box-sizing: border-box;
 }
 .primary:active {
@@ -95,7 +162,7 @@ page {
   justify-content: center;
   font-weight: 800;
   font-size: 32rpx;
-  border: 3rpx solid var(--fg);
+  border: var(--border-w) solid var(--line);
   background: transparent;
   color: var(--fg);
   box-sizing: border-box;
@@ -118,10 +185,10 @@ page {
   height: 18rpx;
   flex: 1;
   border-radius: 999rpx;
-  background: #5d5d5d;
+  background: var(--divider);
 }
 .progress-bar view.on {
-  background: linear-gradient(90deg, #e13c2f, #ff5547);
+  background: var(--progress-fill);
 }
 
 /* ---------- 拼音 / 字形 ---------- */
@@ -131,13 +198,13 @@ page {
   font-weight: 900;
 }
 .initial {
-  color: #ff5144;
+  color: var(--red);
 }
 .final {
   color: var(--yellow);
 }
 .tone{
-  color: var(--muted);
+  color: var(--on-dark-2);
 }
 .glyph {
   font-family: var(--font-yi);
@@ -170,14 +237,14 @@ page {
   justify-content: center;
   width: 64rpx;
   height: 64rpx;
-  border: 2rpx solid var(--line);
+  border: var(--border-w-thin) solid var(--line);
   border-radius: 50%;
   box-sizing: border-box;
 }
 .day.done .day-i {
-  background: var(--red);
-  border-color: var(--red);
-  color: #ffffff;
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--on-dark);
   font-weight: 900;
 }
 
@@ -185,9 +252,10 @@ page {
 .panel {
   margin-top: 24rpx;
   padding: 34rpx;
-  border: 1rpx solid var(--line2);
-  border-radius: var(--r-md);
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--r-lg);
   background: var(--surface);
+  box-shadow: var(--shadow-hard-sm);
   box-sizing: border-box;
 }
 .section-title {
@@ -225,11 +293,11 @@ page {
 .facts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1rpx solid #595959;
+  border-top: 1rpx solid var(--on-dark-line);
 }
 .fact {
   padding: 10rpx 20rpx;
-  border-right: 1rpx solid #595959;
+  border-right: 1rpx solid var(--on-dark-line);
   text-align: center;
 }
 .fact:last-child {
@@ -237,7 +305,7 @@ page {
 }
 .fact-label {
   display: block;
-  color: #aaa49d;
+  color: var(--on-dark-2);
   font-size: 24rpx;
 }
 .fact-value {
@@ -255,9 +323,9 @@ page {
 }
 .detail-fact {
   padding: 28rpx;
-  border: 2rpx solid var(--line);
-  border-radius: 28rpx;
-  background: #ffffff;
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
 }
 .detail-fact-label {
   display: block;
@@ -278,9 +346,9 @@ page {
 }
 .badge {
   padding: 30rpx;
-  background: #fff8e7;
-  border: 2rpx solid #f3dca2;
-  border-radius: 36rpx;
+  background: var(--soft-yellow);
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--r-sm);
   text-align: center;
   box-sizing: border-box;
 }
@@ -297,7 +365,7 @@ page {
 }
 .badge-mark {
   font-size: 68rpx;
-  color: #b87900;
+  color: var(--yellow-brand);
 }
 
 
@@ -307,7 +375,7 @@ page {
   align-items: center;
   gap: 24rpx;
   min-height: 108rpx;
-  border-bottom: 1rpx solid var(--line);
+  border-bottom: 1rpx solid var(--divider);
 }
 .setting:last-child {
   border: 0;
@@ -325,7 +393,7 @@ page {
   height: 60rpx;
   border-radius: 999rpx;
   padding: 6rpx;
-  background: #aaaaaa;
+  background: var(--divider);
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -335,7 +403,7 @@ page {
   width: 48rpx;
   height: 48rpx;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--cream-50);
   transition: transform 0.18s;
 }
 .switch.on {
@@ -364,15 +432,16 @@ page {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: rgba(23, 22, 20, 0.46);
+  background: var(--overlay);
   padding: 36rpx;
 }
 .modal {
   width: 100%;
   padding: 40rpx;
-  border-radius: 48rpx;
-  background: #ffffff;
-  box-shadow: var(--shadow);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  border: var(--border-w) solid var(--line);
+  box-shadow: var(--shadow-hard);
   box-sizing: border-box;
 }
 .modal-title {
